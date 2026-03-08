@@ -1,4 +1,4 @@
-# The Structure of Power: A History of the US Recorded Music Industry
+# Power Structures Revealed: A History of the US Recorded Music Industry
 
 *From the Post-War Boom to the Big Three and Beyond*
 

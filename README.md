@@ -1,4 +1,4 @@
-# The Structure of Power: A History of the US Recorded Music Industry
+# Power Structures Revealed: A History of the US Recorded Music Industry
 
 A comprehensive report tracing the evolution of the American recorded music industry from the post-WWII era to the present-day Big Three, examining the forces — technological, regulatory, economic, and cultural — that shaped its consolidation and the impact on artists, genres, and the economics of making music.
 

@@ -72,8 +72,11 @@
   // --- Smooth scroll for TOC links ---
   tocLinks.forEach(function (link) {
     link.addEventListener('click', function (e) {
+      var href = this.getAttribute('href');
+      // Only handle hash links — let cross-page links navigate normally
+      if (!href || href.charAt(0) !== '#') return;
       e.preventDefault();
-      var targetId = this.getAttribute('href').substring(1);
+      var targetId = href.substring(1);
       var target = document.getElementById(targetId);
       if (target) {
         var offset = target.offsetTop - 50;

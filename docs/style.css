@@ -319,8 +319,9 @@ body {
 
 .ascii-title {
   color: var(--cyan);
-  font-size: 11px;
-  line-height: 1.2;
+  font-size: 13px;
+  line-height: 1.25;
+  font-weight: 500;
   margin-bottom: 2rem;
   overflow-x: auto;
   opacity: 0;
@@ -888,7 +889,7 @@ cite {
   }
 
   .ascii-title {
-    font-size: 8px;
+    font-size: 10px;
   }
 
   .comparison-box {
@@ -910,7 +911,7 @@ cite {
   }
 
   .ascii-title {
-    font-size: 6px;
+    font-size: 8px;
   }
 
   .stat-grid {

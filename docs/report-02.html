@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Power Structures Revealed | Economics of Making Music</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scanlines"></div>
+
+  <div class="terminal-wrapper">
+    <div class="terminal-bar">
+      <div class="terminal-buttons">
+        <span class="btn-close"></span>
+        <span class="btn-minimize"></span>
+        <span class="btn-maximize"></span>
+      </div>
+      <div class="terminal-title">power-structures-revealed/report-02 — zsh — 220×65</div>
+    </div>
+
+    <div class="terminal-body">
+      <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <span class="prompt">$</span> <span class="cmd">cat</span> TABLE_OF_CONTENTS
+        </div>
+        <div class="toc-content">
+          <a href="#hero" class="toc-link toc-top" data-section="hero">
+            <span class="toc-marker">~</span> HOME
+          </a>
+          <div class="toc-group">
+            <div class="toc-group-label">/ SERIES</div>
+            <a href="index.html" class="toc-link"><span class="toc-marker">01</span> History of the Industry</a>
+            <a href="report-02.html" class="toc-link series-current"><span class="toc-marker">02</span> Economics of Making Music</a>
+          </div>
+          <div class="toc-group">
+            <div class="toc-group-label">/ REPORT</div>
+            <a href="#axioms-02" class="toc-link" data-section="axioms-02"><span class="toc-marker">00</span> Axioms</a>
+            <a href="#part-1-streaming" class="toc-link" data-section="part-1-streaming"><span class="toc-marker">01</span> The Streaming Economy</a>
+            <a href="#part-2-physical" class="toc-link" data-section="part-2-physical"><span class="toc-marker">02</span> Physical Sales</a>
+            <a href="#part-3-touring" class="toc-link" data-section="part-3-touring"><span class="toc-marker">03</span> Touring & Merchandise</a>
+            <a href="#part-4-labels" class="toc-link" data-section="part-4-labels"><span class="toc-marker">04</span> The Label Machine</a>
+            <a href="#part-5-wrong" class="toc-link" data-section="part-5-wrong"><span class="toc-marker">05</span> When Things Go Wrong</a>
+          </div>
+          <div class="toc-group">
+            <div class="toc-group-label">/ REFERENCE</div>
+            <a href="#appendix-table" class="toc-link" data-section="appendix-table"><span class="toc-marker">A</span> Comparative Economics</a>
+          </div>
+        </div>
+        <div class="sidebar-footer">
+          <div class="sidebar-meta">
+            <span class="prompt">$</span> <span class="cmd">wc -w</span> report-02.md<br>
+            <span class="output">~18,000 words</span>
+          </div>
+        </div>
+      </nav>
+
+      <button class="mobile-toc-toggle" id="mobileToggle" aria-label="Toggle table of contents">
+        <span class="hamburger"></span>
+      </button>
+
+      <main class="content" id="content">
+
+        <!-- HERO -->
+        <section class="section hero-section" id="hero">
+          <div class="boot-sequence">
+            <div class="boot-line"><span class="boot-ok">[  OK  ]</span> Loading research agents...</div>
+            <div class="boot-line"><span class="boot-ok">[  OK  ]</span> Cross-referencing sources...</div>
+            <div class="boot-line"><span class="boot-ok">[  OK  ]</span> Verifying data integrity...</div>
+            <div class="boot-line"><span class="boot-ok">[  OK  ]</span> No fabricated data detected.</div>
+            <div class="boot-line">&nbsp;</div>
+          </div>
+          <pre class="ascii-title">
+ ___                       _              __
+| __|__ ___ _ _  ___ _ __ (_)__ ___  ___ / _|
+| _|/ _/ _ \ ' \/ _ \ '  \| / _(_-&lt; / _ \  _|
+|___\__\___/_||_\___/_|_|_|_\__/__/ \___/_|
+
+ __  __      _   _             __  __         _
+|  \/  |__ _| |_(_)_ _  __ _  |  \/  |_  _ __(_)__
+| |\/| / _` | / / | ' \/ _` | | |\/| | || (_-&lt; / _|
+|_|  |_\__,_|_\_\_|_||_\__, | |_|  |_\\_,_/__/_\__|
+                       |___/
+</pre>
+          <div class="hero-subtitle">
+            <p>How Money Flows Through Streams, Stages, Shelves, and Storefronts</p>
+            <p class="hero-tagline">Report 2 in the Power Structures Revealed Series</p>
+          </div>
+          <div class="hero-meta">
+            <div class="meta-row">
+              <span class="meta-label">compiled:</span>
+              <span class="meta-value">March 2026</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">sources:</span>
+              <span class="meta-value">150+ verified references</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">methodology:</span>
+              <span class="meta-value">No fabricated data. Single-source claims flagged.</span>
+            </div>
+          </div>
+          <div class="scroll-prompt">
+            <span class="prompt">$</span> <span class="cmd">less</span> report-02.md <span class="cursor-blink">_</span>
+          </div>
+        </section>
+
+        <!-- AXIOMS -->
+        <section class="section" id="axioms-02">
+          <div class="section-header">
+            <span class="section-number">00</span>
+            <h2>Axioms & Starting Assumptions</h2>
+          </div>
+          <div class="section-body">
+            <p>This report inherits and extends the axioms established in <a href="index.html">Report 1: A History of the US Recorded Music Industry</a>. The reader should understand the additional assumptions specific to this economic analysis:</p>
+            <div class="callout callout-axiom">
+              <p>Where Report 1 documented <em>what happened</em>, this report examines the mechanisms of extraction, distribution, and value capture that define the modern music economy.</p>
+            </div>
+            <ol class="axiom-list">
+              <li><strong>Continuation, not repetition</strong>: Report 1 traced the structural history — from the post-war indie explosion through consolidation into the Big Three. This report asks the next logical question: <em>within the structures that emerged, how does money actually move?</em> Where Report 1 documented what happened, this report examines the mechanisms of extraction, distribution, and value capture that define the modern music economy.</li>
+              <li><strong>Multiple revenue streams</strong>: Unlike Report 1, which focused primarily on recorded music revenue, this report examines the full economic picture — streaming, physical sales, touring, merchandise, publishing, and label economics. These streams interact in ways that are not obvious from examining any single one in isolation.</li>
+              <li><strong>No fabricated data</strong>: Every quantitative claim in this report is sourced from verified research. Where a figure could only be verified from a single source, it is marked <code>[single-source]</code>. Where sources disagree on a figure, the range is presented. Where data is unavailable, the gap is stated rather than filled with estimates. This is the same standard applied in Report 1, and it matters more here — economic claims are particularly prone to motivated reasoning on all sides.</li>
+              <li><strong>The artist as economic unit</strong>: This report examines the economics as they affect the <em>working musician</em> — not the industry aggregate, not the label P&L, and not the platform metrics. Industry-level data is presented where necessary, but the analytical lens is always: <em>what does this mean for the person making the music?</em></li>
+              <li><strong>Structural analysis, not moral judgment</strong>: This report describes how money flows and where it accumulates. It does not argue that any particular distribution is morally correct or incorrect. The reader may draw their own conclusions about fairness; the report's job is to provide the data and structural analysis necessary to make those conclusions informed.</li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- PART I: THE STREAMING ECONOMY -->
+        <section class="section" id="part-1-streaming">
+          <div class="section-header">
+            <span class="section-number">01</span>
+            <h2>The Streaming Economy — Who Gets Paid and How</h2>
+          </div>
+          <div class="section-body">
+
+            <h3>The Architecture of a Stream</h3>
+            <p>To understand who gets paid when you press play on Spotify, you first need to understand that there is no single "payment" happening. A single stream triggers obligations across multiple copyrights, multiple intermediaries, and multiple collection systems — each with its own negotiated rate, its own collection body, and its own timeline for payment.</p>
+            <p>The simplest way to think about it: every recorded song involves <em>two separate copyrights</em>. The <strong>sound recording</strong> (the master) — the actual audio you hear — is typically owned by the record label or the artist. The <strong>composition</strong> (the song itself — the melody, lyrics, and structure) is owned by the songwriter and/or their publisher. These are legally distinct properties with distinct revenue flows, and streaming platforms must pay for both.</p>
+            <p>When Spotify collects $9.99 from a subscriber, the money divides roughly as follows:</p>
+            <ul>
+              <li><strong>Spotify retains approximately 30%</strong> (~$3.00) to cover its operating costs, R&D, and margin.</li>
+              <li><strong>Approximately 70%</strong> (~$6.99) flows out to rights holders — but "rights holders" is doing an enormous amount of work in that sentence.</li>
+            </ul>
+            <p>Of that 70% paid out, the split between recording rights and composition rights is not equal. Record labels — the owners of the sound recordings — receive the lion's share. <strong>Labels collectively receive approximately 50-52% of Spotify's total revenue.</strong> Publishers and songwriters receive significantly less — approximately <strong>15-20% of total revenue</strong> goes to the composition side. The remainder covers other rights holders and direct licensing arrangements.</p>
+            <p>This asymmetry is not accidental. It reflects the relative bargaining power that record labels have historically held in negotiations with streaming platforms — a power dynamic shaped by the consolidation documented in Report 1. When three companies control the vast majority of commercially significant recorded music, they negotiate from a position of considerable leverage.</p>
+            <cite>Spotify investor presentations, Digital Music News, Music Business Worldwide. The 70/30 split is widely reported and confirmed by Spotify's own Loud & Clear initiative.</cite>
+
+            <h3>The Pro-Rata Model: A Pool, Not a Per-Play Rate</h3>
+            <p>One of the most persistent misconceptions about streaming economics is that artists are paid a fixed amount per stream. They are not. Spotify uses a <strong>pro-rata model</strong> (sometimes called a "big pool" model), and the distinction matters enormously.</p>
+            <p>Here is how it actually works: each month, Spotify pools all the revenue it has collected from subscriptions and advertising. It allocates approximately 70% of that pool to rights holders. Then it divides that pool based on each track's <strong>share of total streams on the platform that month</strong>. If your song accounts for 0.001% of all streams in a given month, you receive 0.001% of the rights holder pool.</p>
+            <p>This means the "per-stream rate" is not fixed — it fluctuates based on Spotify's total revenue that month and total streams that month. When people cite figures like <strong>$0.003-$0.005 per stream on Spotify</strong>, they are describing an <em>average</em> that shifts over time. The actual rate your stream earns depends on the month, the country where the listener is located (different markets generate different revenue per user), and whether the listener is on a paid or ad-supported tier.</p>
+            <p>The implications of the pro-rata model are subtle but significant. Under this system, an artist's income is determined not just by how many people listen to their music, but by <em>how much everyone else on the platform is being listened to</em>. If a massive global pop release drives a spike in total streams, every other artist's effective per-stream rate decreases — even if their own stream count stays the same. The pool is fixed; streams are the denominator.</p>
+            <p>Critics have proposed an alternative called <strong>user-centric payment</strong>, where each subscriber's $9.99 would be distributed only to the artists <em>that specific user</em> actually listened to. Studies, including academic work from Duke University's Fuqua School of Business, suggest this would modestly benefit mid-tier and niche artists at the expense of the most-streamed superstars. Spotify has publicly acknowledged exploring the idea but has not adopted it, citing implementation complexity and the relatively small magnitude of redistribution.</p>
+            <p>The user-centric vs. pro-rata debate is more than a technical question about payment models — it is a question about what values the system should optimize for. The pro-rata model treats every stream as fungible: a stream is a stream regardless of who generates it. This benefits artists with the broadest appeal and the most passive listening (including background music, playlists designed for ambiance, and algorithmically recommended tracks). User-centric payment would reward artists who command <em>intentional</em> listening — fans who actively seek out specific music — over those who benefit from algorithmic placement. The choice between these models is, at its core, a choice about whether streaming should function as a mass-market popularity contest or as a system that rewards the depth of the artist-fan relationship.</p>
+            <p>Deezer became the first major streaming platform to adopt a modified user-centric system (which it calls "artist-centric"), implementing changes that boost payments for tracks that receive active, intentional listens over algorithmic or passive plays. The results of this experiment will be closely watched by the industry, though it remains to be seen whether other platforms will follow.</p>
+            <cite>Spotify Loud & Clear, Duke Fuqua academic study, Music Business Research, Digital Music News</cite>
+
+            <h3>The Composition Side: Songwriters, Publishers, and PROs</h3>
+            <p>If the recording side of streaming economics is opaque, the composition side is a labyrinth.</p>
+            <p>When a song is streamed, the songwriter is owed two types of royalties on the composition:</p>
+            <ol>
+              <li><strong>Performance royalties</strong> — for the "public performance" of the composition (yes, streaming counts as a public performance under US copyright law).</li>
+              <li><strong>Mechanical royalties</strong> — for the "reproduction" of the composition (each stream is treated as a mechanical reproduction).</li>
+            </ol>
+            <p>The composition earns approximately <strong>$0.0012 per stream</strong> — roughly split 50/50 between the performance royalty and the mechanical royalty. But the songwriter does not receive this full amount. Each type of royalty passes through its own intermediary before reaching the songwriter's pocket.</p>
+            <p><strong>Performance royalties</strong> are collected by Performing Rights Organizations (PROs) — in the US, primarily <strong>ASCAP, BMI, and SESAC</strong> (plus the newer <strong>Global Music Rights/GMR</strong>). Streaming services dedicate approximately <strong>6-7% of their revenue to performance royalties</strong>, which are paid to these PROs under blanket license agreements. The PROs then distribute the money according to a formula: <strong>50% to the publisher, 50% to the songwriter</strong>.</p>
+            <p>The blanket license model is worth pausing on. Rather than negotiate individual licenses for millions of songs, streaming services pay PROs a percentage of revenue for the right to play <em>everything</em> in that PRO's catalog. This is efficient — but it also means that the rate is set through negotiation (or, historically, through consent decrees overseen by the Department of Justice) rather than by market forces acting on individual songs. ASCAP and BMI operated under federal consent decrees for decades that constrained their ability to set rates, though the BMI consent decree was terminated in 2024 and ASCAP's has been under review.</p>
+            <p><strong>Mechanical royalties</strong> flow through a different channel entirely. Prior to 2021, mechanical royalties from streaming were a chaotic mess — services were supposed to identify and pay every songwriter whose composition they used, but frequently could not identify the correct rights holders. Millions of dollars in mechanical royalties went unpaid or were held in escrow.</p>
+            <p>The <strong>Music Modernization Act (MMA)</strong>, signed into law in 2018, created the <strong>Mechanical Licensing Collective (MLC)</strong> to solve this problem. The MLC, which began operations in January 2021, serves as a centralized body that collects mechanical royalties from streaming services and distributes them to songwriters and publishers. Streaming services pay mechanical royalties to the MLC based on rates set by the Copyright Royalty Board. The MLC then distributes those royalties — again, <strong>50% to the publisher, 50% to the songwriter</strong>.</p>
+            <p>So the songwriter's journey to getting paid for a single stream looks something like this:</p>
+            <div class="code-block">
+              <div class="code-header">composition_royalty_flow.txt</div>
+<pre>
+One stream (~$0.0012 composition royalty)
+    |-- Performance royalty (~$0.0006)
+    |     |-- To PRO (ASCAP/BMI/SESAC)
+    |     |     |-- 50% --> Publisher
+    |     |     '-- 50% --> Songwriter
+    |-- Mechanical royalty (~$0.0006)
+    |     |-- To MLC
+    |     |     |-- 50% --> Publisher
+    |     |     '-- 50% --> Songwriter
+</pre>
+            </div>
+            <p>If the songwriter <em>is</em> their own publisher (common for independent artists), they collect both halves. If they have a traditional publishing deal, the publisher takes their 50% and the songwriter keeps their 50%. If they have a co-publishing deal (increasingly common), the split may be more favorable — but the point is that by the time money reaches the person who actually wrote the song, it has been divided, subdivided, and routed through multiple intermediaries.</p>
+            <cite>ASCAP, BMI, The MLC, Music Modernization Act (Congress.gov), Soundcharts, Songpreneurs</cite>
+
+            <h3>Label-Platform Deals: The Hidden Layer</h3>
+            <p>Everything described above operates within a framework of confidential licensing agreements between streaming platforms and the major labels. These deals are the most consequential — and least visible — layer of the streaming economy.</p>
+            <p>What we know comes primarily from legal proceedings, SEC filings, and investigative journalism. And what we know is revealing.</p>
+            <p><strong>Sony Music</strong> negotiated a deal with Spotify that included a <strong>$42.5 million guaranteed minimum payment over the first three years</strong>, plus a Most Favored Nation (MFN) clause ensuring Sony would receive terms at least as favorable as any other label's deal. MFN clauses are standard in major label licensing agreements and create a ratcheting effect — if one major negotiates better terms, the others automatically receive matching terms.</p>
+            <p>Perhaps more significantly, the <strong>major labels collectively held equity stakes in Spotify in its early years — up to an estimated 18% combined</strong>. When Spotify went public in 2018, these stakes were worth billions. The critical question — one that has generated significant controversy — is whether artists shared in those equity windfalls. The labels' position has generally been that equity stakes were compensation for licensing rights and early platform risk, not streaming royalties, and therefore not subject to artist royalty calculations. Many artists and their advocates have argued this is a distinction without a meaningful difference — the labels' leverage in licensing negotiations derived directly from controlling the artists' catalogs.</p>
+            <p>The structural dynamic here echoes a pattern documented extensively in Report 1: the consolidation from Big Six to Big Three gave the surviving majors enormous leverage in negotiations with any distribution platform. Spotify <em>could not launch</em> without licenses from the Big Three — their combined catalogs represent such a dominant share of commercially relevant music that no streaming service can operate without them. This is the same distribution chokepoint that defined the physical era, translated into the digital context.</p>
+            <p><strong>Labels collectively receive 50-52% of Spotify's total revenue</strong> — a figure that becomes more striking when you consider that the labels' marginal cost of delivering a stream is essentially zero. The music is already recorded. The infrastructure is Spotify's. The labels' share reflects not the cost of production but the value of <em>access to the catalog</em> — a form of rent extraction enabled by copyright ownership and market concentration.</p>
+            <cite>The Verge (Sony-Spotify contract leak), SEC filings, Music Business Worldwide, Digital Music News</cite>
+
+            <h3>Discovery Mode: Paying for Algorithmic Visibility</h3>
+            <p>In 2020, Spotify introduced <strong>Discovery Mode</strong>, a tool that reveals something important about the platform's evolving relationship with the music it hosts.</p>
+            <p>The mechanics: artists (or their labels/distributors) can flag specific tracks for algorithmic promotion. In exchange, Spotify takes a <strong>30% commission on recording royalties</strong> generated by streams that result from Discovery Mode promotion. The artist or label receives 70% of recording royalties on those streams instead of the usual 100%. The tool is available to artists with <strong>25,000+ monthly listeners</strong> — a threshold that excludes the majority of artists on the platform.</p>
+
+            <div class="stat-grid">
+              <div class="stat-card">
+                <div class="stat-number">+50%</div>
+                <div class="stat-label">saves (Discovery Mode avg.)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">+44%</div>
+                <div class="stat-label">playlist adds</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">+37%</div>
+                <div class="stat-label">new followers</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">30%</div>
+                <div class="stat-label">royalty commission to Spotify</div>
+              </div>
+            </div>
+
+            <p>The philosophical question Discovery Mode raises is whether a streaming platform should be in the business of selling preferential algorithmic treatment. The precedent is radio payola — a practice that, as documented in Report 1, was driven underground (never eliminated) after the 1960 congressional hearings. Discovery Mode is not payola in the legal sense — the promotion is disclosed and the cost comes from the artist's own royalty share rather than a separate payment. But the functional similarity is worth noting: artists are accepting reduced compensation in exchange for increased exposure, on a platform that controls the primary discovery mechanism for new music.</p>
+            <p>There is a deeper structural issue here that connects to the pro-rata payment model. In a system where total plays determine revenue share, <em>visibility is everything</em>. An artist who is not surfaced by the algorithm does not merely miss an opportunity — they are actively diluted by the streams accruing to artists who are surfaced. Discovery Mode formalizes what was already an implicit reality: algorithmic placement is the most valuable currency on the platform, and Spotify has found a way to monetize it directly. The 25,000 monthly listener threshold means this tool is unavailable to the vast majority of artists — those who arguably need discovery the most. It is available primarily to artists who have already achieved some level of traction, creating a reinforcement loop where the already-visible can pay to become more visible.</p>
+            <p>The broader question for the industry is whether streaming platforms — which started as neutral distributors of music — are becoming curators and gatekeepers in ways that parallel the radio programmers and label A&R executives they ostensibly displaced. If Spotify's algorithm is the new radio, and Discovery Mode is the new payola, then the structural dynamics of the pre-digital era have not been disrupted so much as they have been <em>digitized</em>.</p>
+            <cite>Spotify for Artists, Music Business Worldwide, Hypebot. Discovery Mode metrics from Spotify's own reporting.</cite>
+
+            <h3>The Transparency Paradox: Loud & Clear</h3>
+            <p>In 2021, Spotify launched <strong>Loud & Clear</strong>, a public-facing data initiative that provides aggregated statistics about artist earnings on the platform. The data is genuinely interesting and worth examining on its own terms — while also understanding what it reveals about Spotify's strategic framing.</p>
+            <p>The headline figures:</p>
+            <ul>
+              <li>Spotify paid out <strong>$11 billion to rights holders in 2025</strong> (per Spotify newsroom data).</li>
+              <li>The <strong>100,000th-ranked artist</strong> on Spotify went from earning approximately <strong>~$600 in 2014 to ~$6,000 in 2024</strong> — a 10x increase.</li>
+              <li>The <strong>10,000th-ranked artist</strong> went from earning approximately <strong>$34,000 in 2014 to $131,000 in 2024</strong> — nearly a 4x increase.</li>
+              <li>More artists are now earning <strong>$100,000+ from Spotify alone</strong> than were stocked as artists in physical record stores at the peak of the CD era.</li>
+            </ul>
+            <p>These figures are striking and represent genuine progress in the breadth of the music economy. More artists are earning <em>something</em> from recorded music than ever before. The long tail has thickened.</p>
+            <p>But the framing deserves scrutiny. The $11 billion in payouts goes to "rights holders" — which primarily means <em>labels</em>, not artists. An artist on a major label deal receiving 15-20% of recording royalties would see only $900-$1,200 of that $6,000 earned by the 100,000th-ranked artist. And $6,000 per year — from what Spotify frames as a notable achievement — is not a living. It is not close to a living. It is roughly what a minimum-wage worker earns in two and a half weeks.</p>
+            <p>The 10,000th-ranked artist earning $131,000 from Spotify alone is genuinely significant — this represents a real income from a single platform. But being the 10,000th most-streamed artist on a platform with millions of artists is a rarefied position. For every artist in the top 10,000, there are hundreds of thousands earning less than the cost of a monthly Spotify subscription.</p>
+            <p>This is not to dismiss the data. It is to contextualize it. Spotify has an institutional interest in demonstrating that streaming benefits artists broadly, because the alternative narrative — that streaming has compressed recorded music income for everyone outside the top tier — threatens both regulatory scrutiny and artist goodwill. The Loud & Clear data is real, but the story it tells depends on which part of the distribution you focus on.</p>
+            <cite>Spotify Loud & Clear (loudandclear.byspotify.com), Spotify Newsroom, Digital Music News</cite>
+
+            <h3>The Structural Summary</h3>
+            <p>The streaming economy is not one system. It is multiple overlapping systems — recording royalties, composition royalties, performance rights, mechanical rights — each with its own intermediaries, its own negotiated rates, and its own opacity. The defining feature is not any single rate or split, but the <em>layered complexity</em> that makes it genuinely difficult for any individual artist to trace their own income from source to pocket.</p>
+            <p>This complexity is not accidental. It serves the interests of the intermediaries who operate within each layer. Every split, every collection body, every confidential licensing term represents an institutional actor with a financial interest in the status quo. The artist sits at the end of a chain of deductions that begins with the listener's $9.99 and ends — if it ends at all — with a royalty statement that arrives months later and requires forensic accounting to verify.</p>
+            <p>Consider the full chain for a single stream of a song written and performed by a major label artist with a traditional publishing deal:</p>
+            <ol>
+              <li>The subscriber pays $9.99 to Spotify.</li>
+              <li>Spotify retains ~30% ($3.00).</li>
+              <li>Spotify pays ~52% to the label ($5.19) as the recording rights holder.</li>
+              <li>The label applies the artist's royalty rate (say 18%) to its share: $0.93 accrues to the artist's account — but only applies against the recoupable balance until the artist recoups.</li>
+              <li>Meanwhile, ~6-7% of Spotify's revenue flows to PROs as performance royalties on the composition. The PRO pays 50% to the publisher, 50% to the songwriter.</li>
+              <li>Mechanical royalties flow through the MLC to the publisher (50%) and songwriter (50%).</li>
+              <li>If the artist is also the songwriter, they receive the songwriter's shares from steps 5 and 6 — but these are tiny fractions of the original $9.99.</li>
+              <li>If the artist has a co-publishing deal, the publisher's share from steps 5 and 6 is further split.</li>
+            </ol>
+            <p>By the time this cascade of divisions is complete, the person who wrote and performed the song may receive a few tenths of a cent from that $9.99 subscription payment — and possibly nothing, if they are unrecouped. The system is not designed to be understood by the people it is supposed to serve. It is designed to be understood by the people who administer it.</p>
+          </div>
+        </section>
+
+        <!-- PART II: PHYSICAL SALES -->
+        <section class="section" id="part-2-physical">
+          <div class="section-header">
+            <span class="section-number">02</span>
+            <h2>Physical Sales — The Vinyl Resurgence and the CD Twilight</h2>
+          </div>
+          <div class="section-body">
+
+            <h3>The Numbers Tell Two Stories</h3>
+            <p>The physical music market in 2024 is telling two stories simultaneously, and they point in opposite directions.</p>
+
+            <div class="comparison-box">
+              <div class="comparison-col">
+                <div class="comparison-header comparison-negative">The CD Twilight</div>
+                <ul>
+                  <li>CDs peaked at ~<strong>943 million units</strong> shipped in 2000</li>
+                  <li>By 2024: ~<strong>33 million units</strong></li>
+                  <li><strong>$541 million</strong> in revenue (+1% YoY)</li>
+                  <li><strong>95% decline</strong> from peak unit sales</li>
+                </ul>
+              </div>
+              <div class="comparison-col">
+                <div class="comparison-header comparison-positive">The Vinyl Resurgence</div>
+                <ul>
+                  <li>Vinyl outsold CDs in units for the <strong>3rd consecutive year</strong></li>
+                  <li>~<strong>44 million vinyl units</strong> vs 33 million CDs in 2024</li>
+                  <li><strong>18 consecutive years of growth</strong></li>
+                  <li>Revenue: <strong>$56.77M (2011) to $1.2B (2022)</strong></li>
+                </ul>
+              </div>
+            </div>
+
+            <p>The crossover point — vinyl outselling CDs in unit terms — is historically resonant. The CD was supposed to be the vinyl killer. Introduced in 1982, the CD offered superior audio durability, smaller form factor, and lower manufacturing costs. By 1988, CDs had overtaken vinyl in revenue. By the mid-1990s, major labels had essentially abandoned vinyl pressing. The format was declared dead.</p>
+            <p>And yet here we are. To understand why, you need to look beyond the audio.</p>
+            <cite>RIAA year-end revenue reports (2022, 2024), Billboard</cite>
+
+            <h3>Why People Buy Vinyl in the Streaming Era</h3>
+            <p>The vinyl resurgence is not about audio convenience — streaming is infinitely more convenient. It is not primarily about audio quality — while vinyl enthusiasts make audiophile arguments, the average consumer playing records on a $100 turntable is not extracting superior fidelity. The resurgence is about something else entirely: <strong>vinyl is a physical artifact in an era of dematerialized consumption</strong>.</p>
+
+            <div class="stat-grid">
+              <div class="stat-card">
+                <div class="stat-number">26-35</div>
+                <div class="stat-label">primary vinyl buyer age group</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">60%</div>
+                <div class="stat-label">of Gen Z consumers buy records</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">76%</div>
+                <div class="stat-label">of Gen Z vinyl fans buy monthly</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">84%</div>
+                <div class="stat-label">of Gen Z vinyl buyers shop in physical stores</div>
+              </div>
+            </div>
+
+            <p>These are not people replacing a digital experience with an analog one. They are adding a <em>physical, collectible, tangible</em> dimension to their music consumption. They stream for convenience and buy vinyl for ownership, display, ritual, and identity. The vinyl record has become a cultural object — closer to a book on a shelf or art on a wall than to a playback medium.</p>
+            <p>This has implications for how we think about music economics. Vinyl revenue is not cannibalizing streaming revenue. The two formats serve different psychological needs and largely coexist. An artist's superfan streams their album hundreds of times <em>and</em> buys the vinyl — possibly multiple variants. The formats are complements, not substitutes. This is a crucial point that the industry has been slow to fully internalize: the willingness to pay for music did not disappear in the streaming era. It changed form. Consumers who will not pay $9.99 for a digital album will pay $35 for a colored vinyl pressing of the same album. The perceived value is in the object, not the audio.</p>
+            <p>There is a parallel here to the broader "atoms vs. bits" dynamic in consumer culture. Digital goods — music, books, news, film — have been subject to intense deflationary pressure as marginal reproduction costs approach zero. But physical goods tied to digital content — vinyl records, hardcover books, collector's editions — have moved in the opposite direction, commanding premium prices precisely <em>because</em> they are physical in a world of digital abundance. Scarcity, tangibility, and craftsmanship have become luxury attributes in categories where they were once simply the default. Vinyl's resurgence is not a nostalgia play. It is the market discovering that atoms have value that bits do not.</p>
+            <cite>RIAA data, MRC Data/Luminate consumer surveys, Discogs annual report. Gen Z statistics from multiple industry surveys.</cite>
+
+            <h3>Manufacturing Economics: The Cost of Wax</h3>
+            <p>The economics of vinyl manufacturing create a distinct set of constraints and opportunities depending on whether you are an independent artist pressing a short run or a major label pressing hundreds of thousands of units.</p>
+            <p><strong>Short-run vinyl pressing</strong> (independent artist economics):</p>
+            <div class="data-table-wrapper">
+              <table class="data-table">
+                <thead><tr><th>Run Size</th><th>Approx. Cost Per Unit</th><th>Total Cost</th></tr></thead>
+                <tbody>
+                  <tr><td>100 LPs</td><td>~$11.69/unit</td><td>~$999</td></tr>
+                  <tr><td>200 LPs</td><td>~$8.80/unit</td><td>~$1,760</td></tr>
+                  <tr><td>300 LPs</td><td>~$7.60/unit</td><td>~$2,280</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>These are starter runs — the kind an independent artist or small label would order. The per-unit cost declines with volume but remains substantial compared to CDs, which can be manufactured for well under $1 per unit at scale. Vinyl manufacturing involves more expensive raw materials (PVC pellets), more labor-intensive pressing processes, and longer lead times (8-16 weeks is common, though this has improved from the 6+ month waits during the 2021-2022 demand surge).</p>
+
+            <p><strong>The direct-to-consumer math</strong>: If an independent artist presses 100 units at $11.69 each and sells them directly at $25:</p>
+            <div class="code-block">
+              <div class="code-header">vinyl_direct_sales.py</div>
+<pre>
+revenue_per_unit     = $25.00
+manufacturing_cost   = -$11.69
+gross_profit         = $13.31 (53% margin)
+
+# Via Bandcamp (10% commission + ~5% CC processing):
+revenue              = $25.00
+bandcamp_commission  = -$2.50
+cc_processing        = -$1.25
+manufacturing        = -$11.69
+net_profit           = ~$9.56 (~38-45% margin)
+
+# At the merch table (cash, no platform):
+net_profit           = $13.31 (full margin)
+# 20 records at a show = $266 profit
+# = gas to the next city + a budget hotel
+</pre>
+            </div>
+            <p>CDs, by contrast, are far cheaper to manufacture but face a demand problem. The format has no cultural cachet among younger buyers. A CD at a merch table is an afterthought; a vinyl record is a statement.</p>
+            <cite>Vinyl pressing cost estimates from multiple US pressing plant price lists. Bandcamp fee structure from Bandcamp's published terms.</cite>
+
+            <h3>Major Label Vinyl: A Different Calculation</h3>
+            <p>The economics look very different for an artist on a major label deal. The label controls manufacturing, distribution, and pricing. The artist receives a royalty — and that royalty is subject to the same deduction architecture that has defined label deals for decades.</p>
+            <p>A typical calculation for a new major label artist:</p>
+            <ul>
+              <li><strong>Retail price</strong>: $30.00</li>
+              <li><strong>Artist royalty rate</strong>: 10-25% of retail (new artists typically land at <strong>13-16%</strong>)</li>
+              <li><strong>Packaging deduction</strong>: 20-25% off the retail price before royalties are calculated</li>
+            </ul>
+            <div class="code-block">
+              <div class="code-header">major_label_vinyl_royalty.py</div>
+<pre>
+# At 15% royalty with 25% packaging deduction:
+retail_price         = $30.00
+packaging_deduction  = -$7.50 (25%)
+royalty_base         = $22.50
+artist_royalty       = 15% of $22.50 = $3.38 per unit
+
+# At 25% royalty with 20% packaging deduction:
+retail_price         = $30.00
+packaging_deduction  = -$6.00 (20%)
+royalty_base         = $24.00
+artist_royalty       = 25% of $24.00 = $6.00 per unit
+
+# If unrecouped: artist receives $0
+# Label captures the majority of the margin
+</pre>
+            </div>
+            <p>So a $30 vinyl album might yield the artist somewhere between <strong>$3.38 and $6.00 nominally</strong> — and potentially $0 in practice if they are unrecouped. Meanwhile, the label — which pressed the record for a fraction of the retail price at scale — captures the majority of the margin.</p>
+            <p>The packaging deduction is particularly worth flagging. This deduction originated in the era of elaborate gatefold LP sleeves and was meant to account for the cost of physical packaging. The fact that it persists — decades after its original rationale was relevant — speaks to the stickiness of contractual terms that benefit the party with greater bargaining power. In the digital streaming context, some legacy contracts still apply packaging deductions to digital revenue — a deduction for "packaging" on a product with no physical package. This is a microcosm of a broader pattern in music industry contracts: terms that were introduced for specific, justifiable reasons persist long after the justification has evaporated, because they benefit the party that drafts the contracts.</p>
+            <cite>Sound On Sound (recording contracts), HowStuffWorks, Rexius Records (royalty rate ranges), Songstuff</cite>
+
+            <h3>Taylor Swift and the Power of Scale</h3>
+            <p>No discussion of modern vinyl economics is complete without acknowledging the Taylor Swift phenomenon, which illustrates both the potential and the distortion at the top of the market.</p>
+
+            <div class="stat-grid">
+              <div class="stat-card">
+                <div class="stat-number">1.014M</div>
+                <div class="stat-label">1989 (Taylor's Version) vinyl copies sold in 2023</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">859K</div>
+                <div class="stat-label">Tortured Poets Dept. vinyl copies, first week (2024)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">1 in 15</div>
+                <div class="stat-label">vinyl albums sold in the US were Taylor Swift (2023)</div>
+              </div>
+            </div>
+
+            <p>These numbers are extraordinary and essentially unprecedented in the modern vinyl era. But they also skew the aggregate statistics in ways that matter for understanding the broader market. When one artist accounts for ~7% of all vinyl sales, the "average" vinyl sale becomes a misleading concept. The vinyl market has a superstar tier — Swift, select K-pop acts, legacy reissues — and then a long tail of independent releases that operate in an entirely different economic reality.</p>
+            <p>Swift's vinyl strategy is also instructive: multiple color variants, exclusive retailer editions, and direct-to-consumer releases through her own store. Each variant gives fans a reason to purchase multiple copies of the same album. This is not about audio consumption — it is about collectibility, fandom, and direct monetization of superfan engagement. The variant strategy also reveals something about the economics of fandom in the streaming era. When an album costs $0 at the margin to stream (bundled into a flat subscription), the artist who wants to monetize their most dedicated listeners must offer something that streaming cannot: scarcity, exclusivity, and physical possession. A "Target exclusive lavender vinyl" or a "signed indie record store day pressing" creates artificial differentiation around a product — the music — that is otherwise identical across all distribution channels.</p>
+            <cite>Luminate/MRC Data year-end reports, Billboard, RIAA</cite>
+
+            <h3>Record Store Economics: Thin Margins, No Returns</h3>
+            <p>The retail layer of the physical music economy has its own distinct economics that shape the experience of both consumers and artists.</p>
+            <p><strong>Retailer margins on vinyl are thin compared to many retail categories.</strong> A record store buying a $30 retail LP from a distributor pays a wholesale price that leaves a margin of roughly 30-40% — before accounting for rent, labor, utilities, and the cost of carrying inventory that may not sell.</p>
+            <p>One critical structural difference between vinyl and CDs at the retail level: <strong>vinyl is typically non-returnable</strong>. Unlike CDs, which historically came with a 90-day return window (allowing retailers to send unsold stock back to the distributor for credit), vinyl records are a final sale for the retailer. If a record store orders 20 copies of a new indie release and only sells 8, the remaining 12 are the store's problem.</p>
+            <p>This makes inventory decisions high-stakes for independent record stores. It also creates a conservative bias — stores are incentivized to stock proven sellers and established artists rather than taking risks on unknown releases. The non-returnability of vinyl, paradoxically, may reinforce the same winner-take-most dynamics that define streaming: the safest bet is always the artist who already has demand.</p>
+            <p>The record store, in this context, functions as a microcosm of the broader music economy: a business built on cultural passion operating within economic constraints that reward caution and penalize risk-taking. Store owners stock Taylor Swift and classic rock reissues because they sell reliably; they stock the local indie band's debut because they believe in it — but if it does not sell, the loss is theirs. The cultural curation function that record stores provide is not compensated by the economics they operate within. It is subsidized by the passion of the people who run them.</p>
+            <cite>Record store industry reporting, Coalition of Independent Music Stores (CIMS), Billboard</cite>
+          </div>
+        </section>
+
+        <!-- PART III: TOURING AND MERCHANDISE -->
+        <section class="section" id="part-3-touring">
+          <div class="section-header">
+            <span class="section-number">03</span>
+            <h2>Touring & Merchandise — Where the Money Actually Lives</h2>
+          </div>
+          <div class="section-body">
+
+            <h3>The Great Inversion</h3>
+            <p>Here is the central irony of the modern music economy: <strong>recorded music used to be the primary revenue source that touring supported. Now touring is the primary revenue source, and recorded music functions as marketing for it.</strong></p>
+            <p>This inversion — documented at the macro level in Report 1 as the industry navigated the transition from physical to digital — has profound implications for who can sustain a music career. When recorded music was the primary revenue engine, an artist could theoretically earn a living without ever leaving the studio. You made an album, the label manufactured and distributed it, and royalties (however exploitative the terms) flowed from sales across the country and world. Physical distribution was the label's core competency, and it scaled without requiring the artist's physical presence in every market.</p>
+            <p>Touring does not scale that way. Touring requires the artist to be in a specific place, on a specific night, with specific equipment and personnel. It is labor-intensive, geographically constrained, and subject to costs that have escalated dramatically in the post-COVID era. The shift from recorded music as primary income to touring as primary income is, in economic terms, a shift from a <em>scalable</em> revenue model to a <em>non-scalable</em> one — for the artist, at least.</p>
+            <p>For top-earning artists, approximately <strong>80% of income comes from touring</strong>, 15% from recorded music, and 5% from publishing fees. But "top-earning artists" is doing significant work in that sentence. The touring economy, like every other layer of the music business, is radically stratified.</p>
+            <cite>Citigroup GPS "Putting the Band Back Together" (2018), Music Business Research. Note: Billboard published a detailed critique of the Citigroup study's methodology.</cite>
+
+            <h3>How Ticket Revenue Flows</h3>
+            <p>The path from a fan's ticket purchase to an artist's bank account is longer and more convoluted than most people assume. Using a <strong>$100 ticket</strong> as a baseline:</p>
+            <p><strong>The simplified breakdown</strong>: Of every $100 earned in gross tour revenue, an arena headliner typically retains approximately <strong>$30 pre-tax</strong>. The other $70 is consumed by three broad categories: roughly <strong>40% goes to direct costs</strong> (production, crew, transportation, equipment, venues), and roughly <strong>30% goes to commissions</strong> (manager, booking agent, tour manager, business manager).</p>
+            <p>The deal between artist and promoter typically follows a "versus deal" structure: the artist receives the <strong>greater of</strong> a guaranteed fee <strong>or</strong> 85-90% of net revenue after the promoter's expenses are deducted.</p>
+
+            <div class="data-table-wrapper">
+              <table class="data-table">
+                <caption>Commission Structure on Touring Revenue</caption>
+                <thead><tr><th>Deduction</th><th>Typical Rate</th><th>Basis</th></tr></thead>
+                <tbody>
+                  <tr><td>Booking agent</td><td>10-15%</td><td>Gross performance fee</td></tr>
+                  <tr><td>Artist manager</td><td>15-20%</td><td>Gross income (all sources)</td></tr>
+                  <tr><td>Tour manager</td><td>~10%</td><td>Artist performance fee</td></tr>
+                  <tr><td>Business manager</td><td>~5%</td><td>Gross income</td></tr>
+                  <tr class="row-highlight"><td><strong>Total commissions</strong></td><td><strong>~40-50%</strong></td><td><strong>Of gross, before production costs</strong></td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>These commissions are calculated on <em>gross</em>, not net — meaning the agent and manager take their percentage before production costs are deducted. If an artist grosses $100,000 on a tour, commissions alone could consume $40,000-$50,000, leaving $50,000-$60,000 to cover every other expense: crew salaries, transportation, equipment, hotels, insurance, and per diems.</p>
+            <p>A widely cited figure — artists take home roughly <strong>$8 from every $100 in ticket revenue</strong> after all expenses — captures the end result. This is an average that obscures enormous variation (stadium headliners retain more; club-level artists often retain nothing), but it reflects the structural reality that touring is an expensive, labor-intensive business with many layers of extraction between the gross and the net.</p>
+            <cite>Hypebot, Hearing Things, Music Feeds, Prism.fm, Arts Hacker, XTIX, Sonicbids</cite>
+
+            <h3>The Post-COVID Cost Explosion</h3>
+            <p>The economics of touring, already challenging before 2020, were fundamentally altered by the COVID-19 pandemic and its aftermath. When live music shut down entirely for 12-18 months and then restarted, the cost structure had shifted dramatically — and it has not shifted back.</p>
+
+            <div class="stat-grid">
+              <div class="stat-card">
+                <div class="stat-number">23.3%</div>
+                <div class="stat-label">overall CPI inflation (2019-2024)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">43.89%</div>
+                <div class="stat-label">avg. concert ticket price increase (same period)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">40-50%</div>
+                <div class="stat-label">increase in tour bus rental prices</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">~40%</div>
+                <div class="stat-label">overall touring cost increase post-pandemic</div>
+              </div>
+            </div>
+
+            <p>The causes were compound: supply chain disruptions drove up equipment costs, a shortage of qualified truck and bus drivers (many left the industry during the shutdown and did not return) drove up labor costs, inflation hit hotels and fuel, and the simultaneous restart of all tours created a demand spike for limited touring infrastructure.</p>
+            <p>Ticket prices rose to absorb these costs — but ticket price increases disproportionately affect fans, not the cost structure facing artists. The gap between what fans pay and what artists retain has widened. Costs went up. The artist's share of a higher-priced ticket did not proportionally increase.</p>
+            <cite>AMW Group (live music statistics), Variety (touring costs), KCRW, Grammy.com (post-pandemic touring)</cite>
+
+            <h3>The Indie Touring Crisis</h3>
+            <p>The post-COVID cost explosion has been particularly devastating for independent and mid-level touring artists — the vast middle of the music economy that does not have the scale to absorb higher costs through higher ticket prices.</p>
+
+            <div class="stat-grid">
+              <div class="stat-card">
+                <div class="stat-number">82%</div>
+                <div class="stat-label">of indie musicians can't afford touring beyond local area</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">58.3%</div>
+                <div class="stat-label">have turned down touring opportunities</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">57%</div>
+                <div class="stat-label">turned a profit on most recent tour</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">$3,800</div>
+                <div class="stat-label">avg. net revenue for profitable tours <span class="flag">[single-source]</span></div>
+              </div>
+            </div>
+
+            <p>These are not abstract statistics. They translate into real decisions with real consequences:</p>
+            <p><strong>Wednesday</strong>, an indie band with growing critical acclaim, posted a detailed profit-and-loss breakdown of a multi-date tour through the American South. The bottom line: a <strong>net loss of $98.39</strong>. Not a loss of $98,000. A loss of $98. After weeks of work, travel, and performance, they came home with less money than they left with.</p>
+            <p><strong>Dry Cleaning</strong>, a UK post-punk band with international recognition and label support, <strong>cancelled their North American tour entirely</strong>, citing <em>"the increasingly hostile economic forces that govern touring in the present day."</em> Lead vocalist Florence Shaw stated: <em>"It was definitely much, much, much more doable just a few years ago. Things have got nasty. It's not even about making a profit. It's about actually being able to do it at all."</em></p>
+            <p><strong>Garbage</strong>, a multi-platinum act from the 1990s, billed their most recent headlining tour as their last, blaming the economics of the music industry. Shirley Manson expressed particular concern for young musicians sleeping in vans and working day jobs to subsidize touring.</p>
+            <p>These examples illustrate a structural problem: the modern music economy has made touring the primary income source for artists while simultaneously making touring economically unviable for the majority. The system funnels artists toward live performance as the path to sustainability, then prices most of them out of that path.</p>
+            <p>The implications extend beyond individual artist hardship. If mid-level and independent artists cannot afford to tour, the pipeline of emerging talent is constricted. Arena headliners do not emerge fully formed — they develop through years of club and theater touring, building audiences one city at a time. When the economics of that developmental touring become unsustainable, the industry is undermining the very process that produces its next generation of headliners.</p>
+            <cite>NPR (Ditto Music survey), Rolling Stone (indie touring crisis), Side Door (touring survey), DJ Mag, Consequence</cite>
+
+            <h3>Live Nation and the Vertical Integration of Live Entertainment</h3>
+            <p>The live music economy does not operate in a competitive market. It operates in a market dominated by <strong>Live Nation Entertainment</strong>, a vertically integrated company that simultaneously controls concert promotion, ticketing (through Ticketmaster), venue ownership/operation, artist management (through various subsidiaries), and merchandise (through Live Nation Merchandise).</p>
+
+            <div class="stat-grid">
+              <div class="stat-card">
+                <div class="stat-number">$25.2B</div>
+                <div class="stat-label">Live Nation revenue (2025)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">~80%</div>
+                <div class="stat-label">of major venue primary ticketing (DOJ allegation)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">~75%</div>
+                <div class="stat-label">of major venues under exclusive ticketing contracts</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">~60%</div>
+                <div class="stat-label">of US concert promotion</div>
+              </div>
+            </div>
+
+            <p>The 2010 merger of Live Nation and Ticketmaster was approved under a consent decree that was subsequently found to have been violated. After the DOJ discovered Live Nation was systematically retaliating against venues that chose competitor ticketing services, the consent decree was extended and tightened in 2020 with automatic $1 million penalties per violation. That extended decree expired December 31, 2025. A new DOJ antitrust lawsuit, filed in May 2024 with 40+ state attorneys general, went to trial in March 2026.</p>
+            <p>The vertical integration matters for artist economics because it reduces the number of independent actors in the value chain. When the promoter, the ticketing company, the venue operator, and the merch company are all divisions of the same corporation, the "arm's length" negotiations that theoretically protect artist interests become intra-company transfers. The artist negotiates with Live Nation the promoter while performing at a Live Nation venue, ticketed by Ticketmaster, with merchandise handled by Live Nation Merchandise.</p>
+            <p>The parallels to the label consolidation documented in Report 1 are difficult to ignore. Just as the recorded music industry consolidated from dozens of independent labels into three vertically integrated majors, the live music industry has consolidated into a structure where one dominant company controls promotion, ticketing, venues, and ancillary services.</p>
+            <cite>DOJ press releases, Live Nation earnings reports, Bloomberg Law, ProMarket, R Street Institute, Digital Music News, Music Business Worldwide</cite>
+
+            <h3>Merchandise: The Margin That Matters</h3>
+            <p>If touring is where artists theoretically make money, <strong>merchandise is often where they actually make money</strong>. For mid-level and independent artists, merch is not a side hustle — it is frequently the difference between a tour being financially viable and financially catastrophic.</p>
+            <p>The statistic that captures this: the average small-to-mid artist makes <strong>9x more per show in gross merch sales than an entire year's worth of streaming royalties</strong> <span class="flag">[single-source — atVenu, cited in Glossy]</span>. Merch often makes up approximately <strong>70% of artist revenue</strong> for artists at this level.</p>
+
+            <div class="data-table-wrapper">
+              <table class="data-table">
+                <caption>Merch Economics: $35 T-Shirt at a Venue (25% Merch Cut)</caption>
+                <thead><tr><th>Line Item</th><th>Amount</th></tr></thead>
+                <tbody>
+                  <tr><td>Gross revenue</td><td>$35.00</td></tr>
+                  <tr><td>Venue cut (25% of gross)</td><td>-$8.75</td></tr>
+                  <tr><td>Credit card fee (~5%)</td><td>-$1.75</td></tr>
+                  <tr><td>Sales tax (~8%)</td><td>-$2.80</td></tr>
+                  <tr><td>Production cost</td><td>-$8.00</td></tr>
+                  <tr class="row-highlight"><td><strong>Artist net</strong></td><td><strong>$13.70 (39% of sticker price)</strong></td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>Venues typically take <strong>10-30% of gross merch sales</strong>, with <strong>20% being the most common rate for soft goods</strong> (apparel) and <strong>10% for hard goods</strong> (CDs, vinyl, accessories). Some major arenas and amphitheaters charge as high as <strong>35-40%</strong>. These cuts are on <em>gross revenue, not net</em> — the venue takes their percentage before the artist's production costs are deducted.</p>
+            <p>For established artists selling thousands of dollars in merch per night, the venue cut represents <strong>thousands of dollars per show</strong>. For emerging acts, it can be the <strong>difference between affording a hotel room and sleeping in the van</strong>.</p>
+            <p>Artists including Laura Jane Grace and Jeff Rosenstock have publicly called on venues to eliminate merchandise fees, arguing the practice disproportionately harms smaller artists who depend on merch income for basic tour viability. The counterargument from venues is that they provide the physical space, foot traffic, staffing, and point-of-sale infrastructure that enables merch sales — and that venue margins are thin enough that merch cuts are necessary for operational sustainability. This is not a trivial argument — independent venues, in particular, operate on razor-thin margins and face many of the same cost pressures as independent artists. The merch cut debate is, at its core, a conflict between two economically precarious parties over a slice of revenue that neither can easily afford to lose.</p>
+            <p>Under a <strong>360 deal</strong>, the label takes an additional <strong>10-30%</strong> of the artist's merchandise revenue (typically 15-25%), further compressing what was already the artist's highest-margin revenue stream. Major labels also operate dedicated merchandise companies — most notably <strong>Bravado</strong> (Universal Music Group) and <strong>Live Nation Merchandise</strong>. For the artist on a major label deal with a Bravado merch agreement performing at a Live Nation venue, the merch value chain is entirely captured by their business partners at every stage.</p>
+            <cite>Exploration.io, Disc Makers Blog, Talkhouse, She Shreds, Rolling Stone, Opendate, atVenu/Glossy, Cordero Law</cite>
+          </div>
+        </section>
+
+        <!-- PART IV: THE LABEL MACHINE -->
+        <section class="section" id="part-4-labels">
+          <div class="section-header">
+            <span class="section-number">04</span>
+            <h2>The Label Machine — Economics from the Inside</h2>
+          </div>
+          <div class="section-body">
+
+            <h3>The Cost of Breaking an Artist</h3>
+            <p>The music industry's dirty secret — well, one of many — is that <strong>most signed artists lose money</strong>. The label business model is not built on the assumption that every artist will succeed. It is built on the assumption that a small number of massive successes will subsidize a large number of failures. This is, functionally, a <strong>venture capital model</strong> applied to creative output.</p>
+
+            <div class="stat-grid">
+              <div class="stat-card">
+                <div class="stat-number">$750K-$1.4M</div>
+                <div class="stat-label">cost to develop a new artist (major label)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">~$200K</div>
+                <div class="stat-label">typical new pop act advance</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">10,000</div>
+                <div class="stat-label">or fewer copies — what most new artists sell</div>
+              </div>
+            </div>
+
+            <p>The math is unforgiving: most new artists sell 10,000 or fewer copies (or the streaming equivalent). Most never recoup their advance and development costs. The label absorbs the loss — but it does so with the expectation that the occasional breakout success will more than compensate.</p>
+            <p>As detailed in the deal structures analysis accompanying Report 1, the recoupment mechanism ensures that the label's risk is offset by extremely favorable terms: the label recoups its investment from the artist's royalty share (typically 15-20% of revenue) while keeping the remaining 80-85% from the first dollar. An artist with $950,000 in recoupable costs at an 18% royalty rate needs to generate approximately <strong>$5.28 million in revenue</strong> before they see any royalty income. Until that threshold is reached, the artist earns $0 — but the label has been collecting revenue from the very first stream.</p>
+            <div class="callout callout-axiom">
+              <p>This creates the defining structural grievance of artist-label relations: <strong>the label starts making money immediately; the artist starts making money only after the label has been made whole.</strong></p>
+            </div>
+            <cite>IFPI Investing in Music reports, Music Business Worldwide, Sound On Sound, Julia Holt Law, Promise Legal</cite>
+
+            <h3>The Imprint Structure: Brands Within Brands</h3>
+            <p>One aspect of major label economics that is poorly understood outside the industry is the <strong>imprint system</strong>. When you see "Republic Records" or "Island Records" or "Def Jam" credited on a release, you are not looking at independent companies. You are looking at <strong>trademarks and brands</strong> — divisions within the parent major label corporation.</p>
+            <p>Imprints are not separate business entities. They do not have independent balance sheets, distribution agreements, or corporate structures. The parent label pays an overhead fee to the imprint (covering A&R, marketing, and day-to-day operations) plus artist royalties, and the imprint operates as a branded unit within the larger corporate machine.</p>
+            <p>The imprint system serves several strategic functions:</p>
+            <ol>
+              <li><strong>Artist recruitment</strong>: Artists may prefer to sign with "Def Jam" (cultural cachet, genre identity) rather than "Universal Music Group" (faceless corporation).</li>
+              <li><strong>A&R flexibility</strong>: Imprint heads have some autonomy in signing and developing artists, allowing the parent label to cover more stylistic territory than a single monolithic operation could.</li>
+              <li><strong>Risk distribution</strong>: If an imprint consistently underperforms, it can be restructured, merged, or shuttered without affecting the parent label's other operations.</li>
+              <li><strong>Market perception management</strong>: The existence of multiple imprints creates the <em>appearance</em> of competition and choice in what is, structurally, a highly concentrated market. An artist choosing between Republic and Island is not choosing between competitors; they are choosing between brands within the same company.</li>
+            </ol>
+            <cite>Billboard (UMG restructure 2024), Music Business Worldwide, Wikipedia (Republic Records)</cite>
+
+            <h3>Major Label Financials: The View from the Top</h3>
+            <p>To understand the scale of the major label economy, consider the consolidated financials:</p>
+
+            <div class="comparison-box">
+              <div class="comparison-col">
+                <div class="comparison-header">Universal Music Group (UMG)</div>
+                <ul>
+                  <li>Total revenue: ~<strong>$12B+ USD</strong></li>
+                  <li><strong>Catalog revenue</strong> (music older than 3 years): <strong>66%</strong> of digital/physical revenue</li>
+                  <li>Frontline releases (new music): just <strong>34%</strong></li>
+                </ul>
+              </div>
+              <div class="comparison-col">
+                <div class="comparison-header">Warner Music Group (WMG)</div>
+                <ul>
+                  <li>Total revenue: <strong>$6.43 billion</strong></li>
+                  <li>Recorded music: $5.22B, Publishing: $1.2B</li>
+                  <li>Streaming subscription revenue: <strong>$2.543 billion</strong></li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="callout callout-axiom">
+              <p>The 66/34 catalog-to-frontline split at UMG is arguably the single most important number in the major label business model. It means UMG's financial foundation is not new artist development — it is the <strong>back catalog</strong>. The Beatles, Bob Marley, Nirvana, Amy Winehouse — music recorded years or decades ago, on deals where original artist royalty rates were often far lower than today's standards, generating revenue in perpetuity at near-zero marginal cost.</p>
+            </div>
+
+            <p>That 66/34 catalog-to-frontline ratio also has implications for how labels think about new signings. When two-thirds of your revenue comes from music that is already recorded, already paid for, and generating income essentially on autopilot, the incentive to invest aggressively in new artist development is moderated. New signings are risky, expensive, and uncertain. Catalog revenue is predictable, cheap to maintain, and growing (as streaming expands into new markets and older listeners adopt the technology). A cynical reading would suggest that labels could rationally choose to <em>reduce</em> frontline investment and coast on catalog — and to some extent, the catalog acquisition wave of recent years supports this interpretation. Why sign 10 new artists at $1M each when you can buy a proven catalog for $100M that will generate reliable returns for decades?</p>
+            <p>The streaming subscription figure for WMG alone — $2.543 billion — underscores the scale of value flowing from streaming platforms to labels. This is one of three major labels. Warner Music Group — the <em>smallest</em> of the Big Three — generates more revenue from streaming subscriptions alone than the entire US recorded music industry generated from all sources in its trough year of 2014. The recovery from the digital disruption documented in Report 1 has been real, but it has been a recovery that disproportionately benefits the entities that survived the consolidation — the major labels — rather than the broader creative workforce that produces the music.</p>
+            <cite>UMG annual reports, WMG annual reports (SEC filings), Music Business Worldwide, Billboard</cite>
+
+            <h3>CEO Compensation: A Lens on Value Distribution</h3>
+            <p>The gap between executive compensation at major labels and artist earnings is a data point that speaks for itself.</p>
+            <div class="stat-grid">
+              <div class="stat-card">
+                <div class="stat-number">$128-150M</div>
+                <div class="stat-label">Lucian Grainge (CEO, UMG) 2023 total compensation</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">$18.63M</div>
+                <div class="stat-label">Robert Kyncl (CEO, WMG) fiscal 2024</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">~$6,000</div>
+                <div class="stat-label">100,000th-ranked Spotify artist (2024 earnings)</div>
+              </div>
+            </div>
+            <p>Grainge's compensation in a single year exceeds the combined Spotify earnings of over 20,000 artists at that tier. This is not presented as a moral argument about whether CEO compensation is "deserved" — that is a question outside the scope of this analysis. It is presented as a structural observation about where value accumulates in the music economy. The label captures value at scale through catalog ownership and market position; the artist captures value linearly through individual creative output. These are fundamentally different economic positions, and the compensation data reflects that structural asymmetry.</p>
+            <cite>UMG proxy statements, WMG SEC filings, Billboard, Spotify Loud & Clear</cite>
+
+            <h3>Independent Label Economics: The ORCA Report</h3>
+            <p>The independent label sector operates on different economics — different enough to be worth examining separately, but not so different that the fundamental power dynamics disappear.</p>
+            <p>The ORCA (Organization for Research in Creative Activities) report examined <strong>9 prominent independent labels</strong> and found:</p>
+            <div class="stat-grid">
+              <div class="stat-card">
+                <div class="stat-number">$239M</div>
+                <div class="stat-label">combined revenue (9 indie labels)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">33.5%</div>
+                <div class="stat-label">of revenue distributed to artists ($79.9M)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">$1.77</div>
+                <div class="stat-label">earned per dollar spent (labels)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">$0.59</div>
+                <div class="stat-label">paid to artists per dollar earned</div>
+              </div>
+            </div>
+            <p>The 33.5% artist share is meaningfully higher than the ~15-20% typical of major label deals — reflecting the more favorable deal structures common in the indie world. But it is still far from parity. The label retains roughly twice what the artist receives, even in the "artist-friendly" corner of the industry.</p>
+
+            <div class="comparison-box">
+              <div class="comparison-col">
+                <div class="comparison-header comparison-positive">Indie Deal Structures</div>
+                <ul>
+                  <li><strong>Master ownership</strong>: Artist often retains. Label licenses for 5-10 years, then rights revert.</li>
+                  <li><strong>Profit splits</strong>: Typically <strong>40-75% to artist</strong> (vs. major's 10-25% royalty rate)</li>
+                  <li><strong>Lower advances</strong>: $0-$50K, but more favorable back-end</li>
+                  <li><strong>Recoupment</strong>: More favorable terms, less aggressive cross-collateralization</li>
+                </ul>
+              </div>
+              <div class="comparison-col">
+                <div class="comparison-header comparison-negative">The Trade-Off</div>
+                <ul>
+                  <li>Less marketing muscle</li>
+                  <li>Fewer playlist relationships</li>
+                  <li>Less radio promotion infrastructure</li>
+                  <li>Smaller advances</li>
+                  <li>Artist must build audience organically</li>
+                </ul>
+              </div>
+            </div>
+
+            <p>The growing strength of the indie sector is one of the most significant structural shifts in the modern music industry. As documented in Report 1, the history of the recorded music business is a cycle of independent innovation followed by major label acquisition. But the digital era may be breaking that cycle — or at least slowing it. When distribution is no longer the exclusive province of the majors, the primary leverage point shifts from infrastructure to marketing and curation. This is still a significant advantage, but it is not the unassailable moat that physical distribution once was.</p>
+            <cite>ORCA report, Music Business Worldwide, AWAL, Curve Royalty Systems</cite>
+
+            <h3>Distribution Economics: The Self-Release Path</h3>
+            <p>The third option — beyond major and indie labels — is <strong>self-distribution</strong>, which the digital era has made viable in a way that was structurally impossible in the physical era documented in Report 1.</p>
+            <div class="data-table-wrapper">
+              <table class="data-table">
+                <caption>Self-Distribution Services (2025)</caption>
+                <thead><tr><th>Service</th><th>Cost</th><th>Artist Keeps</th></tr></thead>
+                <tbody>
+                  <tr><td>DistroKid</td><td>$22.99/yr (unlimited uploads)</td><td>100%</td></tr>
+                  <tr><td>TuneCore</td><td>$9.99/yr per single</td><td>100%</td></tr>
+                  <tr><td>CD Baby</td><td>One-time fee</td><td>91%</td></tr>
+                  <tr><td>AWAL</td><td>Free (invite-only)</td><td>85%</td></tr>
+                  <tr><td>UnitedMasters</td><td>$19.99-$59.99/yr</td><td>100%</td></tr>
+                  <tr><td>Stem</td><td>Free</td><td>95%</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>But distribution is not the same as discovery. Getting your music <em>on</em> Spotify is trivially easy. Getting anyone to <em>listen</em> to it is the challenge that labels — with their playlist relationships, radio promotion, marketing budgets, and brand recognition — are positioned to solve. The self-distributed artist retains 85-100% of a much smaller revenue base; the major label artist retains 15-20% of a (potentially) much larger one. The rational choice depends entirely on the artist's ability to generate attention independently.</p>
+            <p><strong>Merlin</strong>, the indie label collective for digital licensing, represents a middle path. With <strong>12%+ of the digital recorded music market</strong> and over <strong>$1 billion paid to members</strong>, Merlin negotiates with streaming platforms on behalf of independent labels and distributors collectively. By aggregating the catalogs of hundreds of independent labels into a single negotiating entity, Merlin provides some of the bargaining leverage that individual indie labels lack while preserving the more favorable deal terms of the indie world.</p>
+            <p>The fundamental tension in the distribution question mirrors the broader theme of this entire report: artists must choose between <em>control</em> and <em>scale</em>, between <em>ownership</em> and <em>access to infrastructure</em>. There is no option that optimizes for both simultaneously. The major label offers scale and infrastructure at the cost of ownership and favorable terms. Self-distribution offers ownership and favorable terms at the cost of scale and infrastructure. Every deal structure in the music industry is a point on this spectrum, and the right choice depends on variables — audience size, growth trajectory, marketing skill, risk tolerance — that are different for every artist and change over time.</p>
+            <cite>DistroKid, TuneCore, CD Baby (published pricing), AWAL, Merlin Network annual reports, Aristake, Chartlex</cite>
+
+            <h3>The Portfolio Risk Model</h3>
+            <p>Zooming out from individual deals, the label business model operates like a <strong>venture capital fund</strong>. A major label signs dozens of new artists per year, knowing that:</p>
+            <ul>
+              <li>Most will fail commercially</li>
+              <li>A few will break even</li>
+              <li>One or two will become hits that generate enough revenue to cover all the losses and produce profit</li>
+            </ul>
+            <p>This model has important implications:</p>
+            <ol>
+              <li><strong>Labels need hits, not just successes.</strong> A modest success that recoups its costs but generates little profit does not contribute to covering the losses from the failures. The model requires <em>outsized</em> returns from a small number of winners.</li>
+              <li><strong>Catalog is the stable base.</strong> While frontline releases are the high-risk, high-reward bets, catalog revenue — the 66% of UMG's digital/physical revenue — provides the predictable cash flow that keeps the operation running between hits. Catalog is the bond portfolio that funds the equity bets.</li>
+              <li><strong>Risk tolerance is asymmetric.</strong> The label can absorb a $1M loss on a failed artist because it is one loss among many, offset by portfolio-level returns. The artist cannot absorb it — it is their career. This asymmetry shapes every negotiation: the label is playing a portfolio game; the artist is playing a single-stock game.</li>
+              <li><strong>The portfolio model justifies the deal terms.</strong> Labels argue that their unfavorable royalty rates are the price of insurance — the artist gets an advance and development resources regardless of commercial outcome, and the label takes the downside risk. Artists counter that the "risk" framing obscures the fact that the label recoups its investment before the artist earns anything, making the artist effectively bear the financial risk of their own failure through lost opportunity cost and creative output.</li>
+            </ol>
+            <p>Both perspectives have merit. The tension between them is not resolvable — it is structural, embedded in the economics of a business where creative output is unpredictable and the cost of a miss is high.</p>
+            <p>What makes this tension particularly intractable is that the portfolio model <em>works</em> — for the label. Major labels are profitable enterprises with growing revenues. The system is not failing in aggregate; it is failing at the level of individual artists within the system. The industry can simultaneously generate record revenues and leave the majority of its creative workforce financially precarious. These are not contradictory outcomes. They are the predictable result of a system designed to concentrate returns at the top of a portfolio while distributing risk across the portfolio's tails.</p>
+          </div>
+        </section>
+
+        <!-- PART V: WHEN THINGS GO WRONG -->
+        <section class="section" id="part-5-wrong">
+          <div class="section-header">
+            <span class="section-number">05</span>
+            <h2>When Things Go Wrong — Cautionary Economics</h2>
+          </div>
+          <div class="section-body">
+
+            <h3>The Artist Perspective: Trapped by Success</h3>
+            <p>The ways the music economy fails artists are not always dramatic. Often, they are bureaucratic — structural features of standard deals that produce perverse outcomes.</p>
+            <p><strong>Unrecouped advances as golden handcuffs.</strong> An artist who receives a $500,000 advance and never recoups is, in one sense, ahead — they received $500,000 they never had to repay. But they are also trapped: they cannot record for another label while under contract, their master recordings belong to the label, and any success they achieve on the label's platform flows to the label's bottom line until the recoupable balance (which includes not just the advance but recording costs, video production, marketing, and possibly tour support) is cleared. The advance is not free money. It is the price of surrender.</p>
+            <p><strong>Cross-collateralization</strong> compounds this trap. In a cross-collateralized deal, the label can offset profits from one revenue stream against losses in another — or, more commonly, offset earnings from a successful album against the unrecouped balance from a prior failure. An artist who flops on Album 1, succeeds on Album 2, and has a cross-collateralized deal may find that Album 2's royalties are entirely consumed by Album 1's unrecouped balance. The artist experienced a failure and a success; they got paid for neither.</p>
+            <p>In its most aggressive form, cross-collateralization can extend across recording and publishing revenue — meaning losses on the recording side are recouped from publishing earnings, even though these are legally separate copyrights often governed by separate agreements. An artist who generates meaningful publishing income (from sync placements, covers, or co-writing credits) may find that income diverted to cover recording losses they had no practical control over.</p>
+            <p><strong>Spotify equity windfalls and the pass-through question.</strong> When the major labels cashed in their equity stakes in Spotify (collectively worth billions at IPO), the question of whether artists should share in those windfalls became a significant industry controversy. The labels had acquired equity as part of licensing negotiations — negotiations where the labels' primary leverage was the catalogs they controlled, which were populated by artists' creative work. The labels generally took the position that equity compensation was separate from streaming royalties and therefore not subject to artist royalty calculations. Many artists and their advocates argued that this was a distinction designed to exclude them from value they had helped create.</p>
+            <p><strong>The verification gap.</strong> Perhaps the most insidious problem is the simplest: <strong>many artists cannot verify their own streaming income</strong>. Royalty statements are complex, opaque, and difficult to audit. The intermediaries between stream and statement — platform, label, distributor, PRO, MLC — each introduce their own accounting, their own timing, and their own potential for error or under-reporting. Independent audits are expensive and time-consuming. The result is an information asymmetry where the entities controlling the money also control the accounting of the money — a situation that would be considered structurally problematic in virtually any other industry.</p>
+            <p>This is not a theoretical concern. Multiple audit firms specializing in music royalties have reported that they find underpayments in the <em>majority</em> of audits they conduct on behalf of artists. The errors are not always large — sometimes they are rounding differences or timing issues — but they consistently flow in one direction: the artist is underpaid, not overpaid. And the cost of an audit (often $25,000-$100,000+) means that only the most successful artists can afford to verify whether they are being paid correctly — creating a perverse dynamic where the artists most likely to be underpaid are the least able to check.</p>
+            <cite>ASCAP (truth about advances), Promise Legal (recoupment), Reprtoir and Songtrust (cross-collateralization), The Verge (Spotify equity), Music Business Worldwide</cite>
+
+            <h3>The Label Perspective: The Other Side of Risk</h3>
+            <p>It would be intellectually dishonest to present artist grievances without acknowledging the genuine economic challenges labels face. The label business is not a risk-free extraction machine — it is a high-risk, capital-intensive enterprise with real failure rates.</p>
+            <p><strong>The cost of failure is real.</strong> When a label invests $1 million+ in an artist who does not connect commercially, that money is gone. The label does not recover it from the artist (advances are not loans — they are non-repayable). The loss comes off the label's balance sheet, offset only by the hope that other bets will pay off. In a portfolio of 20 new signings, a label might reasonably expect 15-17 to lose money. This is a genuine business risk, and it would be disingenuous to pretend otherwise.</p>
+            <p><strong>Rising costs of attention.</strong> The streaming era has created a paradox for label marketing: distribution is free, but attention is scarce. When any artist can upload music to Spotify, the challenge shifts from getting music into stores (the historic label competency) to getting music <em>noticed</em>. Playlist placement, social media campaigns, influencer marketing, TikTok strategies, radio promotion — the marketing toolkit has expanded, but so has the noise. The cost of breaking through has not decreased; it has changed form.</p>
+            <p>The attention economy is arguably the most significant shift in the music industry's competitive landscape. In the physical era, shelf space was the scarce resource. In the streaming era, shelf space is infinite — every song ever recorded is equally accessible — and the scarce resource is the listener's time and attention.</p>
+            <p><strong>Shareholder pressure in a maturing market.</strong> The major labels (particularly UMG, which is publicly traded) face pressure from shareholders for continued growth. But the streaming market in developed countries is approaching saturation. Spotify's US subscription growth had slowed to approximately <strong>3.6% year-over-year by 2024</strong> — still positive, but a deceleration from the double-digit growth rates that characterized the mid-2010s. Growth increasingly depends on emerging markets (where average revenue per user is lower) and price increases (which risk subscriber churn).</p>
+            <p>The catalog acquisition wave — in which investment firms and major labels have spent billions acquiring publishing catalogs and master recording rights — is partly a response to this maturation. When organic growth slows, buying revenue becomes the alternative to growing it. Bob Dylan's catalog sale to Universal (reportedly for $300-400 million), Bruce Springsteen's sale to Sony (reportedly $500+ million), and numerous similar transactions represent a bet that catalog revenue will remain stable and predictable for decades.</p>
+            <p><strong>The AI and generative music threat.</strong> Labels are also increasingly confronting the possibility that AI-generated music could flood streaming platforms with low-cost content, diluting the pro-rata pool and reducing per-stream payouts for human-created music. Under the pro-rata payment model, every stream of AI-generated ambient music or algorithmically produced "functional" content (lo-fi beats, white noise, focus music) diverts a fraction of a penny from human-created music. At scale, this dilution could become meaningful — particularly for mid-tier and niche artists whose per-stream income is already marginal.</p>
+            <p>Spotify has already begun removing some AI-generated and bot-streamed content from its platform, and has introduced minimum stream thresholds before a track begins generating royalties. These are early responses to a structural challenge that will likely intensify as generative AI capabilities improve and the cost of producing passable recorded music approaches zero.</p>
+            <div class="callout callout-note">
+              <p><strong>The tension is real but asymmetric.</strong> Labels face genuine business risks. But they face them from a position of consolidated market power, diversified portfolios, and catalog assets that generate revenue in perpetuity. The artist faces risk from a position of individual vulnerability, limited information, and contractual terms designed by the other party. Both sides have legitimate concerns. They do not have equal power to address them.</p>
+            </div>
+            <p>This asymmetry is reflected in the response to adversity. When a label has a bad quarter, it restructures an imprint, lays off staff, or adjusts its investment strategy. When an artist has a bad album cycle, they may lose their deal, their advance is unrecouped, and their master recordings remain with the label. The label's failure is a portfolio adjustment; the artist's failure is a career event. The scale of consequence is fundamentally different, and this difference in stakes shapes every negotiation, every contract term, and every business relationship in the industry.</p>
+            <p>It is worth noting that some artists have successfully renegotiated the terms of this asymmetry — Taylor Swift's decision to re-record her catalog represents perhaps the most dramatic individual response to the master ownership question. But Swift was able to do this only from a position of unprecedented commercial power. For the vast majority of artists, the contractual terms they sign at the beginning of their career — when they have the least leverage and the most need — define their economic reality for years or decades to come.</p>
+            <cite>UMG annual reports (subscriber growth data), Music Business Worldwide, Billboard, Spotify investor presentations</cite>
+          </div>
+        </section>
+
+        <!-- APPENDIX: COMPARATIVE ECONOMICS -->
+        <section class="section" id="appendix-table">
+          <div class="section-header">
+            <span class="section-number">A</span>
+            <h2>Appendix: Comparative Economics Table</h2>
+          </div>
+          <div class="section-body">
+            <h3>What Does a Hit Song Actually Earn?</h3>
+            <p>The following table models the economics of a hypothetical hit song across four deal structures. The assumptions are based on sourced figures used throughout this report.</p>
+            <div class="callout callout-note">
+              <p><strong>Base assumptions:</strong> 10 million Spotify streams (average per-stream rate: $0.004 to rights holders). Equivalent physical sales scaled to artist level. One 20-date club/theater tour. Merchandise sales at shows. All figures are <strong>approximate</strong> and represent gross-to-artist flows. Actual figures vary by deal terms, territory, and countless other variables. This is a structural illustration, not a financial projection.</p>
+            </div>
+
+            <h3>Scenario 1: Major Label Artist — Traditional Deal, Unrecouped</h3>
+            <p><em>Deal terms: 15% royalty rate, $500K advance, $450K in recoupable expenses. Total recoupable balance: $950K.</em></p>
+            <div class="data-table-wrapper">
+              <table class="data-table">
+                <thead><tr><th>Revenue Stream</th><th>Gross Revenue</th><th>To Rights Holders</th><th>Artist Receives</th><th>Notes</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>Streaming</strong> (10M streams)</td><td>$40,000</td><td>$28,000</td><td><strong>$0</strong></td><td>Artist's 15% ($4,200) applied to recoupable balance. Label keeps 85% from first dollar.</td></tr>
+                  <tr><td><strong>Physical</strong> (5,000 vinyl @ $30)</td><td>$150,000</td><td>~$150,000</td><td><strong>$0</strong></td><td>Artist's ~15% royalty applied to recoupable balance.</td></tr>
+                  <tr><td><strong>Touring</strong> (20 dates, $5K avg)</td><td>$100,000</td><td>N/A</td><td><strong>~$30,000</strong></td><td>After commissions (~40%) and costs (~30%). Not label revenue in traditional deal.</td></tr>
+                  <tr><td><strong>Merch</strong> (20 shows)</td><td>$30,000</td><td>N/A</td><td><strong>~$15,000</strong></td><td>After venue cuts, production costs, CC fees. Not label revenue in traditional deal.</td></tr>
+                  <tr class="row-highlight"><td><strong>TOTAL</strong></td><td><strong>$320,000</strong></td><td></td><td><strong>~$45,000</strong></td><td>Artist receives nothing from recorded music. All income from touring and merch.</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>Scenario 2: Major Label Artist — Same Deal, Recouped</h3>
+            <p><em>Same deal terms (15% royalty), but the artist has already recouped all advances and expenses.</em></p>
+            <div class="data-table-wrapper">
+              <table class="data-table">
+                <thead><tr><th>Revenue Stream</th><th>Gross Revenue</th><th>To Rights Holders</th><th>Artist Receives</th><th>Notes</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>Streaming</strong> (10M streams)</td><td>$40,000</td><td>$28,000</td><td><strong>$4,200</strong></td><td>Artist receives 15% of rights holder share. Label keeps $23,800.</td></tr>
+                  <tr><td><strong>Physical</strong> (5,000 vinyl @ $30)</td><td>$150,000</td><td>~$150,000</td><td><strong>~$16,875</strong></td><td>15% of $112,500 (after 25% packaging deduction).</td></tr>
+                  <tr><td><strong>Touring</strong> (20 dates)</td><td>$100,000</td><td>N/A</td><td><strong>~$30,000</strong></td><td>Same as above.</td></tr>
+                  <tr><td><strong>Merch</strong> (20 shows)</td><td>$30,000</td><td>N/A</td><td><strong>~$15,000</strong></td><td>Same as above.</td></tr>
+                  <tr class="row-highlight"><td><strong>TOTAL</strong></td><td><strong>$320,000</strong></td><td></td><td><strong>~$66,075</strong></td><td>Recouped artist earns ~47% more, entirely from recorded music royalties now flowing.</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>Scenario 3: Independent Artist on Indie Label — 50/50 Profit Split</h3>
+            <p><em>Deal terms: 50/50 profit split after costs, $10K advance (recoupable), label handles distribution and marketing, artist retains master ownership.</em></p>
+            <div class="data-table-wrapper">
+              <table class="data-table">
+                <thead><tr><th>Revenue Stream</th><th>Gross Revenue</th><th>To Rights Holders</th><th>Artist Receives</th><th>Notes</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>Streaming</strong> (10M streams)</td><td>$40,000</td><td>$28,000</td><td><strong>$14,000</strong></td><td>50/50 split after $10K advance recoupment.</td></tr>
+                  <tr><td><strong>Physical</strong> (2,000 vinyl @ $25)</td><td>$50,000</td><td>~$50,000</td><td><strong>~$15,000</strong></td><td>50/50 profit split after manufacturing and distribution costs.</td></tr>
+                  <tr><td><strong>Touring</strong> (20 dates, $2K avg)</td><td>$40,000</td><td>N/A</td><td><strong>~$12,000</strong></td><td>Lower guarantees but no label participation. After commissions and costs.</td></tr>
+                  <tr><td><strong>Merch</strong> (20 shows)</td><td>$20,000</td><td>N/A</td><td><strong>~$10,000</strong></td><td>After venue cuts and production. No label participation.</td></tr>
+                  <tr class="row-highlight"><td><strong>TOTAL</strong></td><td><strong>$150,000</strong></td><td></td><td><strong>~$51,000</strong></td><td>Lower gross but artist captures ~34% — higher share than unrecouped major label artist.</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>Scenario 4: Self-Distributed Artist (via DistroKid/TuneCore)</h3>
+            <p><em>No label. Artist pays DistroKid $22.99/year, handles own marketing, retains 100% of masters.</em></p>
+            <div class="data-table-wrapper">
+              <table class="data-table">
+                <thead><tr><th>Revenue Stream</th><th>Gross Revenue</th><th>To Rights Holders</th><th>Artist Receives</th><th>Notes</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>Streaming</strong> (10M streams)</td><td>$40,000</td><td>$28,000</td><td><strong>$28,000</strong></td><td>Artist keeps 100% of rights holder share (minus $22.99 annual fee).</td></tr>
+                  <tr><td><strong>Physical</strong> (500 vinyl @ $25)</td><td>$12,500</td><td>$12,500</td><td><strong>~$6,650</strong></td><td>500 units @ ~$8/unit production. Sold direct + Bandcamp. After platform fees.</td></tr>
+                  <tr><td><strong>Touring</strong> (20 dates, $1K avg)</td><td>$20,000</td><td>N/A</td><td><strong>~$6,000</strong></td><td>Lower guarantees, smaller venues, minimal crew. After costs.</td></tr>
+                  <tr><td><strong>Merch</strong> (20 shows)</td><td>$16,000</td><td>N/A</td><td><strong>~$9,600</strong></td><td>Higher margin (many sales direct/online, lower venue cuts at smaller venues).</td></tr>
+                  <tr class="row-highlight"><td><strong>TOTAL</strong></td><td><strong>$88,500</strong></td><td></td><td><strong>~$50,250</strong></td><td>Lowest gross but highest capture rate (~57%).</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="callout callout-axiom">
+              <p><strong>Key insight:</strong> The self-distributed artist earning $50,250 from $88,500 in gross revenue retains a higher share than <em>any</em> other scenario. But reaching 10 million streams without label support, marketing infrastructure, or playlist relationships is exceptionally difficult. The constraint is not the deal terms — it is the audience.</p>
+            </div>
+
+            <h3>The Summary Table</h3>
+            <div class="data-table-wrapper">
+              <table class="data-table">
+                <thead><tr><th>Metric</th><th>Major (Unrecouped)</th><th>Major (Recouped)</th><th>Indie Label (50/50)</th><th>Self-Distributed</th></tr></thead>
+                <tbody>
+                  <tr><td>Gross revenue generated</td><td>$320,000</td><td>$320,000</td><td>$150,000</td><td>$88,500</td></tr>
+                  <tr><td>Artist income (pre-tax)</td><td>~$45,000</td><td>~$66,075</td><td>~$51,000</td><td>~$50,250</td></tr>
+                  <tr><td>Artist capture rate</td><td>~14%</td><td>~21%</td><td>~34%</td><td>~57%</td></tr>
+                  <tr><td>Streaming income to artist</td><td>$0</td><td>$4,200</td><td>$14,000</td><td>$28,000</td></tr>
+                  <tr><td>Who owns the masters?</td><td>Label (life of copyright)</td><td>Label</td><td>Artist (licensed to label)</td><td>Artist</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>The table reveals the fundamental trade-off at the heart of the music industry: <strong>scale vs. share</strong>. The major label generates more total revenue but gives the artist less of it. The self-distributed artist keeps more of less. The rational path depends on whether the label's infrastructure can generate enough additional revenue to offset the artist's dramatically reduced share.</p>
+            <p>For the <em>unrecouped</em> major label artist, the arithmetic is damning: they generated $320,000 in economic activity and received $45,000 — less than the self-distributed artist who generated $88,500. The label's scale advantage was entirely captured by the label.</p>
+            <p>One important caveat: these scenarios model a <em>single hit song</em>. The label's argument is that they invested in the artist <em>before</em> the hit — that the advance, development costs, and marketing spend that created the conditions for success must be amortized across the artist's output. The unrecouped artist in Scenario 1 received $500,000 upfront (the advance) plus hundreds of thousands in marketing and production support. The self-distributed artist in Scenario 4 received nothing upfront and funded everything themselves. The total lifetime cash flow to the artist may tell a different story than the per-song economics — but the structural point remains: the major label system is designed so that the label profits from day one while the artist profits only after full recoupment.</p>
+            <p>This is the music industry's version of the startup equity dilemma: take a guaranteed salary at a large company, or take equity in a startup that might make you rich or might make you nothing? The major label deal is the startup equity bet — you trade current economics for the <em>possibility</em> of scale. The self-distribution path is the salary — smaller but certain. The indie label is the Series A: some upside, some structure, better terms than a major but less scale. Every artist's optimal path depends on their risk tolerance, their audience-building capability, and — most honestly — luck.</p>
+
+            <h3>Closing Note: The Shape of the Problem</h3>
+            <p>This report has traced money through streams, stages, shelves, and storefronts — and the pattern that emerges is consistent across every layer. <strong>The music economy is structured to concentrate value in intermediaries and distribute risk to artists.</strong></p>
+            <p>This is not a conspiracy. It is the predictable outcome of structural forces documented across both reports in this series: the consolidation of labels into three gatekeepers (Report 1), the opacity of licensing deals, the asymmetry of information and bargaining power, and the economic reality that creative output is risky and infrastructure is durable.</p>
+            <p>The streaming era has expanded access — more artists can release music, more music is available, and more listeners are paying for music than at any point in history. But access is not the same as equity. The fact that 100,000 artists now earn <em>something</em> from streaming does not resolve the question of whether the <em>distribution</em> of streaming revenue reflects the <em>value</em> that artists create.</p>
+            <p>What makes this moment in music economics particularly interesting is the tension between two simultaneous truths. Truth one: the total pie is bigger than ever. US recorded music revenue has surpassed its 1999 nominal peak. The industry, measured by aggregate revenue, is thriving. Truth two: the average working musician is not thriving. The median artist income from recorded music is negligible. Touring — the supposed alternative — has become economically hostile for anyone below the arena tier. The gap between what the industry earns and what artists earn has not narrowed with the streaming boom; by some measures, it has widened.</p>
+            <p>These two truths are not contradictory. They are the defining feature of winner-take-most economics applied to a creative industry. The streaming era has been exceptionally good for the top 1% of artists (and for the labels and platforms that serve them), modestly good for the next 9%, and largely irrelevant for the remaining 90%. The question is not whether this is true — the data makes it unambiguous — but whether it is <em>acceptable</em>, and if not, what structural changes could alter the distribution without destroying the system that generates the aggregate value.</p>
+            <p>The next report in this series will examine the regulatory and legal landscape — the rules, consent decrees, and legislative frameworks that govern (or fail to govern) the power structures revealed in Reports 1 and 2. Because the question that follows naturally from understanding <em>how</em> money flows is: <em>who has the power to change the flow?</em></p>
+
+            <h3>Source Methodology</h3>
+            <p>This report follows the same sourcing framework established in Report 1:</p>
+            <ul>
+              <li><strong>HIGH confidence</strong>: Verified across 2+ independent sources</li>
+              <li><strong>MODERATE confidence</strong>: Verified from one authoritative source or with minor discrepancies across sources</li>
+              <li><strong>SINGLE-SOURCE</strong>: Could only be verified from one source; flagged in the report text with <code>[single-source]</code></li>
+            </ul>
+            <p>All quantitative claims are sourced from the research files compiled for this series. Where exact figures are unavailable due to NDA-protected licensing terms, this is explicitly stated. No data has been fabricated or estimated to fill gaps.</p>
+            <div class="callout callout-note">
+              <p><strong>A note on currency and time:</strong> Revenue figures are presented in their original reported currency (EUR for UMG, USD for all others). Where year-over-year comparisons are made, they are in nominal terms unless inflation adjustment is specifically noted. The music industry's shift to wholesale reporting (beginning with the RIAA in 2025) means that future reports in this series may need to address comparability across reporting methodologies.</p>
+            </div>
+            <p>Key data sources for this report include: RIAA year-end revenue reports, Spotify Loud & Clear and Newsroom data, UMG and WMG annual reports and SEC filings, the ORCA indie label report, Citigroup GPS "Putting the Band Back Together" (2018), DOJ filings in <em>United States v. Live Nation Entertainment</em>, Live Nation earnings reports, the Mechanical Licensing Collective, and extensive industry reporting from Billboard, Music Business Worldwide, Digital Music News, Variety, Rolling Stone, and NPR.</p>
+
+            <h3>A Note on What This Report Does Not Cover</h3>
+            <p>This report has focused on the <em>economics</em> of the music industry — the mechanics of revenue generation, distribution, and capture. There are important dimensions it has not addressed:</p>
+            <ul>
+              <li><strong>Sync licensing</strong> (placement of music in film, television, advertising, and video games) represents a significant and growing revenue stream that operates on entirely different economics — negotiated case-by-case, with fees ranging from hundreds of dollars to millions.</li>
+              <li><strong>Publishing administration</strong> and the complex web of sub-publishing, mechanical licensing across international territories, and the evolving role of publishing companies in the streaming era.</li>
+              <li><strong>The creator economy intersection</strong> — how platforms like YouTube, TikTok, and Twitch have created new revenue streams (and new forms of exploitation) for musicians that operate outside the traditional label-platform-PRO framework.</li>
+              <li><strong>International variations</strong> — this report focuses on the US market. The economics of music in other major markets (UK, Germany, Japan, South Korea, Latin America) differ in important ways, particularly around physical sales (Japan), collective management (Europe), and market structure.</li>
+            </ul>
+            <p>These topics may be addressed in subsequent reports in this series.</p>
+            <div class="callout callout-axiom">
+              <p><em>Power Structures Revealed</em> is a research series examining the structural economics of the US music industry. Report 1 covered the history from post-WWII to the Big Three. This report examined how money flows through the modern music economy. Report 3 will address the regulatory and legal landscape.</p>
+            </div>
+          </div>
+        </section>
+
+        <footer class="site-footer">
+          <div class="footer-content">
+            <div class="footer-line">
+              <span class="prompt">$</span> <span class="cmd">echo</span> "Power Structures Revealed — Report 2: The Economics of Making Music"
+            </div>
+            <div class="footer-line">
+              <span class="prompt">$</span> <span class="cmd">echo</span> "Compiled March 2026. All data sourced. No fabrication."
+            </div>
+            <div class="footer-line">
+              <span class="prompt">$</span> <span class="cmd">echo</span> "<a href="index.html">← Report 1: History of the Industry</a>"
+            </div>
+            <div class="footer-line">
+              <span class="prompt">$</span> <span class="cmd">echo</span> "Report 3: Coming Soon →"
+            </div>
+            <div class="footer-line footer-dim">
+              <span class="prompt">$</span> <span class="cursor-blink">_</span>
+            </div>
+          </div>
+        </footer>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,12 +1,26 @@
-# Power Structures Revealed: A History of the US Recorded Music Industry
+# Power Structures Revealed
 
-A comprehensive report tracing the evolution of the American recorded music industry from the post-WWII era to the present-day Big Three, examining the forces — technological, regulatory, economic, and cultural — that shaped its consolidation and the impact on artists, genres, and the economics of making music.
+A comprehensive series of reports on the American recorded music industry — its history, its economics, and the forces that shape who profits and who doesn't.
+
+**Live site**: [powerstructures.xyz](https://powerstructures.xyz)
 
 ---
 
-## How to Read This Report
+## Reports
 
-The main report is contained in [`report.md`](report.md). Reference materials:
+### Report 1: A History of the US Recorded Music Industry
+Traces the evolution from the post-WWII indie explosion through consolidation into today's Big Three (UMG, Sony, Warner), examining the technological, regulatory, economic, and cultural forces that shaped it.
+
+- [`report.md`](report.md) — Main report
+
+### Report 2: The Economics of Making Music
+Deep dive into how money flows through streams, stages, shelves, and storefronts. Covers streaming economics, physical sales, touring, merchandise, and label financials from every perspective — major label artist, independent artist, major label, imprint, and indie label.
+
+- [`report-02-economics.md`](report-02-economics.md) — Main report
+
+---
+
+## Reference Materials
 
 - [`label-lineage.md`](label-lineage.md) — Visual consolidation diagrams and ownership trees
 - [`revenue-data.md`](revenue-data.md) — RIAA revenue tables and format breakdowns

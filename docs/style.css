@@ -202,15 +202,39 @@ body {
   color: var(--green);
 }
 
-/* Series navigation - current report indicator */
-.toc-link.series-current {
+/* Series navigation — cross-page links (not managed by scroll JS) */
+.series-link {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 6px 16px;
+  color: var(--text-dim);
+  text-decoration: none;
+  font-size: var(--font-size-sm);
+  transition: all 0.15s ease;
+  border-left: 2px solid transparent;
+}
+
+.series-link:hover {
+  color: var(--text-bright);
+  background: rgba(255, 255, 255, 0.03);
+  border-left-color: var(--border-active);
+}
+
+.series-link .toc-marker {
+  color: var(--text-muted);
+  font-size: var(--font-size-xs);
+  min-width: 16px;
+}
+
+.series-link.series-current {
   color: var(--cyan);
   background: var(--blue-dim);
   border-left-color: var(--cyan);
   font-weight: 600;
 }
 
-.toc-link.series-current .toc-marker {
+.series-link.series-current .toc-marker {
   color: var(--cyan);
 }
 

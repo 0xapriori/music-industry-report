@@ -18,6 +18,11 @@ Deep dive into how money flows through streams, stages, shelves, and storefronts
 
 - [`report-02-economics.md`](report-02-economics.md) — Main report
 
+### Report 3: Law, Lobbying, and the Rules of the Game
+The legal and regulatory framework that determines who profits from music. Copyright acts from 1909 to the MMA, landmark court cases, corporate lobbying and the revolving door, streaming-era legal gaps, the PRO system and consent decrees, and the case for a liquid marketplace for music rights.
+
+- [`report-03-law-and-lobbying.md`](report-03-law-and-lobbying.md) — Main report
+
 ---
 
 ## Reference Materials

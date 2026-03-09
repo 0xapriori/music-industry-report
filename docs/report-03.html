@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Power Structures Revealed | Law, Lobbying, and the Rules of the Game</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scanlines"></div>
+
+  <div class="terminal-wrapper">
+    <div class="terminal-bar">
+      <div class="terminal-buttons">
+        <span class="btn-close"></span>
+        <span class="btn-minimize"></span>
+        <span class="btn-maximize"></span>
+      </div>
+      <div class="terminal-title">power-structures-revealed/report-03 — zsh — 220×65</div>
+    </div>
+
+    <div class="terminal-body">
+      <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <span class="prompt">$</span> <span class="cmd">cat</span> TABLE_OF_CONTENTS
+        </div>
+        <div class="toc-content">
+          <div class="toc-group">
+            <div class="toc-group-label">/ SERIES</div>
+            <a href="index.html" class="series-link"><span class="toc-marker">~</span> HOME</a>
+            <a href="report-01.html" class="series-link"><span class="toc-marker">01</span> History of the Industry</a>
+            <a href="report-02.html" class="series-link"><span class="toc-marker">02</span> Economics of Making Music</a>
+            <a href="report-03.html" class="series-link series-current"><span class="toc-marker">03</span> Law, Lobbying &amp; the Rules</a>
+          </div>
+          <a href="#hero" class="toc-link toc-top" data-section="hero">
+            <span class="toc-marker">~</span> HOME
+          </a>
+          <div class="toc-group">
+            <div class="toc-group-label">/ REPORT</div>
+            <a href="#axioms-03" class="toc-link" data-section="axioms-03"><span class="toc-marker">00</span> Axioms</a>
+            <a href="#part-1-legal" class="toc-link" data-section="part-1-legal"><span class="toc-marker">01</span> The Legal Architecture</a>
+            <a href="#part-2-courts" class="toc-link" data-section="part-2-courts"><span class="toc-marker">02</span> The Courts as Battleground</a>
+            <a href="#part-3-lobbying" class="toc-link" data-section="part-3-lobbying"><span class="toc-marker">03</span> The Lobbying Machine</a>
+            <a href="#part-4-streaming" class="toc-link" data-section="part-4-streaming"><span class="toc-marker">04</span> Streaming vs. the Law</a>
+            <a href="#part-5-pro" class="toc-link" data-section="part-5-pro"><span class="toc-marker">05</span> The PRO Problem</a>
+            <a href="#part-6-changed" class="toc-link" data-section="part-6-changed"><span class="toc-marker">06</span> What Changed &amp; What Didn't</a>
+          </div>
+          <div class="toc-group">
+            <div class="toc-group-label">/ REFERENCE</div>
+            <a href="#appendix-citations" class="toc-link" data-section="appendix-citations"><span class="toc-marker">A</span> Key Legal Citations</a>
+          </div>
+        </div>
+        <div class="sidebar-footer">
+          <div class="sidebar-meta">
+            <span class="prompt">$</span> <span class="cmd">wc -w</span> report-03.md<br>
+            <span class="output">~22,000 words</span>
+          </div>
+        </div>
+      </nav>
+
+      <button class="mobile-toc-toggle" id="mobileToggle" aria-label="Toggle table of contents">
+        <span class="hamburger"></span>
+      </button>
+
+      <main class="content" id="content">
+
+        <!-- HERO -->
+        <section class="section hero-section" id="hero">
+          <div class="boot-sequence">
+            <div class="boot-line"><span class="boot-ok">[  OK  ]</span> Loading research agents...</div>
+            <div class="boot-line"><span class="boot-ok">[  OK  ]</span> Cross-referencing sources...</div>
+            <div class="boot-line"><span class="boot-ok">[  OK  ]</span> Verifying data integrity...</div>
+            <div class="boot-line"><span class="boot-ok">[  OK  ]</span> No fabricated data detected.</div>
+            <div class="boot-line">&nbsp;</div>
+          </div>
+          <pre class="ascii-title">
+ _                   _        _    _         _
+| |   __ ___ __ __  | |   ___| |__| |__ _  _(_)_ _  __ _
+| |__/ _` \ V  V /  | |__/ _ \ '_ \ '_ \ || | | ' \/ _` |_
+|____\__,_|\_/\_( ) |____\___/_.__/_.__/\_, |_|_||_\__, ( )
+                |/                      |__/       |___/|/
+
+              _   _   _          ___      _
+ __ _ _ _  __| | | |_| |_  ___  | _ \_  _| |___ ___
+/ _` | ' \/ _` | |  _| ' \/ -_) |   / || | / -_|_-&lt;
+\__,_|_||_\__,_|  \__|_||_\___| |_|_\\_,_|_\___/__/
+
+
+      __   _   _           ___
+ ___ / _| | |_| |_  ___   / __|__ _ _ __  ___
+/ _ \  _| |  _| ' \/ -_) | (_ / _` | '  \/ -_)
+\___/_|    \__|_||_\___|  \___\__,_|_|_|_\___|
+</pre>
+          <div class="hero-subtitle">
+            <p>The Legal and Regulatory Framework That Determines Who Profits from Music</p>
+            <p class="hero-tagline">Report 3 in the Power Structures Revealed Series</p>
+          </div>
+          <div class="hero-meta">
+            <div class="meta-row">
+              <span class="meta-label">compiled:</span>
+              <span class="meta-value">March 2026</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">sources:</span>
+              <span class="meta-value">100+ verified references</span>
+            </div>
+            <div class="meta-row">
+              <span class="meta-label">methodology:</span>
+              <span class="meta-value">No fabricated data. Single-source claims flagged.</span>
+            </div>
+          </div>
+          <div class="scroll-prompt">
+            <span class="prompt">$</span> <span class="cmd">less</span> report-03.md <span class="cursor-blink">_</span>
+          </div>
+        </section>
+
+        <!-- AXIOMS -->
+        <section class="section" id="axioms-03">
+          <div class="section-header">
+            <span class="section-number">00</span>
+            <h2>Axioms &amp; Starting Assumptions</h2>
+          </div>
+          <div class="section-body">
+            <p>This report inherits and extends the axioms established in <a href="report-01.html">Report 1: A History of the US Recorded Music Industry</a> and <a href="report-02.html">Report 2: The Economics of Making Music</a>. The reader should understand the additional assumptions specific to this legal and regulatory analysis:</p>
+            <div class="callout callout-axiom">
+              <p>Where Report 1 documented <em>who consolidated control</em> and Report 2 documented <em>how money flows</em>, this report asks the prior question: <em>who wrote the rules that made those structures possible, and whose interests did those rules serve?</em></p>
+            </div>
+            <ol class="axiom-list">
+              <li><strong>Law as architecture, not abstraction</strong>: This report treats copyright law, consent decrees, regulatory decisions, and lobbying expenditures not as dry legal matters but as the <em>structural blueprints</em> of the music industry's power dynamics. Report 1 documented who consolidated control. Report 2 documented how money flows within the structures that emerged. This report asks the prior question: <em>who wrote the rules that made those structures possible, and whose interests did those rules serve?</em></li>
+              <li><strong>The distinction between law and practice</strong>: Throughout this report, we will encounter persistent gaps between what the law technically requires and what actually happens. Streaming services operated for years without proper mechanical licenses. Platforms use safe harbor protections in ways the statute's drafters never contemplated. Labels classify recordings as "work for hire" despite dubious legal footing. These gaps are not bugs — they are features of a system where enforcement is expensive and the entities with the most resources shape both the rules and their interpretation.</li>
+              <li><strong>Lobbying is a form of investment</strong>: When the RIAA spends $6.9 million on federal lobbying in a single year, that is not a cost center — it is an investment with expected returns denominated in favorable legislation, blocked unfavorable legislation, and regulatory outcomes. This report treats lobbying expenditures as economic data, not political commentary. The numbers reveal whose interests are represented and whose are not.</li>
+              <li><strong>No fabricated data</strong>: Every dollar figure, case citation, statutory reference, and lobbying expenditure in this report is sourced from the research files. Where a figure comes from a single source, it is marked <code>[single-source]</code>. Where data is unavailable, the gap is stated. This standard is inherited from Reports 1 and 2 and applied with particular rigor here — legal claims are especially prone to motivated framing on all sides.</li>
+              <li><strong>Forward-looking, not just diagnostic</strong>: While much of this report documents structural failures, the final sections articulate what a better system could look like. The point is not merely to catalog dysfunction but to understand why alternatives have not emerged — and what it would take for them to.</li>
+            </ol>
+          </div>
+        </section>
+
+        <!-- PART 1: THE LEGAL ARCHITECTURE -->
+        <section class="section" id="part-1-legal">
+          <div class="section-header">
+            <span class="section-number">01</span>
+            <h2>The Legal Architecture</h2>
+          </div>
+          <div class="section-body">
+
+            <h3>The Scaffolding</h3>
+            <p>Every industry operates within a legal framework. But most industries did not have their legal frameworks designed, in significant part, by the entities those frameworks are supposed to regulate. The American music industry did.</p>
+            <p>To understand who profits from music and who does not, you cannot start with streaming economics or label contracts or even the Big Three's market dominance. You have to start with the statutes — the copyright acts that built the scaffolding on which everything else was constructed. Each one shifted power. Each one had winners and losers. And each one was shaped by the lobbying of specific parties who understood that controlling the rules is more valuable than winning any single game.</p>
+
+            <h3>The Copyright Act of 1909: The Original Bargain</h3>
+            <p>The modern music industry's legal architecture begins with a Supreme Court case about player pianos.</p>
+            <p>In February 1908, the Supreme Court ruled in <em>White-Smith Music Publishing Co. v. Apollo Co.</em> (209 U.S. 1) that manufacturers of player piano rolls were not required to pay royalties to composers. The reasoning: music rolls were not "copies" of musical compositions because they were not "written or printed" records. This was, on its face, absurd — the rolls existed solely to reproduce compositions — but it reflected a court struggling to apply 19th-century legal concepts to early 20th-century technology.</p>
+            <p>Congress responded with the Copyright Act of 1909, signed on March 4, 1909. The Act created the first <strong>compulsory mechanical license</strong>: anyone could make a mechanical reproduction of a musical composition without the copyright owner's consent, provided they paid the statutory rate. That rate was set at <strong>2 cents per copy</strong>.</p>
+            <p>The compulsory license was explicitly anti-monopoly in intent. The Aeolian Company had a near-monopoly on player piano rolls and had been negotiating exclusive deals with music publishers. Congress wanted to prevent any single entity from monopolizing mechanical reproduction of music. This was a genuine public interest purpose — but it also established a precedent that would prove enormously consequential: the government, not the market, would set the price for mechanical reproduction of musical compositions.</p>
+
+            <div class="stat-grid">
+              <div class="stat-card">
+                <div class="stat-number">2&cent;</div>
+                <div class="stat-label">original statutory mechanical rate (1909)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">69 yrs</div>
+                <div class="stat-label">that rate remained unchanged</div>
+              </div>
+            </div>
+
+            <p>For songwriters, the 1909 Act guaranteed compensation for mechanical reproductions, but at a rate they had no power to negotiate. For performers of sound recordings, the Act provided nothing at all. No federal copyright protection for sound recordings would exist until the Sound Recording Amendment of 1971. For nearly the entire first century of the recorded music industry, the people whose voices you actually heard on records had no federal copyright in those recordings.</p>
+            <cite>Copyright Act of 1909 (Pub. L. 60-349), White-Smith Music Publishing Co. v. Apollo Co., 209 U.S. 1 (1908)</cite>
+
+            <h3>The Copyright Act of 1976: Modernization and Its Limits</h3>
+            <p>The 1976 Copyright Act (Public Law 94-553), effective January 1, 1978, was the first comprehensive overhaul since 1909. It modernized copyright law in several ways that mattered for musicians — while embedding structural advantages that persist to this day.</p>
+            <p>The Act extended copyright protection to "original works of authorship fixed in any tangible medium of expression," which definitively included sound recordings. It established the Copyright Royalty Board's predecessor system for setting mechanical royalty rates. And it created Section 203 — the <strong>35-year termination right</strong> — which allowed authors to reclaim copyrights they had assigned, starting 35 years after the grant. Section 203(a)(5) made this right inalienable: "Termination of the grant may be effected notwithstanding any agreement to the contrary." Labels could not contractually prevent artists from exercising this right.</p>
+            <p>In theory.</p>
+            <p>In practice, the 1976 Act also codified the <strong>work-for-hire doctrine</strong> — and this is where the architecture starts to reveal its true beneficiaries. Under Section 101, a "work made for hire" vests copyright ownership in the employer (or commissioner), not the creator. If a sound recording qualifies as work for hire, the artist never owns the copyright and therefore has no termination right to exercise. The 35-year right is meaningless if the recording was "work for hire" from the start.</p>
+            <p>The critical legal question — whether sound recordings qualify as work for hire when made by artists who are technically independent contractors — has never been definitively resolved. Sound recordings are not explicitly listed among the nine statutory categories of commissioned works eligible for work-for-hire status. But record companies routinely insert work-for-hire language into recording contracts, and the legal ambiguity has never been settled by the Supreme Court. This ambiguity is not accidental. It serves the interests of labels, who benefit from a clouded legal landscape where artists are discouraged from testing their termination rights.</p>
+            <cite>Copyright Act of 1976 (Pub. L. 94-553), 17 U.S.C. Sections 101, 203</cite>
+
+            <h3>The 1999 Work-for-Hire Heist</h3>
+            <p>If there is a single episode that crystallizes how the legal system is manipulated by industry insiders, it is the 1999 work-for-hire amendment.</p>
+            <p>In 1999, while Congress was considering the Satellite Home Viewer Improvement Act — a bill about satellite television retransmissions, which had nothing to do with music — an RIAA lobbyist inserted language adding "sound recordings" to the list of works eligible for work-for-hire classification under Section 101 of the Copyright Act. The amendment was slipped in without public debate and without the knowledge of most congressional subcommittee members.</p>
+            <p>If this amendment had stood, it would have stripped recording artists of their 35-year termination rights permanently. Every recording made under a label contract would belong to the label in perpetuity.</p>
+            <div class="callout">
+              <p>The amendment was reportedly drafted by a legislative aide who subsequently accepted a position as Senior Vice President of Government Relations and Legislative Counsel at the RIAA. That aide was <strong>Mitch Glazier</strong>, who now serves as the RIAA's Chairman and CEO.</p>
+            </div>
+            <p>The artist response was immediate and furious. The Recording Artists Coalition, founded by Don Henley and Sheryl Crow, mobilized to fight the amendment. In 2000, Congress passed the <strong>Work Made for Hire and Copyright Corrections Act of 2000</strong>, repealing the amendment retroactively and directing courts to interpret the law as if neither the amendment nor its repeal had occurred.</p>
+            <p>The amendment was dead. But the episode revealed the mechanism: a lobbyist on congressional staff, an amendment buried in an unrelated bill, no public debate, and a subsequent career move to the very industry that benefited. This is how rules get written.</p>
+            <cite>Work Made for Hire and Copyright Corrections Act of 2000, Congressional Record</cite>
+
+            <h3>The Digital Millennium Copyright Act (1998): Safe Harbor and Its Consequences</h3>
+            <p>The DMCA was enacted in 1998 to bring copyright law into the digital era. Its most consequential provisions for the music industry were the <strong>safe harbor protections</strong> of Section 512, which shielded online service providers from liability for user-uploaded infringing content — provided they met certain conditions: adopting a repeat infringer policy, accommodating standard technical measures, and responding to takedown notices.</p>
+            <p>The safe harbor was designed for a specific problem: early internet service providers should not be liable for every piece of infringing content that traversed their networks. The legislative intent was reasonable. But the way the safe harbor has been used — particularly by YouTube — would have been unrecognizable to the statute's drafters.</p>
+            <p>YouTube functions as a de facto music streaming service. It is the single most-used platform for music consumption globally. Yet because it classifies itself as a user-upload platform, it operates under DMCA safe harbor rather than negotiating the kind of direct licenses that Spotify and Apple Music obtain. The result is the "value gap":</p>
+
+            <div class="stat-grid">
+              <div class="stat-card">
+                <div class="stat-number">$0.00069</div>
+                <div class="stat-label">YouTube per-stream rate</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">$0.01</div>
+                <div class="stat-label">Apple Music per-stream rate</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">$0.01284</div>
+                <div class="stat-label">TIDAL per-stream rate</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">~1/14th</div>
+                <div class="stat-label">YouTube rate vs. other services</div>
+              </div>
+            </div>
+
+            <p>The U.S. Copyright Office's own Section 512 Study, published on May 21, 2020, concluded that the safe harbor system is "unbalanced" — that "the balance has shifted almost uniformly in favor of online service providers to the detriment of rightsholders." No comprehensive Section 512 reform has passed as of March 2026. The EU addressed the equivalent problem through Article 17 of the Copyright Directive in 2019. The United States has not.</p>
+            <cite>Digital Millennium Copyright Act (Pub. L. 105-304), U.S. Copyright Office Section 512 Study (2020)</cite>
+
+            <h3>The Digital Performance Right in Sound Recordings Act (1995)</h3>
+            <p>Before 1995, there was no federal right of public performance in sound recordings — period. Radio stations paid songwriters (via PROs) but owed nothing to the artists whose voices they broadcast. The Digital Performance Right in Sound Recordings Act (Public Law 104-39) partially addressed this by creating a limited performance right for sound recordings — but only for <strong>digital audio transmissions</strong>. Terrestrial AM/FM radio remained exempt.</p>
+            <p>This was a deliberate carve-out. The National Association of Broadcasters successfully lobbied to exclude AM/FM radio from the new performance right, arguing that radio airplay provided "free promotion" to artists. The result: the United States joined Iran and North Korea as one of the only significant countries without a performance right for sound recordings on terrestrial radio. Every OECD member country except the U.S. pays artists for radio airplay.</p>
+
+            <div class="stat-grid">
+              <div class="stat-card">
+                <div class="stat-number">$200M</div>
+                <div class="stat-label">annually withheld from US artists in neighboring rights</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">$11.9M</div>
+                <div class="stat-label">NAB lobbying spend (2024) to keep exemption</div>
+              </div>
+            </div>
+
+            <p>Most countries operate under a system of <strong>neighboring rights</strong> derived from the 1961 Rome Convention. The system runs on strict reciprocity: a country's artists receive neighboring rights payments from abroad only if their home country extends the same rights to foreign artists. The United States does not extend those rights. Foreign collecting societies withhold approximately <strong>$200 million annually</strong> in neighboring rights payments that would otherwise flow to American performers and labels.</p>
+            <p>This is not an inevitability. It is a policy choice — one that every other OECD nation has made differently. And it is a policy choice that is actively maintained. The NAB spent $11.9 million on federal lobbying in 2024, outspending the RIAA nearly 2:1, for the specific purpose of preserving terrestrial radio's exemption from paying performers. Two hundred million dollars a year leaves American artists' pockets. Eleven million dollars a year keeps it that way.</p>
+            <cite>Digital Performance Right in Sound Recordings Act (Pub. L. 104-39), OpenSecrets (NAB lobbying data)</cite>
+
+            <h3>The Music Modernization Act (2018): The Peace Treaty</h3>
+            <p>The Music Modernization Act (Public Law 115-264), signed on October 11, 2018, was described by NPR as "a music industry peace treaty." It passed unanimously in both the House (415-0) and the Senate — a remarkable feat in a deeply polarized Congress. It was also the product of years of intense lobbying, negotiation, and compromise.</p>
+            <p>The MMA consolidated three separate bills:</p>
+            <p><strong>Title I</strong> created the <strong>Mechanical Licensing Collective (MLC)</strong>, a nonprofit entity to administer a blanket mechanical license for digital streaming. This addressed the "black box" problem documented in Report 2.</p>
+            <p><strong>Title II</strong> (the CLASSICS Act) extended federal protections to pre-1972 sound recordings.</p>
+            <p><strong>Title III</strong> (the AMP Act) established that producers, mixers, and sound engineers could receive a portion of statutory royalties directly through SoundExchange.</p>
+            <p>The MMA also changed the rate-setting standard for mechanical royalties from the policy-oriented 801(b)(1) standard — which required consideration of "minimizing disruptive impact on existing industry structures" — to a market-based <strong>"willing buyer/willing seller" standard</strong>. This was a significant victory for songwriters and publishers.</p>
+            <p>But the MMA's passage required compromises that tell you who had power at the table:</p>
+            <ul>
+              <li><strong>The Blackstone compromise</strong>: SESAC and Harry Fox Agency — both owned by Blackstone — initially blocked a Senate vote. The compromise allowed the MLC to handle digital streaming mechanical licenses while private entities like Harry Fox continued handling licenses for restaurants, bars, and radio.</li>
+              <li><strong>The SiriusXM compromise</strong>: Satellite radio royalty rates would remain unchanged through 2027 (rather than 2022) in exchange for SiriusXM foregoing its right to appeal a recent CRB ruling.</li>
+              <li><strong>The tech company buy-in</strong>: Digital services agreed to fund the MLC in exchange for a blanket license that reduced their transaction costs and litigation risk. The MMA also constrained the ability of copyright holders to sue digital services for mechanical infringement for lawsuits filed after January 1, 2018.</li>
+            </ul>
+            <p>The MMA was real progress. But the entities at the negotiating table — RIAA, NMPA, NSAI, the Recording Academy, SESAC/Blackstone, SiriusXM, Spotify, Apple, Amazon, Google — were institutions with lobbying infrastructure. Individual songwriters and independent artists were represented indirectly, through organizations whose interests did not perfectly align with theirs.</p>
+            <p>The peace treaty was real. But the terms of the peace reflected the relative power of the parties at the table.</p>
+            <cite>Music Modernization Act (Pub. L. 115-264), NPR, Congress.gov, OpenSecrets</cite>
+          </div>
+        </section>
+
+        <!-- PART 2: THE COURTS AS BATTLEGROUND -->
+        <section class="section" id="part-2-courts">
+          <div class="section-header">
+            <span class="section-number">02</span>
+            <h2>The Courts as Battleground</h2>
+          </div>
+          <div class="section-body">
+
+            <h3>Where the Law Gets Made — and Unmade</h3>
+            <p>If legislation builds the scaffolding, litigation tests its load-bearing capacity. The courtroom is where the gaps between law and practice get exposed — where artists discover what their contracts actually mean, where platforms discover the limits of safe harbor, and where the music industry's structural power dynamics play out in rulings that affect millions of creators.</p>
+
+            <h3>Napster and Grokster: Establishing Digital Liability</h3>
+            <p><em>A&amp;M Records, Inc. v. Napster, Inc.</em>, 239 F.3d 1004 (9th Cir. 2001), was the music industry's first major digital copyright victory. The Ninth Circuit found that Napster users' activities constituted direct copyright infringement, that Napster had both actual and constructive knowledge of infringement, and that Napster's failure to police its system combined with its financial interest in infringement established vicarious infringement.</p>
+            <p>The harder question was whether decentralized peer-to-peer systems would face similar liability. The answer came in <em>MGM Studios, Inc. v. Grokster, Ltd.</em>, 545 U.S. 913 (2005), where the Supreme Court established the <strong>inducement doctrine</strong> in a unanimous 9-0 decision: anyone who distributes software with the object of promoting its use to infringe copyright is liable for the resulting infringement by third parties.</p>
+            <p>The music industry won both cases. But the victories were pyrrhic in a broader sense. Napster and Grokster were shut down, but the technology they represented — digital distribution of music — was unstoppable. The industry's legal strategy of suing technology companies bought time but did not prevent the transition to a digital economy that would ultimately compress the value of recorded music.</p>
+            <cite>A&amp;M Records v. Napster, 239 F.3d 1004 (9th Cir. 2001); MGM v. Grokster, 545 U.S. 913 (2005)</cite>
+
+            <h3>Capitol Records v. Thomas-Rasset: The Individual File-Sharer Strategy</h3>
+            <p>The industry's campaign of suing individual file sharers produced its most publicized case in <em>Capitol Records, Inc. v. Thomas-Rasset</em> — three jury trials, an Eighth Circuit appeal, and a denied certiorari petition, all over a Native American mother of four from Brainerd, Minnesota, who downloaded 24 songs via Kazaa.</p>
+
+            <div class="stat-grid">
+              <div class="stat-card">
+                <div class="stat-number">$222,000</div>
+                <div class="stat-label">1st jury award ($9,250/song)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">$1.92M</div>
+                <div class="stat-label">2nd jury award ($80,000/song)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">$54,000</div>
+                <div class="stat-label">court-reduced amount</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">$1.5M</div>
+                <div class="stat-label">3rd jury award ($62,500/song)</div>
+              </div>
+            </div>
+
+            <p>The case became a symbol of an industry strategy — suing its own potential customers — that the RIAA abandoned in 2008. The strategy had been wildly unpopular, expensive to pursue, and of questionable deterrent value.</p>
+            <cite>Capitol Records v. Thomas-Rasset, 692 F.3d 899 (8th Cir. 2012)</cite>
+
+            <h3>The Eminem/FBT Ruling: Downloads Are Licenses</h3>
+            <p><em>F.B.T. Productions, LLC v. Aftermath Records</em>, 621 F.3d 958 (9th Cir. 2010), changed digital royalty accounting for an entire generation of legacy artists — and revealed how labels had systematically underpaid them.</p>
+            <p>The case turned on a single contractual distinction: FBT's contract with Aftermath (a Universal subsidiary) provided 12-20% royalties on "Records Sold" and 50% of net revenue on "Masters Licensed." Were digital downloads through iTunes "sales" or "licenses"?</p>
+            <p>The Ninth Circuit held they were <strong>licenses</strong>. Aftermath did not sell physical copies to iTunes — it granted iTunes the right to use the master recordings. That was a license, not a sale. F.B.T. and Eminem were owed the 50% licensing rate, not the 12-20% sales rate.</p>
+            <p>The class action that followed settled for <strong>$11.5 million</strong> plus an approximately <strong>10% increase</strong> in digital download royalties going forward. The Allman Brothers' parallel lawsuit against Sony settled for <strong>$7.95 million</strong> plus a <strong>3% royalty bump</strong>. These settlements are rounding errors relative to the total revenue generated during the years when labels were paying the lower rate. But they established a principle: the legal classification of digital transactions matters, and labels' preferred classification does not always prevail.</p>
+            <cite>F.B.T. Productions v. Aftermath Records, 621 F.3d 958 (9th Cir. 2010)</cite>
+
+            <h3>Williams v. Gaye: "Blurred Lines" and the Chill</h3>
+            <p><em>Williams v. Gaye</em>, 885 F.3d 1150 (9th Cir. 2018), sent shockwaves through the music industry. A jury found that "Blurred Lines" (2013) infringed Marvin Gaye's "Got to Give It Up" (1977). Damages included $3,188,527.50 in actual damages, nearly $2.1 million in profits, and a <strong>continuing royalty of 50%</strong> of future songwriter and publishing revenues from "Blurred Lines."</p>
+            <p>Judge Nguyen's dissent warned that the majority had allowed the Gaye estate to "own a musical style" — and the music community largely agreed. The decision created a chilling effect on songwriting, leading to a reported increase in preemptive songwriting credits and settlements.</p>
+            <p>The <em>Skidmore v. Led Zeppelin</em> decision (952 F.3d 1051, 9th Cir. 2020 en banc) provided a partial counterweight, eliminating the "inverse ratio" rule and holding that common musical building blocks like a descending chromatic bass line are not protectable. But the tension between these two Ninth Circuit decisions remains unresolved.</p>
+            <cite>Williams v. Gaye, 885 F.3d 1150 (9th Cir. 2018); Skidmore v. Led Zeppelin, 952 F.3d 1051 (9th Cir. 2020)</cite>
+
+            <h3>Artist-Label Contract Disputes: The Pattern</h3>
+            <p>The court cases between individual artists and their labels follow a pattern so consistent it constitutes its own form of evidence. The specifics differ. The structure does not.</p>
+
+            <h4>Prince vs. Warner Bros. (1993-2014)</h4>
+            <p>Prince signed a reported $100 million deal in 1992 that gave Warner Bros. ownership and control of all master recordings. In 1993, he changed his name to an unpronounceable symbol, appeared publicly with "SLAVE" written on his cheek, and stated he changed his name because "his own name now belonged to the company." It took until 2014 — over two decades — for Prince to regain complete ownership of his Warner Bros. recordings.</p>
+
+            <h4>George Michael vs. Sony (1992-1995)</h4>
+            <p>Michael sued Sony in the UK, arguing his recording contract constituted an unreasonable restraint of trade. The court ruled entirely against him. He settled, paying Sony a reported <strong>$30-40 million</strong> to be released from his contract. The court found the contract was reasonable because Michael had access to expert legal advice and the terms were "standard in the industry" — a ruling that essentially held that if an exploitative contract is standard, it is not unconscionable.</p>
+
+            <h4>TLC: 65 Million Records and Bankruptcy</h4>
+            <p>TLC sold an estimated 65 million records worldwide. Under their 1991 contract with LaFace Records, each member received approximately one-third of 56 cents per album. They reportedly received approximately 1% of an estimated $175 million in album sales. They filed for Chapter 11 bankruptcy in July 1995, declaring $3.5 million in debts.</p>
+            <div class="callout">
+              <p>At the 1996 Grammy Awards, after winning Best R&amp;B Album, Chilli stated: <strong>"We've sold 10 million albums worldwide. We're as broke as broke can be."</strong></p>
+            </div>
+
+            <h4>Toni Braxton: $1,972</h4>
+            <p>Despite $170 million in worldwide sales and over 40 million records sold, Braxton received a <strong>$1,972 royalty check</strong> from her first recording contract. Her lawyer told the LA Times she was receiving only 33 cents per album. She filed for bankruptcy twice — in 1998 (Chapter 7) and in 2010 (Chapter 11, citing $18.3 million in debts).</p>
+
+            <h4>Kesha vs. Dr. Luke / Sony (2014-2023)</h4>
+            <p>Kesha sued producer Dr. Luke for sexual assault, harassment, and abuse, and sought release from her contract with Dr. Luke's label (a Sony imprint). In February 2016, a New York Supreme Court judge denied her request — meaning she remained contractually bound to record for the label run by her alleged abuser. The case settled in June 2023. It laid bare the intersection of contractual power and personal safety.</p>
+
+            <h4>Megan Thee Stallion vs. 1501 Certified Entertainment (2020-2023)</h4>
+            <p>Megan challenged a contract she signed at age 20 as "not only entirely unconscionable, but ridiculously so." Recording profits were split 60-40 in favor of the label, versus an industry standard of 50-50. The parties settled confidentially in October 2023. One week later, Megan announced her next album would be self-released.</p>
+
+            <h4>Lil Wayne vs. Cash Money (2015-2018)</h4>
+            <p>Wayne filed a $51 million lawsuit against Cash Money Records and Birdman, alleging financial mishandling and the withholding of his album <em>Tha Carter V</em> for four years. Wayne claimed he received only $2 million of a $10 million advance owed. Settlement: Universal paid Wayne $10 million and terminated his Cash Money contract.</p>
+
+            <div class="callout callout-axiom">
+              <p><strong>The pattern:</strong> artists sign contracts when they have no leverage — often young, often without adequate legal representation. The contracts transfer ownership of master recordings to the label, establish recoupment structures that can consume decades of revenue, and bind the artist for multiple albums. When artists become successful enough to understand what they signed, they discover that the legal system treats these contracts as enforceable — because the artist "had access to legal counsel" and the terms are "standard in the industry."</p>
+            </div>
+
+            <h3>Congressional Testimony: Artists on the Record</h3>
+            <p>When artists have testified before Congress and state legislatures, their testimony has been remarkably consistent across decades.</p>
+            <div class="callout">
+              <p><strong>Don Henley</strong>, California State Senate, September 2001: <em>"Record companies can fire us, but we can't fire them, even if they fail to perform their duties."</em></p>
+            </div>
+            <div class="callout">
+              <p><strong>Courtney Love</strong>, same hearing: <em>"I've made more for Universal than 'Titanic.'"</em> And: <em>"In 1987, [record companies] snuck in, and you guys got snookered"</em> — referring to the 1987 amendment to California Labor Code Section 2855.</p>
+            </div>
+            <div class="callout">
+              <p><strong>LeAnn Rimes</strong>, same hearing, age 19: <em>"At 12, I was thrilled to sign my record contract with Curb Records, and at that age I didn't understand everything that was in my contract. I just turned 19 last month, and if I record at a rate of one album every two years, which is the industry average, I will be 35 before the contract is over."</em></p>
+            </div>
+            <div class="callout">
+              <p><strong>Don Henley</strong>, U.S. Senate Judiciary Subcommittee, June 2020, on DMCA reform: <em>"The system is antiquated and badly broken. And the creative community is paying a very steep price."</em></p>
+            </div>
+            <p>The testimony spans nearly two decades. The complaints are the same. The system is structured to extract value from creators and transfer it to corporate entities. The creators know this. They say so, on the record, under oath. And the system adjusts at the margins — a reform here, a settlement there — without altering the fundamental architecture.</p>
+
+            <h3>The Seven-Year Rule and Its Music Industry Carve-Out</h3>
+            <p>California Labor Code Section 2855, enacted in 1937, provides that personal service contracts cannot be enforced beyond seven years. In 1987, the music industry lobbied for an amendment — Section 2855(b) — that created a carve-out specifically for phonorecord production. Artists can invoke the seven-year rule, but the label retains the right to recover damages for undelivered material. This effectively creates a financial penalty for exercising the right.</p>
+            <p>30 Seconds to Mars invoked Section 2855(a) in 2008 when Virgin/EMI sued them for $30 million for breach of contract. The band countersued, alleging "creative accounting." The parties settled and signed a new multi-album deal with Virgin/EMI — which tells you something about the relative leverage even when the law is nominally on the artist's side.</p>
+            <p>The California FAIR Act (A.B. 983 / A.B. 2926) has been introduced multiple times to restore full seven-year rule protection for recording artists. As of this writing, it has not been enacted.</p>
+            <cite>Cal. Lab. Code Section 2855, Congressional testimony records, court filings</cite>
+          </div>
+        </section>
+
+        <!-- PART 3: THE LOBBYING MACHINE -->
+        <section class="section" id="part-3-lobbying">
+          <div class="section-header">
+            <span class="section-number">03</span>
+            <h2>The Lobbying Machine</h2>
+          </div>
+          <div class="section-body">
+
+            <h3>Who Lobbies and How Much They Spend</h3>
+            <p>The American music industry's policy outcomes are not determined by the merits of competing arguments. They are determined by the relative resources deployed to advance those arguments. Understanding the lobbying landscape is prerequisite to understanding why the law looks the way it does.</p>
+
+            <h4>The RIAA (Recording Industry Association of America)</h4>
+            <p>The RIAA represents labels — not artists. Its board and funding come from its label members: Universal Music Group, Sony Music Entertainment, Warner Music Group, and hundreds of smaller labels.</p>
+            <div class="data-table-wrapper">
+              <table class="data-table">
+                <caption>RIAA Federal Lobbying Expenditures (OpenSecrets)</caption>
+                <thead><tr><th>Year</th><th>Amount</th><th>Note</th></tr></thead>
+                <tbody>
+                  <tr><td>2018</td><td><strong>$5,642,155</strong></td><td></td></tr>
+                  <tr><td>2024</td><td><strong>$6,910,041</strong></td><td></td></tr>
+                  <tr><td>Q1 2025</td><td><strong>$2,500,000+</strong></td><td><span class="flag">[single-source]</span></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>In 2023, 28 out of 35 RIAA lobbyists had previously held government jobs. In 2024, 24 out of 32 had government backgrounds. The revolving door is not a metaphor — it is a staffing strategy.</p>
+
+            <h4>The Individual Major Labels</h4>
+            <div class="data-table-wrapper">
+              <table class="data-table">
+                <caption>Major Label Independent Lobbying (OpenSecrets)</caption>
+                <thead><tr><th>Entity</th><th>Year</th><th>Amount</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>UMG</strong></td><td>2022</td><td>$1,920,000</td></tr>
+                  <tr><td><strong>UMG</strong></td><td>2023</td><td>$2,260,000</td></tr>
+                  <tr><td><strong>UMG</strong></td><td>2024</td><td>$2,440,000</td></tr>
+                  <tr><td><strong>Sony Corp</strong> (all divisions)</td><td>2021</td><td>$2,652,769</td></tr>
+                  <tr><td><strong>Sony Corp</strong> (all divisions)</td><td>2024</td><td>$3,353,894</td></tr>
+                  <tr><td><strong>WMG</strong></td><td>2010</td><td>$447,450</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h4>Other Music Industry Lobbying</h4>
+            <ul>
+              <li><strong>NMPA</strong> (publishers): $742,500 in 2018. PAC raised $58,500 in the 2021-2022 cycle.</li>
+              <li><strong>ASCAP</strong>: $880,000 (2024)</li>
+              <li><strong>BMI</strong>: $380,000 (2018), $210,000 (2024)</li>
+              <li><strong>SoundExchange</strong>: $960,000 (2015)</li>
+            </ul>
+            <cite>OpenSecrets (based on Senate Office of Public Records filings and FEC data)</cite>
+
+            <h3>The Opponents</h3>
+            <p>Now look at the other side of the table.</p>
+            <p><strong>The National Association of Broadcasters (NAB)</strong> — the radio industry's trade group and the music industry's primary opponent on terrestrial radio royalties — spent <strong>$11,150,000</strong> in 2023 and <strong>$11,920,000</strong> in 2024 on federal lobbying. The NAB PAC raised <strong>$2,577,537</strong> in the 2023-2024 cycle — approximately <strong>40 times more</strong> than Warner Music Group's PAC in comparable cycles.</p>
+
+            <h4>Big Tech Lobbying</h4>
+            <div class="data-table-wrapper">
+              <table class="data-table">
+                <caption>Tech Company Federal Lobbying Expenditures (OpenSecrets)</caption>
+                <thead><tr><th>Company</th><th>Year</th><th>Amount</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>Alphabet/Google</strong></td><td>2018</td><td>$22,000,000</td></tr>
+                  <tr><td><strong>Alphabet/Google</strong></td><td>2024</td><td>$14,860,000</td></tr>
+                  <tr><td><strong>Apple Inc</strong></td><td>2022</td><td>$9,360,000</td></tr>
+                  <tr><td><strong>Apple Inc</strong></td><td>2024</td><td>$7,820,000</td></tr>
+                  <tr><td><strong>Apple Inc</strong></td><td>2025</td><td>$10,000,000</td></tr>
+                  <tr><td><strong>Spotify</strong></td><td>2020</td><td>$820,000</td></tr>
+                  <tr><td><strong>Spotify</strong></td><td>2023</td><td>$1,580,000</td></tr>
+                  <tr><td><strong>Spotify</strong></td><td>2024</td><td>$2,040,000</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>The Spending Asymmetry</h3>
+            <p>Let this sink in. In 2024:</p>
+            <div class="stat-grid">
+              <div class="stat-card">
+                <div class="stat-number">$6.9M</div>
+                <div class="stat-label">RIAA (entire recorded music trade group)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">$14.9M</div>
+                <div class="stat-label">Alphabet/Google (one company)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">$11.9M</div>
+                <div class="stat-label">NAB (opposes paying artists)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">$7.8M</div>
+                <div class="stat-label">Apple (one company)</div>
+              </div>
+            </div>
+            <p>The RIAA's $6.9 million is the music industry's <em>primary</em> federal lobbying vehicle. It represents labels, not artists. And it is outspent by the broadcasters who refuse to pay artists for radio play, and by the tech companies that argue in CRB proceedings for lower songwriter royalty rates.</p>
+
+            <h3>The Artist Representation Gap</h3>
+            <p>Where are the artists in this picture?</p>
+            <ul>
+              <li><strong>The Artist Rights Alliance</strong> (formerly Music Artists Coalition) was founded in 2019 — not in 1919, not in 1959, but in 2019 — by Irving Azoff and others. It was formed because, as described at its launch, "artists don't really have a seat at any table."</li>
+              <li><strong>The Future of Music Coalition</strong>, founded in 2000, is a nonprofit focused on ensuring artists' voices are included in policy debates. Its budget is not remotely comparable to the RIAA or NMPA.</li>
+              <li><strong>The Recording Academy</strong> has an advocacy division that lobbies on artist issues. But it also represents the broader industry, not artists exclusively.</li>
+              <li><strong>The Recording Artists Coalition</strong>, founded in 2000 by Don Henley and Sheryl Crow to counter the RIAA's lobbying. Its founding was itself an indictment: if the RIAA represented artist interests, artists would not need a separate coalition to counter the RIAA.</li>
+            </ul>
+
+            <h3>The Missing Middle: Independent Labels</h3>
+            <p>Independent labels, collectively, control roughly <strong>30-40%</strong> of global recorded music revenue. Globally, <strong>Merlin</strong> negotiates digital licensing on behalf of thousands of indie labels and distributors. But Merlin's negotiating power remains a fraction of what any single major commands.</p>
+            <p>Independent labels occupy the worst possible location in the lobbying landscape: too small individually to command a major's leverage, too institutional to generate the sympathy that individual artist stories produce. When the RIAA lobbies, it represents its major label members first. When artist advocacy groups mobilize, they speak for creators, not label owners. The independent label falls between the cracks of both narratives.</p>
+            <p>The structural failures — opaque royalty accounting, payment delays, algorithmic gatekeeping, metadata breakdowns — affect independent <em>companies</em> as much as individual creators. The dividing line is not corporate structure. It is concentrated power, and the legal and regulatory framework that sustains it.</p>
+
+            <h3>SOPA/PIPA: The Lobby That Lost</h3>
+            <p>The Stop Online Piracy Act (House) and PROTECT IP Act (Senate) in 2011-2012 represented the music and film industries' most ambitious legislative push in the digital era — and their most visible defeat.</p>
+
+            <div class="stat-grid">
+              <div class="stat-card">
+                <div class="stat-number">$91M+</div>
+                <div class="stat-label">content industry lobbying for SOPA/PIPA</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">246</div>
+                <div class="stat-label">tech company lobbyists on SOPA/PIPA</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">241</div>
+                <div class="stat-label">entertainment industry lobbyists</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">$104.6M</div>
+                <div class="stat-label">combined lobbying, Q4 2011 alone</div>
+              </div>
+            </div>
+
+            <p>The tech companies had a weapon that traditional lobbying could not match: the ability to mobilize their users. The Wikipedia blackout on January 18, 2012, Google's homepage protest, and broader internet-coordinated action generated millions of contacts to Congress. Both bills were shelved.</p>
+            <p>The SOPA/PIPA episode demonstrated something important about power in the digital age: traditional lobbying expenditure can be overwhelmed by platform-mediated user mobilization. The music industry spent more money. Tech won anyway — because tech companies sit between the public and the internet.</p>
+
+            <h3>The Revolving Door</h3>
+            <p>The RIAA's lobbyist workforce is substantially composed of former government employees. Per OpenSecrets revolving door data: <strong>28 out of 35</strong> RIAA lobbyists in 2023, and <strong>24 out of 32</strong> in 2024, had previously held government jobs.</p>
+            <p>The Mitch Glazier story is the most dramatic example — legislative aide inserts work-for-hire language, then takes a job at the RIAA — but the broader pattern is systemic. Former U.S. Congressman Joe Crowley (D-NY) became a registered lobbyist for the musicFIRST Coalition, an RIAA-backed group. The concentration — over 75% of RIAA lobbyists with government backgrounds — reflects a deliberate strategy of hiring people who understand legislative process from the inside.</p>
+            <cite>OpenSecrets revolving door data, Congressional lobbying disclosure filings</cite>
+          </div>
+        </section>
+
+        <!-- PART 4: STREAMING VS. THE LAW -->
+        <section class="section" id="part-4-streaming">
+          <div class="section-header">
+            <span class="section-number">04</span>
+            <h2>Streaming vs. the Law</h2>
+          </div>
+          <div class="section-body">
+
+            <h3>Where Practice Diverges from Statute</h3>
+            <p>The streaming era has created a set of industry practices that exist in a gray zone — not clearly illegal, not clearly consistent with the law's intent, but enormously profitable for the entities that exploit them.</p>
+
+            <h3>The Mechanical Licensing Black Box</h3>
+            <p>Before the MMA, streaming services were required to obtain mechanical licenses on a song-by-song basis under Section 115 of the Copyright Act. In practice, services filed over one million "address unknown" NOIs with the Copyright Office, which released them from the obligation to pay. Songs were streamed billions of times without compensating the people who wrote them.</p>
+            <p>The lawsuits that followed quantified the damage:</p>
+            <div class="stat-grid">
+              <div class="stat-card">
+                <div class="stat-number">$112.55M</div>
+                <div class="stat-label">Ferrick v. Spotify settlement</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">$1.6B</div>
+                <div class="stat-label">Wixen v. Spotify (sought)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">$424.4M</div>
+                <div class="stat-label">historical unmatched royalties transferred to MLC</div>
+              </div>
+            </div>
+            <p>The MMA's creation of the MLC was supposed to fix this. But hundreds of millions in unmatched royalties remain. And the MMA's market-share distribution mechanism — where unclaimed royalties after three years go to publishers based on market share — creates a structural incentive for major publishers to benefit from the very problem they are best positioned to solve.</p>
+            <cite>Ferrick v. Spotify (S.D.N.Y.), Wixen Music Publishing v. Spotify (C.D. Cal. 2017), MLC reports</cite>
+
+            <h3>Safe Harbor Abuse and the Value Gap</h3>
+            <p>YouTube's business model depends on DMCA Section 512 safe harbor. Because it classifies as a user-upload platform rather than an interactive streaming service, YouTube can negotiate lower rates. YouTube pays approximately $0.00069 per stream versus Apple Music's approximately $0.01 — roughly one-fourteenth the rate.</p>
+            <p>YouTube's Content ID system is voluntary and not required by the DMCA. Google says 98% of copyright issues are caught via Content ID. But Content ID matches do not trigger copyright strikes under YouTube's repeat infringer policy — meaning virtually all copyright-infringing material identified through Content ID is "entirely insulated" from the three-strikes termination policy required by the DMCA.</p>
+            <p>The DMCA's notice-and-takedown system requires rights holders to police their own copyrights. "For each infringing link or file taken down, a dozen more pop up in its place," as Don Henley testified. The game of whack-a-mole shifts the cost of copyright enforcement from the entity profiting from the content to the entity that created it.</p>
+            <p>The <em>BMG Rights Management v. Cox Communications</em> case (4th Cir. 2018) established that ISPs can lose safe harbor protection if they fail to reasonably implement repeat infringer policies. The subsequent <em>Sony Music v. Cox</em> case (4th Cir. 2024) vacated an unprecedented $1 billion judgment against Cox, reversing vicarious liability while preserving the contributory infringement framework.</p>
+            <cite>BMG v. Cox Communications (4th Cir. 2018), Sony Music v. Cox (4th Cir. 2024), 17 U.S.C. Section 512</cite>
+
+            <h3>Discovery Mode: Modern Payola?</h3>
+            <p>Spotify's Discovery Mode allows artists or their labels to flag tracks for algorithmic priority in exchange for accepting a <strong>30% royalty reduction</strong> on streams generated by the promotion. In 2021, the House Judiciary Committee requested information over its similarities to <strong>payola</strong> — prohibited under 47 U.S.C. Section 508 since 1960.</p>
+            <p>In November 2025, subscriber Genevieve Capolongo filed a class action lawsuit against Spotify (S.D.N.Y.), alleging Discovery Mode constitutes "modern payola" — selling visibility through undisclosed promotional deals while presenting recommendations as algorithmically neutral. Spotify called the lawsuit "nonsense."</p>
+            <p>The legal question is unresolved. But the functional reality is clear: Spotify has created a system where artists pay for algorithmic visibility by accepting lower royalties — and listeners are not told which recommendations are organic and which are paid.</p>
+            <cite>47 U.S.C. Section 508, Capolongo v. Spotify (S.D.N.Y. 2025), FTC Endorsement Guides</cite>
+
+            <h3>Spotify's Audiobook Bundling and the Rate Arbitrage</h3>
+            <p>In March 2024, Spotify reclassified its Premium subscription tiers as "bundles" after adding 15 hours of monthly audiobook access. The reclassification was not primarily about audiobooks. It was about mechanical royalty rates.</p>
+            <p>By adding audiobooks and calling the result a "bundle," Spotify reduced the revenue base on which it owes mechanical royalties to songwriters. The mechanical royalty rate effectively dropped to approximately 24.5% of Total Content Cost for the relevant accounting period. <span class="flag">[single-source]</span></p>
+
+            <div class="stat-grid">
+              <div class="stat-card">
+                <div class="stat-number">$150M</div>
+                <div class="stat-label">projected first-year loss to songwriters (NMPA)</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">$3.1B</div>
+                <div class="stat-label">projected cumulative loss through 2032 (NMPA)</div>
+              </div>
+            </div>
+
+            <p>In January 2025, Judge Analisa Torres (S.D.N.Y.) ruled that Spotify could legally classify its Premium service as a bundle. This is legal. It is also exactly the kind of move that reveals whose interests the legal framework serves. Songwriters win a 44% rate increase after years of litigation. And then a platform finds a mechanism to reduce its effective rate by reclassifying its product. The letter of the law is satisfied. The intent is circumvented.</p>
+            <cite>Phonorecords IV settlement, NMPA, MLC v. Spotify (S.D.N.Y. 2025)</cite>
+
+            <h3>The CRB Rate Fight: Labels Against Their Own Publishers</h3>
+            <p>In 2018, the CRB ruled to increase mechanical streaming royalty rates from 10.5% to 15.1% over five years — a nearly 44% increase, hailed as a "monumental victory" for songwriters. In 2019, <strong>Spotify, Amazon, Google, and Pandora</strong> appealed the rate increase. Apple Music notably did not join the appeal.</p>
+            <p>Here is where it gets structurally interesting. The three major label groups — Universal, Sony, and Warner — also operate the world's three largest music publishing operations. The streaming services they partner with on recordings were simultaneously fighting to suppress the mechanical (publishing) rates that the labels' own publishing subsidiaries would have received.</p>
+            <p>The major labels did not join the appeal. But they also did not publicly oppose it — even though a lower mechanical rate would directly reduce revenue to their own publishing divisions. The labels' silence was a calculation: the value of maintaining good relationships with streaming platforms outweighed the value of defending higher publishing rates.</p>
+            <p>The CRB reaffirmed the 15.1% headline rate in July 2022 after remand. The final determination was not published in the Federal Register until August 10, 2023 (88 FR 54336). Songwriters waited years for a rate increase they had already won, while their own publishers' parent companies sat on their hands.</p>
+            <cite>88 FR 54336, Phonorecords III CRB proceedings, Music Business Worldwide</cite>
+
+            <h3>AI Streaming Fraud: The New Frontier</h3>
+            <p><em>United States v. Michael Smith</em> (S.D.N.Y., 2024) was the first criminal prosecution of AI-generated streaming fraud in the U.S. Smith used AI to generate thousands of fake songs — titles like "Zygotic Washstands" by fake artists like "Callous Post" — and bots to stream them millions of times. The scheme ran from 2017 to 2024 and generated over <strong>$10 million</strong> in fraudulent royalties. Charges include wire fraud conspiracy, wire fraud, and money laundering conspiracy, each carrying up to 20 years.</p>
+            <p>In April 2024, Spotify introduced a minimum threshold of 1,000 streams in the previous 12 months for tracks to be eligible for royalty payments. The policy is explicitly anti-fraud — but it also disproportionately affects small independent artists with legitimate but modest audiences.</p>
+            <cite>United States v. Michael Smith (S.D.N.Y. 2024), Spotify for Artists</cite>
+          </div>
+        </section>
+
+        <!-- PART 5: THE PRO PROBLEM -->
+        <section class="section" id="part-5-pro">
+          <div class="section-header">
+            <span class="section-number">05</span>
+            <h2>The PRO Problem and the Case for a Marketplace</h2>
+          </div>
+          <div class="section-body">
+
+            <h3>How PROs Actually Work</h3>
+            <p>The performing rights organization system is one of the music industry's oldest institutional structures — and one of its most poorly understood, even by the songwriters it ostensibly serves.</p>
+
+            <h4>ASCAP</h4>
+            <p>Founded in 1914, operates as a not-for-profit membership association. Surpassed 1.1 million members in 2025. Total revenue reached <strong>$1.945 billion</strong> in 2025, with $1.759 billion available for royalty distribution and a 10-year compound annual growth rate of 6.7%.</p>
+
+            <h4>BMI</h4>
+            <p>Founded in 1939. Acquired by <strong>New Mountain Capital</strong> in February 2024, making it the <strong>only for-profit PRO</strong> in the US with an open-door membership policy. A Google/Alphabet fund acquired a minority stake. BMI raised its retained margin from approximately 10% to 15% of collections. Last reported revenue: $1.573 billion (FY2022) — the company has ceased publishing detailed revenue figures since going for-profit.</p>
+
+            <h4>SESAC</h4>
+            <p>Founded in 1930. Acquired by <strong>Blackstone</strong> in 2017 for approximately $1.125 billion. A private, invitation-only organization that operates outside the consent decrees — meaning it negotiates rates in a free market.</p>
+
+            <h4>Other Entities</h4>
+            <ul>
+              <li><strong>Global Music Rights (GMR)</strong>: Founded in 2013 by Irving Azoff. Private, for-profit, operates outside consent decrees.</li>
+              <li><strong>SoundExchange</strong>: Nonprofit collecting digital performance royalties for sound recordings. Distributed <strong>$1.052 billion</strong> in 2024.</li>
+              <li><strong>The MLC</strong>: Distributed more than <strong>$3.3 billion</strong> cumulatively since operations began in 2021.</li>
+            </ul>
+
+            <h3>The Consent Decree Constraint</h3>
+            <p>ASCAP and BMI have operated under DOJ antitrust consent decrees since <strong>1941</strong>. The decrees impose fundamental constraints:</p>
+            <ol>
+              <li>ASCAP and BMI may obtain only <strong>nonexclusive</strong> rights</li>
+              <li>Must grant a license to <strong>any applicant</strong> on request</li>
+              <li>Must accept as a member any songwriter who meets minimum requirements</li>
+              <li>If they cannot agree on a rate, either party may petition a federal <strong>"rate court"</strong> judge to set a reasonable rate</li>
+            </ol>
+            <p>The DOJ has reviewed the consent decrees three times and each time declined to modify or terminate them. ASCAP and BMI have argued the decrees are "outdated relics from the 1940s" that hamper fair compensation in the digital age.</p>
+
+            <div class="callout callout-axiom">
+              <p><strong>The foundational distortion:</strong> Record labels negotiate freely with streaming platforms for master recording licenses, while composition rates are constrained by government-set rates and consent decree oversight. The same streaming service pays whatever the market will bear for recordings and whatever the CRB or rate court dictates for compositions. This asymmetry is why songwriters earn a fraction of what their recordings generate.</p>
+            </div>
+
+            <h3>The Negotiation Asymmetry in Detail</h3>
+            <p>When Spotify negotiates with Universal Music Group for recordings, the negotiation is between two private parties in a free market. There is no consent decree, no rate court, no CRB proceeding. Labels collectively receive approximately <strong>50-52%</strong> of Spotify's total revenue.</p>
+            <p>When the same songs' <em>compositions</em> are licensed, performance royalties flow through consent-decree-constrained PROs. Mechanical royalties are set by the CRB. The composition side receives roughly <strong>15-20%</strong> of total streaming revenue. The recording side receives <strong>50-52%</strong>. The same creative work generates fundamentally different compensation depending on which right is being monetized.</p>
+            <p>Publishers attempted to address this by withdrawing catalogs' digital rights from ASCAP and BMI to negotiate directly. The Second Circuit determined the consent decrees prohibit selective withdrawal. The NMPA petitioned the DOJ to allow partial withdrawal. The DOJ declined in both the 2016 and 2021 reviews.</p>
+            <cite>DOJ consent decree reviews, ASCAP/BMI rate court proceedings, Second Circuit rulings</cite>
+
+            <h3>The $2.5 Billion Black Box</h3>
+            <p>The "black box" — unmatched royalties that cannot be attributed to specific rights holders — has been estimated at <strong>$2.5 billion globally</strong>. <span class="flag">[single-source]</span></p>
+            <p>The MLC has partially addressed the domestic portion: 20 DSPs transferred $424.4 million in historical unmatched royalties. The MLC has matched and distributed over $225 million (57%+) of this amount. But the black box is a structural feature of a system that requires accurate metadata to function and has no reliable mechanism to ensure that metadata is accurate.</p>
+            <p>Modern songs frequently have <strong>10+ co-writers</strong>, each potentially represented by different publishers affiliated with different PROs. One study found <strong>46 million examples</strong> of "author unknown" songs being streamed. <span class="flag">[single-source]</span> A 2025 PRO report highlighted that up to <strong>15% of indie music submissions</strong> contained metadata mismatches that delayed or blocked royalty disbursement. <span class="flag">[single-source]</span></p>
+            <p>When black box royalties are eventually distributed — based on market share — major publishers receive the largest share. But major publishers are the entities with the best metadata systems and the lowest unmatched rates. The unmatched royalties disproportionately belong to independent songwriters who lack the infrastructure. The system takes money from those who can least afford to lose it and gives it to those who least need it.</p>
+
+            <h3>Payment Delays</h3>
+            <div class="data-table-wrapper">
+              <table class="data-table">
+                <caption>Settlement Speed Comparison</caption>
+                <thead><tr><th>Transaction Type</th><th>Settlement Time</th></tr></thead>
+                <tbody>
+                  <tr><td>Stock trades</td><td><strong>T+1</strong> (one business day)</td></tr>
+                  <tr><td>Credit card transactions</td><td><strong>1-3 business days</strong></td></tr>
+                  <tr><td>Streaming mechanical royalties</td><td><strong>2-3 months</strong></td></tr>
+                  <tr><td>Performance royalties (PROs)</td><td><strong>3-6 months+</strong> (quarterly/semi-annually)</td></tr>
+                  <tr><td>International royalties</td><td><strong>12-18 months</strong></td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p>These are not technology limitations. The technology to process and settle financial transactions in real time has existed for years. The delays persist because the system was designed by and for intermediaries whose business models depend on holding money during the settlement period. Float is free capital. The question is whose capital — and the answer is the creators'.</p>
+
+            <h3>The Case for a Liquid Marketplace</h3>
+            <p>Everything documented above — the consent decree constraints, the negotiation asymmetry, the black box, the payment delays, the metadata failures, the information asymmetry — points toward a single structural diagnosis: music rights lack a functioning market.</p>
+            <p><strong>Sync licensing</strong> is the exception that proves the rule. Sync operates closer to a true marketplace than any other music rights transaction. There is no compulsory license. Rights holders can refuse or set any price. Prices are freely negotiated based on supply and demand. US average commercial sync license: <strong>$15,000-$50,000</strong> (2024). <span class="flag">[single-source]</span></p>
+            <p>Sync works because it lacks the regulatory constraints that govern performance and mechanical rights. No consent decree. No CRB. No rate court. Just willing counterparties discovering a price.</p>
+
+            <h3>What a Marketplace Could Look Like</h3>
+            <ul>
+              <li><strong>Direct counterparty discovery</strong>: Rights holders and licensees find each other without mandatory intermediaries.</li>
+              <li><strong>Transparent pricing</strong>: Rates visible to all participants, enabling genuine price discovery.</li>
+              <li><strong>Real-time settlement</strong>: Royalties flow from platform to rights holder in days, not months.</li>
+              <li><strong>Standardized rights units</strong>: Fractional ownership stakes tradeable like securities.</li>
+              <li><strong>Automated matching</strong>: Play data matched to rights holders in real time using verified ownership records.</li>
+              <li><strong>Global scope</strong>: A single marketplace serving all territories.</li>
+            </ul>
+
+            <h3>Existing Experiments</h3>
+            <p><strong>Royalty Exchange</strong>: Over <strong>2,000 transactions</strong> totaling more than <strong>$170 million</strong> in volume. Demonstrates price discovery is possible for music rights at scale.</p>
+            <p><strong>Royal.io</strong>: Allowed artists to tokenize royalty streams. <strong>Scaled back in 2024</strong> amid regulatory uncertainty about whether tokenized rights constitute securities. Sunsetting its marketplace.</p>
+            <p><strong>Audius</strong>: Decentralized streaming platform. Claims 6+ million monthly users and 100,000+ artists, with artists retaining 90% of revenue. Has not achieved mainstream adoption.</p>
+            <p><strong>ANote Music</strong>: European platform operating a secondary market for music royalties since 2020.</p>
+
+            <h3>The Hipgnosis Episode</h3>
+            <p>Hipgnosis Songs Fund aggressively acquired catalogs, spending approximately <strong>$2.206 billion</strong>. After shareholder revolt and governance failures, <strong>Blackstone acquired Hipgnosis Songs Fund for $1.6 billion</strong> in July 2024. An independent valuation firm subsequently valued the portfolio at <strong>$2.36 billion</strong>. Blackstone bought the portfolio for less than it was worth — a transaction enabled by the governance failures and limited liquidity that characterize the current system.</p>
+
+            <h3>The Private Equity Flood</h3>
+            <p>Total capital deployed into music rights since 2018 exceeds <strong>$30 billion</strong>. <span class="flag">[single-source]</span></p>
+            <div class="data-table-wrapper">
+              <table class="data-table">
+                <caption>Major Private Equity Music Investments</caption>
+                <thead><tr><th>Firm</th><th>Notable Transactions</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>Blackstone</strong></td><td>SESAC ($1.125B, 2017); Hipgnosis Songs Fund ($1.6B, 2024)</td></tr>
+                  <tr><td><strong>New Mountain Capital</strong></td><td>BMI majority stake (2024)</td></tr>
+                  <tr><td><strong>KKR</strong></td><td>Kobalt KMR portfolio ($1.1B, 62K+ copyrights); $500M to HarbourView (2024)</td></tr>
+                  <tr><td><strong>Primary Wave</strong></td><td>Britney Spears catalog (~$200M, December 2025)</td></tr>
+                  <tr><td><strong>Round Hill Music</strong></td><td>100+ catalog deals worth $1B+</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>Why Incumbents Resist Transparency</h3>
+            <ul>
+              <li><strong>Information asymmetry is a competitive advantage.</strong> Major labels possess superior data on catalog valuations. A transparent marketplace would erode this advantage.</li>
+              <li><strong>Intermediary fees depend on intermediation.</strong> A direct marketplace would partially displace major publishers' administrative role.</li>
+              <li><strong>Black box distributions by market share benefit majors.</strong> The major publishers receive the largest share of money that likely belongs to independents.</li>
+            </ul>
+            <p>The resistance is not irrational. The question is whether a system designed to serve intermediaries can be reformed to serve creators, or whether the creators need an alternative system entirely.</p>
+
+            <h3>What Could Go Wrong</h3>
+            <ul>
+              <li><strong>Fragmentation</strong>: A marketplace with thousands of individual rights holders could make blanket licensing more difficult for small businesses.</li>
+              <li><strong>Power imbalances</strong>: Sophisticated institutional investors could exploit information advantages unless designed with transparency mechanisms.</li>
+              <li><strong>Regulatory uncertainty</strong>: Tokenized music rights may be classified as securities.</li>
+              <li><strong>Loss of collective bargaining</strong>: Individual creators negotiating alone may get worse terms.</li>
+              <li><strong>Technology barriers</strong>: Not all rights holders have the sophistication to participate in a digital marketplace.</li>
+              <li><strong>Transition costs</strong>: Migrating from the current system would be enormously complex and disruptive.</li>
+            </ul>
+            <p>The path forward likely involves hybrid models — marketplaces that operate alongside reformed versions of existing institutions, rather than replacing them overnight. What is missing is the political will to assemble these pieces — and the political will is missing because the entities with the most lobbying power are the ones that benefit most from the status quo.</p>
+            <cite>Royalty Exchange, McKinsey, Hipgnosis/Blackstone filings, SEC filings, Billboard</cite>
+          </div>
+        </section>
+
+        <!-- PART 6: WHAT CHANGED AND WHAT DIDN'T -->
+        <section class="section" id="part-6-changed">
+          <div class="section-header">
+            <span class="section-number">06</span>
+            <h2>What Changed and What Didn't</h2>
+          </div>
+          <div class="section-body">
+
+            <h3>Recent Developments in Context</h3>
+            <p>The legal and regulatory landscape is not static. Several significant developments since 2023 warrant examination — not because they fundamentally alter the structures documented in this report, but because they illustrate the ongoing negotiation between the interests that shape those structures.</p>
+
+            <h3>AI Copyright: The Next Frontier</h3>
+            <p>AI has created the first genuinely new copyright question since the rise of digital distribution.</p>
+            <p><strong>Can AI-generated works be copyrighted?</strong> The U.S. Copyright Office's Part 2 report (January 29, 2025) affirmed that copyright does not extend to purely AI-generated material. Prompts alone provide insufficient human "control" for authorship. AI-generated work can be registered "when and if it embodies meaningful human authorship." The U.S. Court of Appeals reinforced this in a March 21, 2025 ruling.</p>
+            <p><strong>Can AI be trained on copyrighted music?</strong> Sony, UMG, and WMG filed lawsuits against AI music generators Suno and Udio in 2024. The <strong>TRAIN Act</strong> (introduced 2024) would require transparency about whether copyrighted works were used in training data.</p>
+            <p><strong>Can AI replicate an artist's voice or likeness?</strong> This is the most immediately personal of the AI questions, and it has driven the fastest legislative response.</p>
+
+            <h3>The ELVIS Act and State AI Laws</h3>
+            <p>Tennessee became the first state to modernize right-of-publicity laws for AI when Governor Bill Lee signed the <strong>Ensuring Likeness Voice and Image Security (ELVIS) Act</strong> on March 21, 2024, effective July 1, 2024. It passed unanimously — 93-0 in the House, 30-0 in the Senate.</p>
+            <div class="data-table-wrapper">
+              <table class="data-table">
+                <caption>State AI / Digital Replica Laws</caption>
+                <thead><tr><th>State</th><th>Law</th><th>Key Provisions</th></tr></thead>
+                <tbody>
+                  <tr><td><strong>Tennessee</strong></td><td>ELVIS Act</td><td>Adds "voice" to publicity-rights protections; prohibits AI voice cloning without consent</td></tr>
+                  <tr><td><strong>California</strong></td><td>AB 2602</td><td>Voids contract clauses granting broad "digital replica" rights without detailed terms, legal counsel, or union oversight</td></tr>
+                  <tr><td><strong>California</strong></td><td>AB 1836</td><td>Extends publicity rights to deceased personalities; damages up to $10,000/violation</td></tr>
+                  <tr><td><strong>California</strong></td><td>SB 942</td><td>Requires AI systems with 1M+ monthly visitors to disclose AI-generated content</td></tr>
+                  <tr><td><strong>New York</strong></td><td>Digital Replica Law</td><td>Invalidates exploitative contracts for replicas replacing personal services; new civil remedies (January 2025)</td></tr>
+                  <tr><td><strong>Illinois</strong></td><td>HB 4762</td><td>Unenforces vague digital replica clauses in performer agreements (August 2024)</td></tr>
+                  <tr><td><strong>Arkansas</strong></td><td>HB 1071</td><td>Amends Publicity Rights Protection Act to include AI-generated images and voice</td></tr>
+                  <tr><td><strong>Michigan</strong></td><td>HB 4047/4048</td><td>Criminalizes nonconsensual intimate AI deepfakes (August 2025)</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>The NO FAKES Act</h3>
+            <p>The federal answer — the <strong>Nurture Originals, Foster Art and Keep Entertainment Safe (NO FAKES) Act</strong> — was reintroduced in April 2025 (H.R. 2794, 119th Congress). It grants individuals the exclusive right to authorize digital replicas, creates civil liability for unauthorized use, and includes safe harbors for platforms acting in good faith. Over 400 artists signed a letter of support.</p>
+            <p>The NO FAKES Act has not been enacted as of March 2026. Whether it passes will depend on the same factors that determine all music policy outcomes: the relative lobbying resources deployed by supporters and opponents.</p>
+
+            <h3>#BrokenRecord and the Unrecouped Balance Clearing</h3>
+            <p>The most tangible artist-advocacy victory of the past five years was not legislative. It was the <strong>#BrokenRecord campaign</strong>, founded in April 2020 by Tom Gray of the band Gomez.</p>
+            <p>The UK Digital, Culture, Media and Sport Committee received evidence from 300+ artists and concluded that the streaming market needed a "complete reset." The campaign's pressure — amplified by an open letter co-signed by Paul McCartney, Kate Bush, The Rolling Stones, Chris Martin, and 200+ others — produced a concrete result:</p>
+            <ul>
+              <li><strong>Sony Music</strong> (June 2021): Cleared historic unrecouped debts for legacy artists.</li>
+              <li><strong>Warner Music Group</strong> (February 2022): Launched program for artists signed before 2000. Reported 4,500 artists benefiting.</li>
+              <li><strong>Universal Music Group</strong> (April 2022): Cleared unrecouped balances for eligible creators.</li>
+            </ul>
+            <p>The mechanism matters as much as the outcome. It was not a lawsuit, a statute, or a regulatory action that cleared unrecouped balances. It was a parliamentary inquiry triggered by a grassroots campaign, combined with public pressure from some of the most famous names in music. The labels responded because the political and reputational cost of not responding became higher than the financial cost of clearing the balances. This is a different kind of power — not lobbying power, not legal power, but the power of public attention.</p>
+
+            <h3>UMAW and Justice at Spotify</h3>
+            <p>The <strong>Union of Musicians and Allied Workers (UMAW)</strong> launched its "Justice at Spotify" campaign in October 2020, demanding one cent per stream, transparent business models, user-centric payments, and appropriate crediting. Over 30,000 musicians signed. Protests occurred at Spotify offices in 31 cities.</p>
+            <p>The outcomes were partial. Spotify launched its "Loud and Clear" transparency initiative. Apple Music publicly claimed to pay one cent per stream. But UMAW itself acknowledged that "the exploitation of musicians and allied workers unfortunately remains unchanged."</p>
+
+            <h3>Taylor Swift vs. Apple Music (2015)</h3>
+            <p>One artist, with sufficient fame and leverage, accomplished in one Tumblr post what years of advocacy could not.</p>
+            <p>Taylor Swift refused to allow <em>1989</em> on Apple Music because of Apple's plan not to pay royalties during Apple Music's three-month free trial. <em>"Three months is a long time to go unpaid, and it is unfair to ask anyone to work for nothing... We don't ask you for free iPhones. Please don't ask us to provide you with our music for no compensation."</em></p>
+            <p>Within hours, Apple executive Eddy Cue reversed the policy.</p>
+            <p>The episode is frequently cited as evidence that artists can win. It is more accurately evidence that <em>one of the most commercially powerful artists in history</em> can win. For the vast majority of artists, whose individual absence from a platform would go unnoticed, the Swift precedent offers inspiration but not a replicable strategy.</p>
+            <p>Swift's re-recording campaign (four albums topping the Billboard 200 as "Taylor's Version") and her eventual acquisition of her masters from Shamrock Capital for a reported sum close to $360 million in 2025 demonstrated both the financial value of master ownership and the extraordinary resources required to fight for it.</p>
+
+            <h3>SAG-AFTRA: Collective Bargaining Works</h3>
+            <p>The SAG-AFTRA Sound Recordings Agreement ratified in 2024 offers a counterpoint to the atomized world of individual artist contracts:</p>
+            <div class="stat-grid">
+              <div class="stat-card">
+                <div class="stat-number">26.3%</div>
+                <div class="stat-label">total wage increase over contract</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">streaming health/retirement contribution by Dec 2026</div>
+              </div>
+            </div>
+            <ul>
+              <li><strong>Wage increases</strong>: 14.5% upon ratification, plus 3.75% (Jan 2025), 3.25% (Jan 2026), and 3% (Dec 2026).</li>
+              <li><strong>AI Protections</strong>: Clear consent required with minimum compensation and specific details of intended use before releasing any sound recording using a digital replication of an artist's voice.</li>
+            </ul>
+            <p>The agreement demonstrates that collective bargaining can achieve outcomes — particularly on AI protections — that individual artists cannot negotiate alone.</p>
+
+            <h3>What the Listener Never Sees</h3>
+            <p>Three reports. Hundreds of pages. And nearly all of it has been about the supply side. The listener has been almost entirely absent from the analysis. This is not an oversight. The listener is absent from the power structure too. But the power structure shapes what the listener hears.</p>
+            <p>The pro-rata model ensures the majority of streaming revenue flows to the most-streamed tracks — overwhelmingly major-label releases backed by playlist placement budgets and Discovery Mode. The algorithm rewards engagement. Labels optimize for engagement. The result is a feedback loop where the music most likely to be surfaced is the music most likely to conform to patterns that have already proven successful.</p>
+            <p>Then there is the music that never gets made. Report 2 documented that a solo independent artist needs roughly 4.7 million annual streams to reach a $15,080 income. The artists who persist under those economics are disproportionately those with access to independent wealth. The music that disappears is the music that cannot be subsidized.</p>
+            <p>The legal and regulatory framework does not dictate taste. It does something more durable: it creates the economic conditions under which certain music thrives and other music does not. The power structures are not just revealed in who gets paid. They are revealed in what gets played.</p>
+
+            <h3>Where Things Stand</h3>
+            <p>The legal and regulatory landscape of the American music industry in March 2026:</p>
+            <ul>
+              <li><strong>The consent decrees remain in place.</strong> The DOJ has declined to modify them in three separate reviews.</li>
+              <li><strong>The CRB rate fights continue.</strong> Mechanical royalty rates are set at 15.1-15.35% of service revenue. The bundling loophole allows platforms to reduce their effective rate.</li>
+              <li><strong>Safe harbor remains unreformed.</strong> The Copyright Office concluded Section 512 is "unbalanced." No legislation has passed.</li>
+              <li><strong>Artists still do not have a seat at the table.</strong> The Artist Rights Alliance was founded in 2019. Neither it nor the Future of Music Coalition has lobbying expenditures remotely comparable to the RIAA.</li>
+              <li><strong>AI is the new battleground.</strong> State laws are moving fast. Federal legislation is stalled.</li>
+              <li><strong>The marketplace alternative does not yet exist at scale.</strong> Royalty Exchange has proven the concept. The PE flood has validated music rights as an asset class. But no platform has assembled the pieces into a functioning marketplace.</li>
+            </ul>
+            <p>The rules of the game were written by the entities with the most resources to write them. The rules can be changed — the #BrokenRecord campaign proved that. But changing them requires sustained political pressure from constituencies that are structurally underrepresented in the lobbying process.</p>
+            <p>The architecture remains. The question is whether the architects will be challenged by new builders — or whether they will continue to redesign the building from the inside, making adjustments at the margins while the foundations stay the same.</p>
+
+            <h3>Source Methodology</h3>
+            <p>This report follows the same sourcing framework established in Reports 1 and 2:</p>
+            <ul>
+              <li><strong>HIGH confidence</strong>: Verified across 2+ independent sources</li>
+              <li><strong>MODERATE confidence</strong>: Verified from one authoritative source</li>
+              <li><strong>SINGLE-SOURCE</strong>: Could only be verified from one source; flagged with <code>[single-source]</code></li>
+            </ul>
+            <p>All data sourced from public records, court filings, OpenSecrets (based on Senate Office of Public Records filings and FEC data), congressional records, government agency publications, and established music industry journalism. No data points have been fabricated or estimated.</p>
+            <div class="callout callout-axiom">
+              <p><em>Power Structures Revealed</em> is a research series examining the structural economics of the US music industry. Report 1 covered the history from post-WWII to the Big Three. Report 2 examined how money flows through the modern music economy. This report examined the legal and regulatory framework that determines who profits from music — and who writes the rules.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- APPENDIX: KEY LEGAL CITATIONS -->
+        <section class="section" id="appendix-citations">
+          <div class="section-header">
+            <span class="section-number">A</span>
+            <h2>Appendix: Key Legal Citations</h2>
+          </div>
+          <div class="section-body">
+
+            <h3>Statutes</h3>
+            <div class="data-table-wrapper">
+              <table class="data-table compact">
+                <thead><tr><th>Citation</th><th>Description</th><th>Date</th></tr></thead>
+                <tbody>
+                  <tr><td>Copyright Act of 1909 (Pub. L. 60-349)</td><td>Compulsory mechanical license; 2-cent statutory rate</td><td>March 4, 1909</td></tr>
+                  <tr><td>Sound Recording Amendment (Pub. L. 92-140)</td><td>First federal copyright for sound recordings</td><td>October 15, 1971</td></tr>
+                  <tr><td>Copyright Act of 1976 (Pub. L. 94-553)</td><td>Comprehensive overhaul; work-for-hire; termination rights (Section 203)</td><td>Oct 19, 1976</td></tr>
+                  <tr><td>Digital Performance Right (Pub. L. 104-39)</td><td>Limited digital performance right; AM/FM exemption</td><td>November 1, 1995</td></tr>
+                  <tr><td>Telecommunications Act of 1996 (Pub. L. 104-104)</td><td>Radio ownership deregulation; broadcast consolidation</td><td>February 8, 1996</td></tr>
+                  <tr><td>DMCA (Pub. L. 105-304)</td><td>Safe harbor (Section 512); anti-circumvention (Section 1201)</td><td>October 28, 1998</td></tr>
+                  <tr><td>Work Made for Hire Corrections Act of 2000</td><td>Repealed 1999 work-for-hire amendment for sound recordings</td><td>November 2, 2000</td></tr>
+                  <tr><td>Copyright Royalty Reform Act (Pub. L. 108-419)</td><td>Created Copyright Royalty Board</td><td>November 30, 2004</td></tr>
+                  <tr><td>Music Modernization Act (Pub. L. 115-264)</td><td>MLC; pre-1972 protections; willing buyer/willing seller standard</td><td>October 11, 2018</td></tr>
+                  <tr><td>17 U.S.C. Section 101</td><td>Definitions, including work made for hire</td><td></td></tr>
+                  <tr><td>17 U.S.C. Section 114</td><td>Scope of exclusive rights in sound recordings</td><td></td></tr>
+                  <tr><td>17 U.S.C. Section 115</td><td>Mechanical license (compulsory license for phonorecords)</td><td></td></tr>
+                  <tr><td>17 U.S.C. Section 203</td><td>Termination of transfers and licenses (35-year right)</td><td></td></tr>
+                  <tr><td>17 U.S.C. Section 512</td><td>DMCA safe harbor provisions</td><td></td></tr>
+                  <tr><td>47 U.S.C. Section 508</td><td>Anti-payola statute (Communications Act)</td><td></td></tr>
+                  <tr><td>Cal. Lab. Code Section 2855</td><td>Seven-year personal service contract limitation</td><td></td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>Federal Register</h3>
+            <div class="data-table-wrapper">
+              <table class="data-table compact">
+                <thead><tr><th>Citation</th><th>Description</th><th>Date</th></tr></thead>
+                <tbody>
+                  <tr><td>88 FR 54336</td><td>Phonorecords III final determination (15.1% rate affirmed)</td><td>August 10, 2023</td></tr>
+                  <tr><td>87 FR 77414</td><td>Phonorecords IV settlement (15.1% rising to 15.35%)</td><td>December 16, 2022</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>Court Cases</h3>
+            <div class="data-table-wrapper">
+              <table class="data-table compact">
+                <thead><tr><th>Case</th><th>Citation</th><th>Significance</th></tr></thead>
+                <tbody>
+                  <tr><td><em>White-Smith v. Apollo Co.</em></td><td>209 U.S. 1 (1908)</td><td>Piano rolls not "copies"; led to 1909 Act</td></tr>
+                  <tr><td><em>A&amp;M Records v. Napster</em></td><td>239 F.3d 1004 (9th Cir. 2001)</td><td>P2P liability; contributory and vicarious infringement</td></tr>
+                  <tr><td><em>MGM v. Grokster</em></td><td>545 U.S. 913 (2005)</td><td>Inducement doctrine (9-0 Supreme Court)</td></tr>
+                  <tr><td><em>Capitol Records v. Thomas-Rasset</em></td><td>692 F.3d 899 (8th Cir. 2012)</td><td>Individual file-sharer statutory damages</td></tr>
+                  <tr><td><em>F.B.T. Productions v. Aftermath</em></td><td>621 F.3d 958 (9th Cir. 2010)</td><td>Downloads are licenses, not sales (Eminem case)</td></tr>
+                  <tr><td><em>Williams v. Gaye</em></td><td>885 F.3d 1150 (9th Cir. 2018)</td><td>"Blurred Lines"; "feel" of a song</td></tr>
+                  <tr><td><em>Skidmore v. Led Zeppelin</em></td><td>952 F.3d 1051 (9th Cir. 2020)</td><td>Inverse ratio rule eliminated</td></tr>
+                  <tr><td><em>BMG v. Cox Communications</em></td><td>No. 16-1972 (4th Cir. 2018)</td><td>Repeat infringer policy enforcement required</td></tr>
+                  <tr><td><em>Sony Music v. Cox</em></td><td>(4th Cir. 2024)</td><td>$1B judgment vacated; vicarious liability reversed</td></tr>
+                  <tr><td><em>Ferrick v. Spotify</em></td><td>No. 1:16-cv-08412 (S.D.N.Y.)</td><td>Mechanical licensing class action; $112.55M settlement</td></tr>
+                  <tr><td><em>Wixen v. Spotify</em></td><td>(C.D. Cal. 2017)</td><td>$1.6B mechanical licensing suit</td></tr>
+                  <tr><td><em>Panayiotou v. Sony Music (UK)</em></td><td>Chancery Division, 1994</td><td>George Michael restraint of trade claim rejected</td></tr>
+                  <tr><td><em>United States v. Michael Smith</em></td><td>(S.D.N.Y. 2024)</td><td>First AI streaming fraud criminal prosecution</td></tr>
+                  <tr><td><em>Capolongo v. Spotify</em></td><td>(S.D.N.Y. 2025)</td><td>Discovery Mode / payola class action</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>Pending Legislation (as of March 2026)</h3>
+            <div class="data-table-wrapper">
+              <table class="data-table compact">
+                <thead><tr><th>Bill</th><th>Description</th><th>Status</th></tr></thead>
+                <tbody>
+                  <tr><td>American Music Fairness Act (H.R. 861 / S. 326)</td><td>Terrestrial radio performance royalty</td><td>Not enacted</td></tr>
+                  <tr><td>NO FAKES Act (H.R. 2794)</td><td>Digital replica protections</td><td>Referred to Judiciary Committees</td></tr>
+                  <tr><td>TRAIN Act</td><td>AI training data transparency</td><td>Introduced 2024</td></tr>
+                  <tr><td>California FAIR Act (A.B. 983 / A.B. 2926)</td><td>Restore seven-year rule for recording artists</td><td>Not enacted</td></tr>
+                  <tr><td>Tennessee ELVIS Act</td><td>AI voice cloning protections</td><td>Signed March 21, 2024</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+          </div>
+        </section>
+
+        <footer class="site-footer">
+          <div class="footer-content">
+            <div class="footer-line">
+              <span class="prompt">$</span> <span class="cmd">echo</span> "Power Structures Revealed — Report 3: Law, Lobbying, and the Rules of the Game"
+            </div>
+            <div class="footer-line">
+              <span class="prompt">$</span> <span class="cmd">echo</span> "Compiled March 2026. All data sourced. No fabrication."
+            </div>
+            <div class="footer-line">
+              <span class="prompt">$</span> <span class="cmd">echo</span> "<a href="report-01.html">&larr; Report 1: History of the Industry</a>"
+            </div>
+            <div class="footer-line">
+              <span class="prompt">$</span> <span class="cmd">echo</span> "<a href="report-02.html">&larr; Report 2: Economics of Making Music</a>"
+            </div>
+            <div class="footer-line footer-dim">
+              <span class="prompt">$</span> <span class="cursor-blink">_</span>
+            </div>
+          </div>
+        </footer>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

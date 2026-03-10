@@ -25,79 +25,48 @@
       line-height: 1.8;
     }
 
-    .report-cards {
-      display: grid;
-      gap: 16px;
-      margin: 2rem 0 3rem;
-    }
-
-    .report-card {
-      background: var(--bg-card);
+    /* Top nav bar */
+    .report-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+      margin-top: 1.5rem;
       border: 1px solid var(--border);
       border-radius: 4px;
-      padding: 24px;
-      text-decoration: none;
-      color: var(--text);
-      transition: all 0.2s ease;
-      display: block;
-    }
-
-    .report-card:hover {
-      border-color: var(--border-active);
-      background: var(--bg-elevated);
-      transform: translateY(-1px);
-    }
-
-    .report-card-header {
-      display: flex;
-      align-items: baseline;
-      gap: 12px;
-      margin-bottom: 12px;
-    }
-
-    .report-card-number {
-      color: var(--green);
-      font-size: 1.2rem;
-      font-weight: 700;
-      min-width: 36px;
-    }
-
-    .report-card-title {
-      color: var(--text-bright);
-      font-size: var(--font-size-lg);
-      font-weight: 600;
-    }
-
-    .report-card-desc {
-      font-size: var(--font-size-sm);
-      color: var(--text-dim);
-      line-height: 1.7;
-      padding-left: 48px;
-    }
-
-    .report-card-meta {
-      display: flex;
-      gap: 24px;
-      margin-top: 12px;
-      padding-left: 48px;
-      font-size: var(--font-size-xs);
-      color: var(--text-muted);
-    }
-
-    .report-card-arrow {
-      color: var(--cyan);
-      margin-left: auto;
-      font-size: var(--font-size-lg);
+      overflow: hidden;
       opacity: 0;
-      transition: opacity 0.2s ease;
+      animation: bootFade 0.5s ease forwards;
+      animation-delay: 2.2s;
     }
 
-    .report-card:hover .report-card-arrow {
-      opacity: 1;
+    .report-nav a {
+      flex: 1;
+      min-width: 0;
+      padding: 10px 12px;
+      text-align: center;
+      text-decoration: none;
+      color: var(--text-dim);
+      font-size: var(--font-size-sm);
+      font-weight: 500;
+      background: var(--bg-card);
+      border-right: 1px solid var(--border);
+      transition: all 0.15s ease;
+      white-space: nowrap;
     }
 
-    .report-card:hover .report-card-title {
+    .report-nav a:last-child {
+      border-right: none;
+    }
+
+    .report-nav a:hover {
+      background: var(--bg-elevated);
       color: var(--cyan);
+    }
+
+    .report-nav a span.nav-num {
+      color: var(--green);
+      font-weight: 700;
+      margin-right: 6px;
     }
 
     .landing-methodology {
@@ -117,10 +86,50 @@
       margin-bottom: 0;
     }
 
+    .report-list {
+      list-style: none;
+      padding-left: 0;
+      margin: 1.5rem 0;
+    }
+
+    .report-list li {
+      padding: 6px 0;
+      font-size: var(--font-size-sm);
+    }
+
+    .report-list a {
+      color: var(--blue);
+      text-decoration: none;
+    }
+
+    .report-list a:hover {
+      text-decoration: underline;
+      color: var(--cyan);
+    }
+
+    .report-list .list-num {
+      color: var(--green);
+      font-weight: 700;
+      margin-right: 8px;
+      min-width: 24px;
+      display: inline-block;
+    }
+
+    .report-list .list-meta {
+      color: var(--text-muted);
+      font-size: var(--font-size-xs);
+      margin-left: 8px;
+    }
+
     @media (max-width: 900px) {
       .landing-content {
         padding: 2rem 1.5rem;
         padding-top: 3rem;
+      }
+
+      .report-nav a {
+        font-size: var(--font-size-xs);
+        padding: 8px 6px;
       }
     }
 
@@ -130,9 +139,19 @@
         padding-top: 3rem;
       }
 
-      .report-card-desc,
-      .report-card-meta {
-        padding-left: 0;
+      .report-nav {
+        flex-direction: column;
+      }
+
+      .report-nav a {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        text-align: left;
+        padding: 10px 16px;
+      }
+
+      .report-nav a:last-child {
+        border-bottom: none;
       }
     }
   </style>
@@ -174,85 +193,18 @@
             <p>Examining the American Recorded Music Industry</p>
             <p class="hero-tagline">Who profits. Who doesn't. And the structures that determine which is which.</p>
           </div>
+
+          <!-- TOP NAV BAR -->
+          <nav class="report-nav">
+            <a href="report-01.html"><span class="nav-num">01</span>History</a>
+            <a href="report-02.html"><span class="nav-num">02</span>Economics</a>
+            <a href="report-03.html"><span class="nav-num">03</span>Law</a>
+            <a href="report-04.html"><span class="nav-num">04</span>Samples</a>
+            <a href="report-05.html"><span class="nav-num">05</span>AI &amp; Playbook</a>
+          </nav>
         </section>
 
-        <!-- REPORT INDEX -->
-        <section class="section">
-          <div class="section-header">
-            <span class="section-number">ls</span>
-            <h2>Reports</h2>
-          </div>
-          <div class="section-body">
-            <div class="report-cards">
-              <a href="report-01.html" class="report-card">
-                <div class="report-card-header">
-                  <span class="report-card-number">01</span>
-                  <span class="report-card-title">A History of the US Recorded Music Industry</span>
-                  <span class="report-card-arrow">→</span>
-                </div>
-                <p class="report-card-desc">From the post-WWII indie explosion through the payola scandals, the CD boom, and the wave of mergers that consolidated hundreds of labels into today's Big Three — UMG, Sony Music, and Warner Music Group. How technology, regulation, and corporate strategy shaped who controls recorded music.</p>
-                <div class="report-card-meta">
-                  <span>~20,000 words</span>
-                  <span>100+ sources</span>
-                  <span>8 sections + appendices</span>
-                </div>
-              </a>
-
-              <a href="report-02.html" class="report-card">
-                <div class="report-card-header">
-                  <span class="report-card-number">02</span>
-                  <span class="report-card-title">The Economics of Making Music</span>
-                  <span class="report-card-arrow">→</span>
-                </div>
-                <p class="report-card-desc">How money actually moves through streams, stages, shelves, and storefronts. Streaming royalty mechanics, physical sales margins, touring economics, merchandise, and the internal P&L of labels — examined from the perspective of major label artists, independents, imprints, and indie labels.</p>
-                <div class="report-card-meta">
-                  <span>~15,000 words</span>
-                  <span>5 sections + appendix</span>
-                </div>
-              </a>
-              <a href="report-03.html" class="report-card">
-                <div class="report-card-header">
-                  <span class="report-card-number">03</span>
-                  <span class="report-card-title">Law, Lobbying, and the Rules of the Game</span>
-                  <span class="report-card-arrow">→</span>
-                </div>
-                <p class="report-card-desc">The legal and regulatory framework that determines who profits from music. Copyright acts, landmark court cases, corporate lobbying, the PRO system, streaming-era legal gaps, and why a liquid marketplace for music rights could upend the entire structure.</p>
-                <div class="report-card-meta">
-                  <span>~22,000 words</span>
-                  <span>6 sections + appendix</span>
-                </div>
-              </a>
-              <a href="report-04.html" class="report-card">
-                <div class="report-card-header">
-                  <span class="report-card-number">04</span>
-                  <span class="report-card-title">The Sample Economy</span>
-                  <span class="report-card-arrow">&rarr;</span>
-                </div>
-                <p class="report-card-desc">Where consolidation, economics, and law converge on a single transaction. The two-copyright problem, landmark case law from Grand Upright to the circuit split, case studies from Isaac Hayes to Clipping, the publishing power structure, masters ownership battles, and the AI horizon that threatens to reorganize it all.</p>
-                <div class="report-card-meta">
-                  <span>~20,000 words</span>
-                  <span>6 sections + appendix</span>
-                </div>
-              </a>
-
-              <a href="report-05.html" class="report-card">
-                <div class="report-card-header">
-                  <span class="report-card-number">05</span>
-                  <span class="report-card-title">AI, Futures, and the Artist Playbook</span>
-                  <span class="report-card-arrow">&rarr;</span>
-                </div>
-                <p class="report-card-desc">How AI is disrupting the music industry, four future scenarios based on whether regulation or democratization wins, and an actionable playbook for artists navigating the structure documented in Reports 1&ndash;4. Decision frameworks for going independent vs. signing, what to own, revenue architecture, AI engagement, legal self-defense, and career-stage strategy &mdash; all grounded in case studies and real economics.</p>
-                <div class="report-card-meta">
-                  <span>~18,000 words</span>
-                  <span>6 sections + 3 appendices</span>
-                  <span>100+ sources</span>
-                </div>
-              </a>
-            </div>
-          </div>
-        </section>
-
-        <!-- ABOUT -->
+        <!-- INTRODUCTION -->
         <section class="section landing-intro">
           <div class="section-header">
             <span class="section-number">//</span>
@@ -288,6 +240,23 @@
           </div>
         </section>
 
+        <!-- REPORT INDEX -->
+        <section class="section">
+          <div class="section-header">
+            <span class="section-number">ls</span>
+            <h2>Reports</h2>
+          </div>
+          <div class="section-body">
+            <ul class="report-list">
+              <li><span class="list-num">01</span><a href="report-01.html">A History of the US Recorded Music Industry</a><span class="list-meta">~20,000 words</span></li>
+              <li><span class="list-num">02</span><a href="report-02.html">The Economics of Making Music</a><span class="list-meta">~15,000 words</span></li>
+              <li><span class="list-num">03</span><a href="report-03.html">Law, Lobbying, and the Rules of the Game</a><span class="list-meta">~22,000 words</span></li>
+              <li><span class="list-num">04</span><a href="report-04.html">The Sample Economy</a><span class="list-meta">~20,000 words</span></li>
+              <li><span class="list-num">05</span><a href="report-05.html">AI, Futures, and the Artist Playbook</a><span class="list-meta">~18,000 words</span></li>
+            </ul>
+          </div>
+        </section>
+
         <!-- METHODOLOGY -->
         <section class="section">
           <div class="section-header">
@@ -306,7 +275,7 @@
         <!-- FOOTER -->
         <footer class="site-footer">
           <div class="footer-line">
-            <span class="prompt">$</span> <span class="cmd">echo</span> "power-structures-revealed v2.0"
+            <span class="prompt">$</span> <span class="cmd">echo</span> "power-structures-revealed v3.0"
           </div>
           <div class="footer-line">
             <span class="prompt">$</span> <span class="cmd">echo</span> "Last updated: March 2026"

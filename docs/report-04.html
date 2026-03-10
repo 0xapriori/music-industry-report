@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Power Structures Revealed | The Sample Economy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scanlines"></div>
+
+  <div class="terminal-wrapper">
+    <div class="terminal-bar">
+      <div class="terminal-buttons">
+        <span class="btn-close"></span>
+        <span class="btn-minimize"></span>
+        <span class="btn-maximize"></span>
+      </div>
+      <div class="terminal-title">power-structures-revealed/report-04 — zsh — 220×65</div>
+    </div>
+
+    <div class="terminal-body">
+      <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+          <span class="prompt">$</span> <span class="cmd">cat</span> TABLE_OF_CONTENTS
+        </div>
+        <div class="toc-content">
+          <div class="toc-group">
+            <div class="toc-group-label">/ SERIES</div>
+            <a href="index.html" class="series-link"><span class="toc-marker">~</span> HOME</a>
+            <a href="report-01.html" class="series-link"><span class="toc-marker">01</span> History of the Industry</a>
+            <a href="report-02.html" class="series-link"><span class="toc-marker">02</span> Economics of Making Music</a>
+            <a href="report-03.html" class="series-link"><span class="toc-marker">03</span> Law, Lobbying &amp; the Rules</a>
+            <a href="report-04.html" class="series-link series-current"><span class="toc-marker">04</span> The Sample Economy</a>
+          </div>
+          <a href="#hero" class="toc-link toc-top" data-section="hero">
+            <span class="toc-marker">~</span> HOME
+          </a>
+          <div class="toc-group">
+            <div class="toc-group-label">/ REPORT</div>
+            <a href="#axioms-04" class="toc-link" data-section="axioms-04"><span class="toc-marker">00</span> Axioms</a>
+            <a href="#part-1-anatomy" class="toc-link" data-section="part-1-anatomy"><span class="toc-marker">01</span> Anatomy of a Sample</a>
+            <a href="#part-2-caselaw" class="toc-link" data-section="part-2-caselaw"><span class="toc-marker">02</span> The Case Law</a>
+            <a href="#part-3-studies" class="toc-link" data-section="part-3-studies"><span class="toc-marker">03</span> Case Studies</a>
+            <a href="#part-4-publishing" class="toc-link" data-section="part-4-publishing"><span class="toc-marker">04</span> Publishing &amp; Masters</a>
+            <a href="#part-5-ai" class="toc-link" data-section="part-5-ai"><span class="toc-marker">05</span> The AI Horizon</a>
+            <a href="#part-6-reveals" class="toc-link" data-section="part-6-reveals"><span class="toc-marker">06</span> What It Reveals</a>
+          </div>
+          <div class="toc-group">
+            <div class="toc-group-label">/ REFERENCE</div>
+            <a href="#appendix-citations" class="toc-link" data-section="appendix-citations"><span class="toc-marker">A</span> Citations &amp; Sources</a>
+          </div>
+        </div>
+        <div class="sidebar-footer">
+          <div class="sidebar-meta">
+            <span class="prompt">$</span> <span class="cmd">wc -w</span> report-04.md<br>
+            <span class="output">~20,000 words</span>
+          </div>
+        </div>
+      </nav>
+
+      <button class="mobile-toc-toggle" id="mobileToggle" aria-label="Toggle table of contents">
+        <span class="hamburger"></span>
+      </button>
+
+      <main class="content" id="content">
+
+        <!-- HERO -->
+        <section class="section hero-section" id="hero">
+          <div class="boot-sequence">
+            <div class="boot-line"><span class="boot-ok">[  OK  ]</span> Loading research agents...</div>
+            <div class="boot-line"><span class="boot-ok">[  OK  ]</span> Cross-referencing sources...</div>
+            <div class="boot-line"><span class="boot-ok">[  OK  ]</span> Verifying data integrity...</div>
+            <div class="boot-line"><span class="boot-ok">[  OK  ]</span> No fabricated data detected.</div>
+            <div class="boot-line">&nbsp;</div>
+          </div>
+          <pre class="ascii-title">
+ _____ _            ___                       _
+|_   _| |_  ___    / __| __ _ _ __  _ __ | |___
+  | | | ' \/ -_)   \__ \/ _` | '  \| '_ \| / -_)
+  |_| |_||_\___|   |___/\__,_|_|_|_| .__/_\___|
+                                    |_|
+
+ ___
+| __|__ ___ _ _  ___ _ __ _  _
+| _|/ _/ _ \ ' \/ _ \ '  \ || |
+|___\__\___/_||_\___/_|_|_\_, |
+                           |__/
+          </pre>
+          <p class="subtitle"><em>Where Consolidation, Economics, and Law Converge on a Single Transaction</em></p>
+          <div class="report-meta">
+            <span class="meta-item"><span class="label">Report:</span> 04 of 04</span>
+            <span class="meta-item"><span class="label">Series:</span> Power Structures Revealed</span>
+            <span class="meta-item"><span class="label">Updated:</span> March 2026</span>
+          </div>
+        </section>
+
+        <!-- AXIOMS -->
+        <section class="section" id="axioms-04">
+          <h2 class="section-title"><span class="prompt">$</span> Axioms and Starting Assumptions</h2>
+          <div class="section-content">
+
+            <p>This is the capstone report. Everything documented in the first three reports &mdash; the consolidation of the industry into three dominant groups (<a href="report-01.html">Report 1</a>), the economics that flow through those structures (<a href="report-02.html">Report 2</a>), the laws and lobbying that maintain them (<a href="report-03.html">Report 3</a>) &mdash; converges here. The reader should understand the assumptions that frame this analysis:</p>
+
+            <div class="callout">
+              <p><strong>1. The sample clearance system is a microcosm of the industry's power structure: major labels and publishers as gatekeepers, independent artists bearing disproportionate costs, legal ambiguity serving incumbents.</strong> This is not a closing observation. It is the thesis of the entire series, and this report is where we prove it. Every time an independent artist samples a recording owned by a major, they experience the full architecture at once &mdash; the consolidation (who owns the catalog), the economics (what it costs), and the legal framework (what happens if they do not pay). Sample clearance is not a niche corner of copyright law. It is the mechanism in action.</p>
+            </div>
+
+            <p><strong>2. Two copyrights, two gatekeepers</strong>: A single recorded song embodies two distinct copyrights &mdash; the musical composition (owned by songwriters and publishers) and the sound recording (owned by artists and labels). Sampling requires clearance from both, independently. This dual-copyright structure doubles the cost, doubles the negotiation, and doubles the leverage held by rights holders. Understanding this is prerequisite to understanding everything that follows.</p>
+
+            <p><strong>3. The absence of a compulsory license for sampling is a policy choice, not an inevitability</strong>: Cover songs have a compulsory mechanical license at a statutory rate. Sampling does not. There is no legal requirement that sampling be left to unregulated private negotiation where the sampled party holds all leverage. The system was designed this way, and it was designed this way because the entities that benefit from it had the power to ensure no alternative emerged.</p>
+
+            <p><strong>4. No fabricated data</strong>: Every dollar figure, case citation, and royalty percentage in this report is sourced from the research files or verified public reporting. Where a figure comes from a single source, it is marked <code>[single-source]</code>. Where data is unavailable &mdash; and there are significant gaps, particularly in aggregate clearance statistics &mdash; the gap is stated explicitly.</p>
+
+            <p><strong>5. This report closes the arc</strong>: Reports 1 through 3 documented who has power, how money flows, and what rules maintain the structure. This report demonstrates all three operating simultaneously in a single economic transaction &mdash; the sample clearance &mdash; and then looks at what happens when technology threatens to make that transaction obsolete.</p>
+
+          </div>
+        </section>
+
+        <!-- PART 1: ANATOMY OF A SAMPLE -->
+        <section class="section" id="part-1-anatomy">
+          <h2 class="section-title"><span class="prompt">$</span> Part 1: Anatomy of a Sample</h2>
+          <div class="section-content">
+
+            <h3>The Two-Copyright Problem</h3>
+
+            <p>Before we can talk about the economics of sampling, we need to understand what a sample actually touches.</p>
+
+            <p>Under U.S. copyright law, a single recorded song embodies two separate, independently owned copyrights:</p>
+
+            <div class="data-table">
+              <table>
+                <thead>
+                  <tr><th></th><th>Musical Composition</th><th>Sound Recording</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><strong>What it covers</strong></td><td>Melody, harmony, lyrics, arrangement</td><td>The specific recorded performance</td></tr>
+                  <tr><td><strong>Typical owner</strong></td><td>Songwriter / music publisher</td><td>Artist / record label</td></tr>
+                  <tr><td><strong>Copyright symbol</strong></td><td>&copy;</td><td>&#8471;</td></tr>
+                  <tr><td><strong>Sampling requires clearance?</strong></td><td>Yes (both sampling and interpolation)</td><td>Yes (sampling only; not interpolation)</td></tr>
+                  <tr><td><strong>De minimis defense?</strong></td><td>Yes (all circuits)</td><td>Yes (9th Cir.) / No (6th Cir.)</td></tr>
+                  <tr><td><strong>Compulsory license?</strong></td><td>Yes, for cover recordings (Section 115)</td><td>No</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>When you sample an existing recording &mdash; when you take a piece of the actual audio, the actual waveform, and place it into a new work &mdash; you are using both copyrights simultaneously. You need permission from both owners. Each negotiation is independent. Either side can refuse. Either side can demand whatever terms they want.</p>
+
+            <p>This dual-clearance requirement is the foundational mechanism of the sample economy. It doubles every cost, every negotiation, every point of potential failure. And it creates a structural dynamic where the entities most likely to own both copyrights &mdash; the major labels, which operate the world&rsquo;s three largest publishing companies through their subsidiaries &mdash; hold leverage on both sides of the transaction.</p>
+
+            <h3>What &ldquo;Clearing a Sample&rdquo; Actually Means</h3>
+
+            <p>The process is more opaque than it needs to be. But the mechanics are straightforward enough to lay out step by step.</p>
+
+            <p><strong>Step 1: Identify all rights holders.</strong> This is often the hardest part. Use ASCAP, BMI, and SESAC databases to find publishers and songwriters. Use label copy to find master owners. For older recordings &mdash; the kind most commonly sampled &mdash; rights may have changed hands multiple times through acquisitions, bankruptcies, and catalog sales. The chain of title for a 1970s soul recording can pass through half a dozen corporate entities before landing at its current owner. Finding the right person to even ask is itself a research project.</p>
+
+            <p><strong>Step 2: Submit written clearance requests to both the master owner and the publisher(s).</strong> The request must specify the original work, the new work, how the sample is used, how long the sample runs, and the intended release format and territory. A separate request goes to each rights holder.</p>
+
+            <p><strong>Step 3: Review and negotiation.</strong> Rights holders review the request and decide &mdash; at their sole discretion &mdash; whether to grant permission. If willing, they propose terms: upfront fees, royalty splits, ownership percentages. Each side negotiates independently. There is no coordination requirement. There is no arbitration mechanism. There is no obligation to offer reasonable terms. There is, in fact, no obligation to respond at all.</p>
+
+            <p><strong>Step 4: Execute license agreements.</strong> Separate written agreements for the master use license and the publishing/composition license. Terms specify territory, format, duration, financial arrangements. Clearance must be completed before release.</p>
+
+            <p>That is the process. Two to six months is typical. Major publishers may take months to respond. Finding rights holders alone can consume weeks. And throughout, the requesting artist has no leverage and no recourse. If either rights holder says no, the sample cannot be used. There is no compulsory license for sampling &mdash; no statutory mechanism that forces a rights holder to license at a set rate, as exists for cover songs under Section 115. The sampled party has absolute discretion.</p>
+
+            <p>This asymmetry is not a bug. It is the system.</p>
+
+            <h3>The Role of Specialists</h3>
+
+            <p><strong>DMG Clearances</strong>, founded in 1996 by Deborah Mannis-Gardner &mdash; known in the industry as the &ldquo;Queen of Sample Clearance&rdquo; &mdash; handles clearances for artists including Kendrick Lamar, Beyonc&eacute;, and Rihanna. DMG charges flat rates starting at $150/hour minimum for the first hour, with Stage One clearances (submission and negotiation) at $325 each for publishing and master rights.</p>
+
+            <p><strong>Tracklib</strong> represents a newer model: a marketplace offering pre-cleared samples organized into three licensing tiers &mdash; Category A ($1,500), Category B ($500), Category C ($50), with over 90% of the catalog in Category C. In 2024, Tracklib added unlimited clearances to subscription tiers ($8.99&ndash;$19.99/month).</p>
+
+            <p>The existence of these specialists tells you something. In a functioning market, you do not need a dedicated professional class to help you buy something. The fact that sample clearance requires its own cottage industry of brokers, lawyers, and intermediaries is a symptom of a process that is opaque by design &mdash; opaque in ways that benefit incumbents and disadvantage newcomers.</p>
+
+            <div class="callout">
+              <p>Consider the sheer number of entities that must independently say &ldquo;yes&rdquo; before a two-second audio snippet can legally appear in a new song. The master recording owner (typically a label or its corporate successor). The publisher or publishers of the underlying composition &mdash; and if the sampled song has multiple co-writers, each co-writer&rsquo;s publisher must clear independently. The PRO that administers the performance rights. The sampling artist&rsquo;s own label, which must approve the financial terms. The sampling artist&rsquo;s own publisher, who must agree to the reduced share. Attorneys on both sides. Clearance specialists brokering the negotiation. A single two-second sample can require the affirmative consent of six to ten separate entities, any one of which can refuse, demand renegotiation, or simply fail to respond. The system does not have a bottleneck. It <em>is</em> a bottleneck.</p>
+            </div>
+
+            <h3>The Economics of Clearance</h3>
+
+            <p><strong>Publishing (composition) clearance</strong> typically involves an advance of $1,500 to $5,000, plus an ownership percentage of the new song&rsquo;s publishing &mdash; typically 15% to 50%. For a small vocal snippet, DMG Clearances targets around 5% of publishing <code>[single-source]</code>. If the sample forms the hook, publishers may demand 50% to 100%.</p>
+
+            <p><strong>Master (sound recording) clearance</strong> typically involves an advance of $2,000 to $10,000, plus a royalty of 1% to 5% of retail price per unit sold, or an equivalent penny rate (~$0.03 per unit). Some labels prefer a flat-fee buyout.</p>
+
+            <p><strong>Combined</strong>, the minimum cost for both clearances is roughly $4,000 to $15,000 in advances alone, plus ongoing royalties. And that is per sample. A single sample. Albums that use multiple samples multiply these costs accordingly.</p>
+
+            <p>To put this in streaming-era context: with per-stream revenue at approximately $0.008 before splits, a $5,000 advance requires roughly 625,000 streams just to generate that amount in gross revenue &mdash; before the label, distributor, and other parties take their shares.</p>
+
+            <p>DJ Shadow put it plainly in 2017: &ldquo;Music has never been worth less as a commodity, and yet sampling has never been more risky.&rdquo;</p>
+
+            <h3>What Happens When Clearance Is Denied</h3>
+
+            <p>Rights holders have absolute discretion to deny clearance. There is no appeal. There is no compulsory mechanism. The artist must remove the sample, replace it, or abandon the track.</p>
+
+            <p>Some artists maintain informal &ldquo;Do Not Sample&rdquo; lists &mdash; artists who categorically refuse to grant sample clearances. Tracy Chapman is a documented example; DMG Clearances confirmed she was on an unofficial &ldquo;do not sample or interpolate&rdquo; list.</p>
+
+            <h3>What Happens When a Sample Is Used Without Clearance</h3>
+
+            <p>Using an uncleared sample constitutes copyright infringement. The consequences are severe and asymmetric:</p>
+
+            <ul>
+              <li><strong>Statutory damages</strong>: Up to $150,000 per sample, per copy distributed</li>
+              <li><strong>Injunctions</strong>: Courts can order the song removed from sale and streaming</li>
+              <li><strong>Retroactive licensing demands</strong>: The sampled party negotiates from maximum leverage</li>
+              <li><strong>Songwriting credit reassignment</strong>: Original writers added to credits, diluting the sampling artist&rsquo;s ownership</li>
+              <li><strong>Settlement payments</strong>: Documented cases range from hundreds of thousands to millions of dollars</li>
+            </ul>
+
+            <h3>The Independent Artist Problem</h3>
+
+            <p><strong>Financial barriers</strong>: An independent artist may have a total recording budget of $2,000 to $5,000 &mdash; less than the cost of clearing a single sample. Major label artists have clearance costs covered by the label (recoupable against the artist&rsquo;s royalties, but not an out-of-pocket expense).</p>
+
+            <p><strong>Leverage disparity</strong>: A request from Universal Music for a Warner Music sample carries institutional weight. A request from an unknown independent artist does not. Major labels benefit from pre-existing relationships and can offer reciprocal arrangements that independents cannot.</p>
+
+            <p><strong>Legal risk</strong>: Statutory damages of up to $150,000 per infringement make uncleared sampling an existential financial risk for independent artists. Lord Finesse sued Mac Miller for $10 million over an uncleared sample on a free mixtape.</p>
+
+            <h3>The Bomb Squad Extinction</h3>
+
+            <p>Public Enemy&rsquo;s <em>It Takes a Nation of Millions to Hold Us Back</em> (1988) and <em>Fear of a Black Planet</em> (1990) were produced by the Bomb Squad &mdash; Hank Shocklee, Keith Shocklee, and Eric &ldquo;Vietnam&rdquo; Sadler &mdash; using a dense layering technique that stacked 10 to 20 or more samples per track.</p>
+
+            <p>That production style is dead. Not because producers lost interest in it, but because the math killed it.</p>
+
+            <p>DiCola and McLeod&rsquo;s academic analysis estimated that clearing the samples on <em>Fear of a Black Planet</em> at modern rates would cost at least $5 per copy. On a platinum record (one million copies), that is $5 million in clearance costs alone &mdash; before recording, mixing, mastering, marketing, distribution, or the label&rsquo;s recoupment. And that estimate assumes every sample holder agrees to license. If even one refuses &mdash; and they have absolute discretion to refuse &mdash; the entire track must be reworked or abandoned.</p>
+
+            <p>Hank Shocklee himself has spoken about this directly. In an interview with <em>Little Village</em>, he and Chuck D described how the post-Grand Upright landscape made their signature production approach impossible to replicate. The legal framework did not merely raise the cost of sampling. It eliminated an entire mode of musical expression &mdash; one that was disproportionately associated with Black American artists working in hip-hop, the genre most dependent on sampling as a creative tool.</p>
+
+            <div class="callout">
+              <p>The racial dimension of this suppression deserves explicit quantification. Hip-hop and R&amp;B have consistently represented approximately 25% to 30% of total U.S. music consumption in recent years &mdash; the largest or second-largest genre by market share in any given year. Yet artists in these genres bear a wildly disproportionate share of sample clearance costs, mechanical licensing friction, and copyright litigation, simply because the foundational production norms of the genre depend on sampling in ways that rock, pop, and country do not. The post-1991 legal framework did not target hip-hop by name. It did not need to. By eliminating the de minimis defense for sound recordings and establishing that any unauthorized sample constitutes infringement regardless of duration or recognizability, the law created a regime whose costs fall heaviest on the genre most dependent on the practice it criminalized. The neutrality is formal. The impact is not.</p>
+            </div>
+
+            <p>When an artistic movement dies not because audiences reject it but because the legal system makes it unaffordable, the word for that is not &ldquo;evolution.&rdquo; It is suppression.</p>
+
+            <h3>The Interpolation Escape Route</h3>
+
+            <p><strong>Sampling</strong> takes a portion of the actual sound recording and incorporates it into a new work. It requires two clearances: master (from the label) and publishing (from the publisher/songwriter).</p>
+
+            <p><strong>Interpolation</strong> re-records or re-performs a recognizable musical element using new musicians and new equipment. The original recording is not used. It requires clearance only from the composition copyright holder (the publisher/songwriter), not the sound recording owner (the label).</p>
+
+            <p>The economics favor interpolation. One negotiation instead of two. No master clearance fee. No dealing with labels that may demand co-ownership of the new recording. But interpolation is not a safe harbor. As the <em>Juice WRLD / Sting</em> and <em>Williams v. Gaye</em> cases demonstrate, composition rights holders can demand enormous percentages, and courts can find infringement based on the &ldquo;feel&rdquo; of a composition without any direct copying.</p>
+
+          </div>
+        </section>
+
+        <!-- PART 2: CASE LAW -->
+        <section class="section" id="part-2-caselaw">
+          <h2 class="section-title"><span class="prompt">$</span> Part 2: The Case Law That Built the Rules</h2>
+          <div class="section-content">
+
+            <h3>Before the Rules: The Wild West (1979&ndash;1991)</h3>
+
+            <p>From the late 1970s through 1991, hip-hop producers sampled freely with little concern for copyright clearance. The practice was not just common &mdash; it was foundational. The albums of this era &mdash; Public Enemy&rsquo;s <em>It Takes a Nation of Millions to Hold Us Back</em> (1988), De La Soul&rsquo;s <em>3 Feet High and Rising</em> (1989), the Beastie Boys&rsquo; <em>Paul&rsquo;s Boutique</em> (1989) &mdash; represent the pinnacle of unregulated sampling. <em>Paul&rsquo;s Boutique</em> contains approximately 105 identifiable samples.</p>
+
+            <p>Could <em>Paul&rsquo;s Boutique</em> be made today? The consensus among music attorneys is no. Estimates for clearing all samples under modern conditions range from $300,000 to $500,000 or more, and many rights holders would likely refuse to license at any price.</p>
+
+            <p>Two events in 1991 ended the era.</p>
+
+            <h3>Grand Upright Music v. Warner Bros. (1991): &ldquo;Thou Shalt Not Steal&rdquo;</h3>
+
+            <p><strong>Case</strong>: 780 F. Supp. 182 (S.D.N.Y. 1991)<br>
+            <strong>Judge</strong>: Kevin Thomas Duffy</p>
+
+            <p>Rapper Biz Markie sampled a portion of Gilbert O&rsquo;Sullivan&rsquo;s 1972 hit &ldquo;Alone Again (Naturally)&rdquo; for his track &ldquo;Alone Again.&rdquo; Warner Bros. had contacted O&rsquo;Sullivan&rsquo;s representatives to obtain a license. They were denied. They released the album anyway.</p>
+
+            <p>Judge Duffy&rsquo;s opinion opened with the biblical admonition: <strong>&ldquo;Thou shalt not steal.&rdquo;</strong> He granted a preliminary injunction halting distribution and took the extraordinary step of referring the matter to the U.S. Attorney for potential criminal prosecution. No criminal charges were ultimately filed. But the threat of criminal prosecution for sampling sent shockwaves through the industry.</p>
+
+            <p>The opinion has been widely criticized for its brevity, lack of legal analysis, and failure to apply established copyright doctrines. It is, by any standard of legal reasoning, a poor opinion. But its impact was enormous.</p>
+
+            <h3>Campbell v. Acuff-Rose Music (1994): Fair Use Lives</h3>
+
+            <p><strong>Case</strong>: 510 U.S. 569 (1994)<br>
+            <strong>Court</strong>: Supreme Court of the United States<br>
+            <strong>Opinion</strong>: Justice David Souter (unanimous)</p>
+
+            <p>Three years after Grand Upright shut the door, the Supreme Court opened a window. 2 Live Crew&rsquo;s &ldquo;Pretty Woman&rdquo; was a parody of Roy Orbison&rsquo;s classic. Acuff-Rose refused to license. 2 Live Crew released the song anyway. The Supreme Court reversed the Sixth Circuit, holding that commercial parody can qualify as fair use and establishing the concept of <strong>transformative use</strong>.</p>
+
+            <p>Campbell v. Acuff-Rose was the last time the Supreme Court said anything definitive about fair use in the music context. Thirty-two years and counting.</p>
+
+            <h3>Newton v. Diamond (2004): The Two-Copyright Distinction</h3>
+
+            <p><strong>Case</strong>: 388 F.3d 1189 (9th Cir. 2004)</p>
+
+            <p>The Beastie Boys sampled six seconds of James Newton&rsquo;s &ldquo;Choir&rdquo; &mdash; three notes &mdash; and looped it over 40 times in &ldquo;Pass the Mic.&rdquo; They cleared the sound recording but not the composition. The Ninth Circuit held that the three-note sequence was <strong>de minimis</strong>. The case drew a critical line between the two copyrights.</p>
+
+            <h3>Bridgeport Music v. Dimension Films (2005): &ldquo;Get a License or Do Not Sample&rdquo;</h3>
+
+            <p><strong>Case</strong>: 410 F.3d 792 (6th Cir. 2005)<br>
+            <strong>Opinion</strong>: Circuit Judge Ralph B. Guy Jr.</p>
+
+            <p>If Grand Upright was the moral verdict, Bridgeport was the bright-line rule.</p>
+
+            <p>N.W.A.&rsquo;s &ldquo;100 Miles and Runnin&rsquo;&rdquo; sampled a two-second guitar chord from Funkadelic&rsquo;s &ldquo;Get Off Your Ass and Jam.&rdquo; The Sixth Circuit created the strictest rule in American sampling law: <strong>the de minimis defense does not apply to sound recordings.</strong> Even a fraction of a second. Even if the snippet was unrecognizable to any listener. <strong>&ldquo;Get a license or do not sample.&rdquo;</strong></p>
+
+            <p>In the Sixth Circuit &mdash; covering Michigan, Ohio, Kentucky, and Tennessee, including Nashville &mdash; any unauthorized use of even a fraction of a second constitutes infringement. No exceptions.</p>
+
+            <h3>VMG Salsoul v. Ciccone (2016): The Ninth Circuit Disagrees</h3>
+
+            <p><strong>Case</strong>: 824 F.3d 871 (9th Cir. 2016)</p>
+
+            <p>VMG Salsoul alleged that producer Shep Pettibone copied a <strong>0.23-second</strong> segment of horns from a Salsoul Orchestra track and used it in Madonna&rsquo;s &ldquo;Vogue.&rdquo; The Ninth Circuit affirmed summary judgment for the defendants and <strong>expressly declined to follow Bridgeport</strong>. The de minimis exception applies to sound recordings.</p>
+
+            <p>This created a <strong>circuit split</strong> &mdash; two federal appeals courts applying contradictory rules to the same legal question:</p>
+
+            <div class="data-table">
+              <table>
+                <thead>
+                  <tr><th></th><th>6th Circuit (Bridgeport)</th><th>9th Circuit (VMG Salsoul)</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><strong>Rule</strong></td><td>No de minimis defense</td><td>De minimis defense applies</td></tr>
+                  <tr><td><strong>Standard</strong></td><td>&ldquo;Get a license or do not sample&rdquo;</td><td>Would a reasonable audience recognize it?</td></tr>
+                  <tr><td><strong>Coverage</strong></td><td>MI, OH, KY, TN (Nashville)</td><td>CA, OR, WA, AZ, NV (Los Angeles)</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>The Supreme Court has not resolved this split. As of March 2026, the law of sampling depends on where you are standing when you press record.</p>
+
+            <div class="callout">
+              <p>There is a deeper reason the ambiguity persists: it serves incumbents. Major labels and publishers, which control the catalogs most likely to be sampled, benefit from a legal landscape where the safest course is always to pay for clearance. Uncertainty does not hurt the party selling the license. It hurts the party who needs to buy one.</p>
+            </div>
+
+            <h3>Williams v. Gaye (2015/2018): The Chill</h3>
+
+            <p><strong>Case</strong>: 895 F.3d 1106 (9th Cir. 2018)</p>
+
+            <p>This was not a sampling case. No audio was taken from Marvin Gaye&rsquo;s recording. But the Gaye estate alleged that &ldquo;Blurred Lines&rdquo; infringed the &ldquo;groove&rdquo; and &ldquo;feel&rdquo; of &ldquo;Got to Give It Up.&rdquo; The jury found infringement and awarded $7.4 million, later reduced to ~$4.98 million plus a running 50% royalty. Judge Nguyen&rsquo;s dissent warned that the majority had allowed the Gaye estate to &ldquo;own a musical style.&rdquo;</p>
+
+            <p>For the sample economy, <em>Blurred Lines</em> matters because it demonstrated that even interpolation does not provide a safe harbor if the resulting composition is substantially similar to the original.</p>
+
+            <h3>International: Kraftwerk v. Pelham (Germany/EU, 1999&ndash;ongoing)</h3>
+
+            <p>The world&rsquo;s longest-running sampling lawsuit spans over two decades. Kraftwerk sued over a two-second rhythmic sequence looped in rapper Sabrina Setlur&rsquo;s 1997 song. As of March 2026, the case has produced approximately ten separate judicial opinions over 27 years and is not yet finally resolved <code>[single-source]</code>.</p>
+
+            <p>A system that generates 27 years of litigation over two seconds of audio is not functioning as a mechanism for resolving disputes. It is functioning as a mechanism for generating them.</p>
+
+          </div>
+        </section>
+
+        <!-- PART 3: CASE STUDIES -->
+        <section class="section" id="part-3-studies">
+          <h2 class="section-title"><span class="prompt">$</span> Part 3: Case Studies &mdash; Who Pays, Who Profits, Who Gets Erased</h2>
+          <div class="section-content">
+
+            <p>The legal framework is abstract until you see what it does to actual people.</p>
+
+            <h3>Isaac Hayes: The Artist Who Lost Everything Before He Died</h3>
+
+            <p>Isaac Hayes was a foundational figure at Stax Records in Memphis, co-writing iconic songs including &ldquo;Soul Man&rdquo; and &ldquo;Hold On, I&rsquo;m Coming.&rdquo; His 1971 score for <em>Shaft</em> won the Academy Award for Best Original Score.</p>
+
+            <p>In 1976, Hayes filed for bankruptcy with approximately $6 million in debt. He lost the rights to all future royalties from his pre-bankruptcy catalog.</p>
+
+            <p>Follow the chain of title for the masters: Stax &rarr; Fantasy Records (1977) &rarr; Concord Records (2004). Follow the chain for the publishing: UMPG and Warner Chappell control the key compositions. In October 2023, Primary Wave announced a publishing administration deal with the Hayes estate.</p>
+
+            <p>In August 2024, the Hayes estate sued Donald Trump&rsquo;s presidential campaign for unauthorized use of &ldquo;Hold On, I&rsquo;m Comin&rsquo;&rdquo; at over 133 campaign events. The Trump campaign&rsquo;s defense was revealing: <em>the Hayes estate does not own the copyright to the song</em>. The lawsuit was mutually resolved in February 2026.</p>
+
+            <div class="callout">
+              <p>Isaac Hayes died on August 10, 2008. If you want to sample an Isaac Hayes Stax recording, you negotiate with Concord (masters) and UMPG/Warner Chappell (publishing). The artist who created the music is the least powerful party in the transaction. This is what the power structure looks like from the bottom.</p>
+            </div>
+
+            <h3>Biz Markie: The Man Grand Upright Destroyed</h3>
+
+            <p>Biz Markie&rsquo;s album <em>I Need a Haircut</em> was recalled from stores. His next album, pointedly titled <strong><em>All Samples Cleared!</em></strong> (1993), reflected the new legal reality in its title. It did not achieve commercial success. His recording career effectively stalled. He pivoted to DJing and television.</p>
+
+            <p>Biz Markie died on July 16, 2021, at age 57. The pattern is consistent throughout the history of sampling law: the legal precedents are set in cases involving individual artists, but the structural beneficiaries are the corporate entities that own catalogs and control clearance. Biz Markie bore the cost of establishing the rule. Every major label&rsquo;s catalog became more valuable because of it.</p>
+
+            <h3>Nicki Minaj / Tracy Chapman: The &ldquo;Do Not Sample&rdquo; List</h3>
+
+            <p>Nicki Minaj wanted to sample Tracy Chapman&rsquo;s &ldquo;Baby Can I Hold You.&rdquo; Chapman refused. The song leaked to radio anyway. Chapman sued. Minaj settled for $450,000.</p>
+
+            <p>The &ldquo;Do Not Sample&rdquo; list is the logical endpoint of a system where clearance is entirely discretionary. An artist or estate can permanently remove their work from the raw materials available to future creators. For cover songs, the compulsory license ensures any artist can record any song by paying the statutory rate. No such mechanism exists for sampling.</p>
+
+            <h3>Clipping: How Clearance Difficulty Becomes Creative Constraint</h3>
+
+            <p>Clipping primarily builds beats from found sounds &mdash; beer bottles, alarm clocks, bricks breaking, thermoses &mdash; rather than traditional music samples. The group has stated explicitly that they avoid traditional samples in part because they are difficult to clear.</p>
+
+            <p>The case of &ldquo;Say the Name&rdquo; from <em>Visions of Bodies Being Burned</em> (2020) illustrates the friction. The Geto Boys interpolation required pitch-shifting Daveed Diggs&rsquo;s voice as a workaround, and clearance still delayed the track by potentially over a year <code>[single-source]</code>.</p>
+
+            <p>Clipping is what happens when creative artists accept the clearance system as a given and route around it. The fact that an experimental hip-hop group must avoid referencing the genre&rsquo;s own history because the legal costs of engaging with that history are prohibitive tells you something about who the system serves.</p>
+
+            <h3>Kanye West: The Economics of Sampling at Scale</h3>
+
+            <p><strong>My Beautiful Dark Twisted Fantasy</strong> (2010): ~29 distinct samples across 13 tracks. One documented clearance cost: $62,500 for the Eddie Bo &ldquo;Hook &amp; Sling&rdquo; sample.</p>
+
+            <p><strong>The Life of Pablo</strong> (2016): ~39 samples.</p>
+
+            <p><strong>The Vultures albums</strong> (2024): Something unprecedented &mdash; a major artist releasing commercial recordings with widespread uncleared samples, apparently by design. Donna Summer&rsquo;s estate denied clearance; track removed. Black Sabbath&rsquo;s &ldquo;Iron Man&rdquo; sample pulled after threats from the Osbournes. James Brown&rsquo;s estate told <em>Billboard</em> that &ldquo;Funky President&rdquo; was not cleared. Portishead&rsquo;s Geoff Barrow publicly stated their song was sampled without proper clearance.</p>
+
+            <p>Reservoir Media&rsquo;s president/COO Rell Lafague: &ldquo;On the level of Kanye in 2024 to put out an entire album with samples that haven&rsquo;t even been requested to be cleared, I don&rsquo;t think I&rsquo;ve ever really seen that today.&rdquo;</p>
+
+            <div class="callout">
+              <p>The system does not treat every artist the same. It treats them according to their position in the power structure. The same two-second sample that costs an indie artist $5,000 and three months of negotiation gets &ldquo;replayed&rdquo; by Kanye&rsquo;s session musicians under an in-house publishing deal. The same uncleared sample that would result in career-ending litigation for an unknown artist generates manageable lawsuits for one of the best-selling musicians in history. The rules are the same. The game is different.</p>
+            </div>
+
+            <h3>The Verve / &ldquo;Bitter Sweet Symphony&rdquo;: Twenty-Two Years in the Machine</h3>
+
+            <p>The Verve sampled a 1966 orchestral recording of the Rolling Stones&rsquo; &ldquo;The Last Time.&rdquo; Allen Klein (ABKCO Records) claimed the Verve used more than agreed and demanded 100% of songwriting royalties or withdrawal. The Verve capitulated. Richard Ashcroft reportedly received $1,000 from one of the decade&rsquo;s biggest songs. Estimated lost revenue: $5 million by Billboard&rsquo;s estimate, potentially $7&ndash;12 million over 22 years <code>[single-source on the $7-12M figure]</code>.</p>
+
+            <p>Resolution came in April 2019 &mdash; voluntary, not court-ordered. It required the death of Allen Klein and the goodwill of Mick Jagger and Keith Richards.</p>
+
+            <h3>Juice WRLD / &ldquo;Lucid Dreams&rdquo;: Interpolation Is Not a Safe Harbor</h3>
+
+            <p>&ldquo;Lucid Dreams&rdquo; (2018) was an interpolation of Sting&rsquo;s &ldquo;Shape of My Heart.&rdquo; No audio from Sting&rsquo;s recording was used. Only a publishing license was required.</p>
+
+            <p>Sting received 85% of the royalties.</p>
+
+            <p>That number bears repeating: eighty-five percent. The royalty arrangement was a negotiated license, not a lawsuit. Sting denied suing Juice WRLD; a spokesperson called the claims &ldquo;simply untrue.&rdquo;</p>
+
+            <p>But there is a reason interpolation remains the preferred workaround despite these draconian publishing splits: the master recording royalties. Because no audio from Sting&rsquo;s recording was used, Juice WRLD and his label retained 100% of the master recording royalties. In the streaming era, master royalties generally pay out significantly higher than publishing royalties &mdash; roughly three to four times higher per stream. Sting got 85% of the smaller pie; Juice WRLD kept all of the bigger one.</p>
+
+            <p>Interpolation is not a loophole so much as a calculated trade-off. You surrender most of the publishing in exchange for keeping all of the masters. But the fundamental power asymmetry remains intact.</p>
+
+            <h3>De La Soul: Thirty-Four Years Locked Out</h3>
+
+            <p>De La Soul&rsquo;s classic albums were unavailable on streaming for 34 years until March 3, 2023. The 90/10 split with Tommy Boy Records. The &ldquo;Tommy Boycott.&rdquo; The reacquisition of masters. DMG Clearances renegotiating dozens of sample licenses over a year. Tracks altered &mdash; &ldquo;Cool Breeze on the Rocks&rdquo; became &ldquo;Cool Breeze on the Rocks (The Melted Version).&rdquo;</p>
+
+            <p>Dave (David Jude Jolicoeur) died on February 12, 2023 &mdash; less than three weeks before the catalog reached streaming. He did not live to see his music become legally accessible to the streaming generation.</p>
+
+            <div class="callout">
+              <p>The De La Soul case sits at the intersection of every structural failure this series has documented. The original contract (90/10 split) reflects the exploitative economics documented in <a href="report-02.html">Report 2</a>. The label&rsquo;s control of the masters reflects the consolidation documented in <a href="report-01.html">Report 1</a>. The sample clearance complexity reflects the legal architecture documented in <a href="report-03.html">Report 3</a>. And the 34-year delay represents the human cost.</p>
+            </div>
+
+            <h3>DJ Shadow / Endtroducing: The Album That Cannot Be Repeated</h3>
+
+            <p><em>Endtroducing.....</em> (1996) entered the Guinness Book of Records as the first album composed entirely from sampled material. Approximately 500 samples.</p>
+
+            <p>DJ Shadow: &ldquo;If you&rsquo;re clearing one sample out of 18, and they want 50% and everybody down the line wants 50%, then it&rsquo;s kind of like, &lsquo;Hang on guys, this isn&rsquo;t going to work!&rsquo; It literally makes the art form illegal and dangerous.&rdquo;</p>
+
+            <p><em>Endtroducing</em> could not be repeated today. The album exists as a monument to a brief window when the creative possibilities of sampling outran the legal system&rsquo;s ability to monetize them. That window closed.</p>
+
+            <h3>J Dilla: Estate Under Siege</h3>
+
+            <p><em>Donuts</em> (2006), 31 tracks built from ~34 primary samples. Released on J Dilla&rsquo;s 32nd birthday, three days before his death.</p>
+
+            <p>In September 2020, Music Sales Corporation &mdash; which had purchased 10cc&rsquo;s intellectual property in 2019 &mdash; sued the Dilla estate over samples. This has been characterized as potential &ldquo;sample trolling&rdquo;: acquiring catalogs specifically to pursue infringement claims <code>[single-source for the characterization]</code>.</p>
+
+            <h3>Girl Talk: The Fair Use Argument Nobody Wants Tested</h3>
+
+            <p>Gregg Gillis creates densely layered mashup albums using hundreds of unlicensed samples. None have been cleared. No rights holder has ever sued him.</p>
+
+            <p>Why? Rights holders fear establishing favorable fair use precedent. A court ruling in Gillis&rsquo;s favor could undermine the entire clearance economy. The system&rsquo;s power depends partly on uncertainty. Girl Talk&rsquo;s continued existence as an unlicensed sampler is, paradoxically, evidence that the system is working as intended &mdash; not as a mechanism for resolving disputes, but as a mechanism for maintaining the leverage that makes licensing the rational choice.</p>
+
+            <h3>Mac Miller / Lord Finesse: The Mixtape Myth</h3>
+
+            <p>Mac Miller used a Lord Finesse beat on a free mixtape. Lord Finesse filed a $10 million lawsuit. The case settled confidentially in December 2012. The &ldquo;free mixtape&rdquo; defense does not immunize artists from sample infringement claims.</p>
+
+            <h3>Vanilla Ice / &ldquo;Ice Ice Baby&rdquo;: The $4 Million Bassline</h3>
+
+            <p>&ldquo;Ice Ice Baby&rdquo; (1990) sampled Queen and David Bowie&rsquo;s &ldquo;Under Pressure&rdquo; without credit. Vanilla Ice reportedly paid $4 million to acquire the publishing rights &mdash; a resolution available only to artists with extraordinary resources.</p>
+
+            <h3>The Sample Chain Problem</h3>
+
+            <p>Three 6 Mafia&rsquo;s &ldquo;Sippin&rsquo; on Some Syrup&rdquo; samples Marvin Gaye. Subsequent artists who sample Three 6 Mafia are technically also sampling Marvin Gaye. The clearance obligation cascades backward through the chain of title. There is no public database that reliably tracks which recordings contain which samples.</p>
+
+          </div>
+        </section>
+
+        <!-- PART 4: PUBLISHING & MASTERS -->
+        <section class="section" id="part-4-publishing">
+          <h2 class="section-title"><span class="prompt">$</span> Part 4: The Publishing Power Structure and Masters Ownership</h2>
+          <div class="section-content">
+
+            <h3>The Big Three Publishers</h3>
+
+            <div class="data-table">
+              <table>
+                <thead>
+                  <tr><th>Publisher</th><th>2024 Global Market Share</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Sony Music Publishing</td><td>25.2%</td></tr>
+                  <tr><td>Universal Music Publishing Group (UMPG)</td><td>23.2%</td></tr>
+                  <tr><td>Warner Chappell Music (WCM)</td><td>12.2%</td></tr>
+                  <tr><td><strong>Major total</strong></td><td><strong>~60.6%</strong></td></tr>
+                  <tr><td>Independent publishers (combined)</td><td>39.4%</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <p>These are the same corporate parents that control the major record labels. The consolidation documented in <a href="report-01.html">Report 1</a> applies to publishing with equal force.</p>
+
+            <p>When 60.6% of global publishing is controlled by three corporate groups &mdash; the same groups that control roughly 70% of recorded music &mdash; the probability that any given sample requires negotiation with a major publisher approaches certainty for commercially significant recordings.</p>
+
+            <h3>How Publishing Compounds the Sample Clearance Problem</h3>
+
+            <p>When an independent artist wants to sample a recording from a major label&rsquo;s catalog, they often face the same corporate parent on both sides of the transaction. Two negotiations, both with entities that ultimately report to the same corporate parent.</p>
+
+            <p>This creates a structural advantage for major-label artists sampling from within the same corporate family. If a Universal artist wants to sample a Universal-owned recording, the clearance can be handled internally. If an independent artist wants the same sample, they face two separate external negotiations with no incentive to offer favorable terms.</p>
+
+            <h3>Masters Ownership: The Central Economic Lever</h3>
+
+            <p>Under standard contracts, the label owns the master recordings outright. The artist receives a royalty &mdash; historically 12&ndash;20% &mdash; only after the advance recoups. Catalog music generates roughly 50% of a major label&rsquo;s revenue but approximately 70% of its profits.</p>
+
+            <p>This matters for the sample economy because it determines who sits on the other side of the negotiation table. In almost every case, it is not the original artist. It is the label that signed them &mdash; or the corporate successor that acquired the label that signed them, or the investment fund that acquired the corporate successor.</p>
+
+            <h3>The Artists Who Fought Back</h3>
+
+            <p><strong>Taylor Swift</strong>: Spent $360 million in May 2025 to buy back her own masters from Shamrock Holdings, after re-recording four albums to strategically devalue the originals.</p>
+
+            <p><strong>Prince</strong>: Changed his name to a symbol, wrote &ldquo;SLAVE&rdquo; on his face, fought for two decades. Warner Bros. returned his masters in 2014. He died in April 2016 without a will.</p>
+
+            <p><strong>Frank Ocean</strong>: Released the visual album <em>Endless</em> to fulfill his Def Jam contract, then immediately released <em>Blonde</em> independently. Reportedly paid back a $2 million advance to retain ownership <code>[single-source on the $20M Apple Music figure]</code>.</p>
+
+            <p><strong>Jay-Z</strong>: Co-founded Roc-A-Fella Records in 1995. Roc Nation Distribution now operates on a model where independent artists retain ownership of their masters.</p>
+
+            <p>These are escape stories from a system that most artists never escape.</p>
+
+            <h3>The Catalog Acquisition Boom</h3>
+
+            <p><strong>Hipgnosis Song Fund</strong> spent more than $2.2 billion acquiring 105 catalog deals. 67 of 105 deals were worth less than their purchase price. 75% missed growth forecasts by an average of 23% annually. Blackstone acquired Hipgnosis for $1.6 billion &mdash; a significant discount. Rebranded as Recognition Music Group in March 2025.</p>
+
+            <p>Other institutional buyers: KKR (backed BMG, purchased Kobalt Capital&rsquo;s catalog for ~$1.1 billion), Primary Wave (50% stake in Prince&rsquo;s estate assets), Round Hill Music (acquired by Concord for $468.8 million).</p>
+
+            <p>Current multiples: 16.1x NPS for publishing, 13.0x NLS for masters. Iconic catalogs command 19&ndash;20x or higher.</p>
+
+            <div class="callout">
+              <p>When a private equity fund controls a catalog, clearance decisions are made by portfolio managers whose fiduciary duty is to maximize return on investment. The question is not &ldquo;does this serve the music?&rdquo; but &ldquo;does this maximize the value of the asset?&rdquo;</p>
+            </div>
+
+            <h3>Section 203: The Industry&rsquo;s Most Underutilized Tool</h3>
+
+            <p>Section 203 of the Copyright Act provides authors with an inalienable right to terminate and reclaim any grant of copyright made on or after January 1, 1978 &mdash; 35 years after the original grant. It cannot be waived or contracted away.</p>
+
+            <p>Why it is underutilized: lack of awareness, complex procedural requirements, label opposition, work-for-hire ambiguity (the Mitch Glazier episode from <a href="report-03.html">Report 3</a>), relationship concerns, and the simple passage of time. Section 203 remains the music industry&rsquo;s most powerful and least used tool for artist empowerment.</p>
+
+            <h3>Estate Case Studies</h3>
+
+            <p><strong>Prince</strong>: Died without a will. Six years of proceedings. IRS valued the estate at $163.2 million vs. the administrator&rsquo;s $82.3 million. Settled at ~$156.4 million. Primary Wave acquired 50%. Valued at over $400 million by mid-2025 <code>[single-source]</code>.</p>
+
+            <p><strong>Michael Jackson</strong>: Purchased ATV Music Publishing (including the Beatles catalog) for $47.5 million in 1985. Sold 50% stake in his own catalog to Sony for ~$600 million in 2024. Total posthumous earnings since 2009: $3.5 billion.</p>
+
+            <p><strong>Nipsey Hussle</strong>: The counterexample. Founded All Money In No Money Out Records. Full control of masters and brand. Family-controlled, deliberate approach to posthumous releases.</p>
+
+            <p><strong>Juice WRLD</strong>: Over 3,000 unreleased tracks. Three posthumous albums released. &ldquo;Lucid Dreams&rdquo; &mdash; the song that established him &mdash; gives 85% of its publishing to Sting. The sample clearance system does not stop operating when the sampling artist dies.</p>
+
+          </div>
+        </section>
+
+        <!-- PART 5: AI HORIZON -->
+        <section class="section" id="part-5-ai">
+          <h2 class="section-title"><span class="prompt">$</span> Part 5: The AI Horizon</h2>
+          <div class="section-content">
+
+            <h3>Three Tiers of Analysis</h3>
+
+            <ul>
+              <li><strong>FACT</strong>: Documented events, filed lawsuits, enacted legislation, published rulings.</li>
+              <li><strong>ANALYSIS</strong>: Reasonable inferences from established facts, informed by the structural patterns documented in Reports 1&ndash;3.</li>
+              <li><strong>SPECULATION</strong>: Forward-looking projections that may or may not materialize.</li>
+            </ul>
+
+            <h3>FACT: The Legal Landscape</h3>
+
+            <p><strong>RIAA v. Suno and RIAA v. Udio (filed June 24, 2024)</strong>: The major labels sued both AI music generation platforms. UMG and WMG settled with Suno in late 2025; Suno will launch a new model trained only on licensed material. UMG settled with Udio on October 29, 2025, announcing a joint &ldquo;music creation, consumption and streaming&rdquo; service launching in 2026. WMG settled with Udio on November 19, 2025 with an opt-in licensing model. Sony has not settled. Both cases remain ongoing.</p>
+
+            <p><strong>Concord / ABKCO / UMG v. Anthropic</strong>: Publishers filed suit in 2023 alleging Anthropic&rsquo;s Claude AI was trained on song lyrics without authorization. In January 2026, publishers filed expanded claims covering more than 20,000 songs, with potential statutory damages exceeding $3 billion.</p>
+
+            <p><strong>Thaler v. Perlmutter</strong>: SCOTUS denied cert March 2, 2026. The &ldquo;human-only rule&rdquo; for copyright authorship is now settled law.</p>
+
+            <p><strong>USCO Part 3 Report (May 2025)</strong>: 108-page analysis concluding that AI training is <strong>&ldquo;not categorically fair use.&rdquo;</strong> &ldquo;Making commercial use of vast tropes of copyrighted works to produce expressive content that competes with them in existing markets&hellip; goes beyond established fair use boundaries.&rdquo;</p>
+
+            <p><strong>Legislative responses</strong>:</p>
+            <ul>
+              <li><strong>ELVIS Act</strong> (Tennessee, enacted March 2024): First U.S. law protecting against AI voice cloning. Passed unanimously.</li>
+              <li><strong>NO FAKES Act</strong> (reintroduced April 2025): Federal right of publicity for digital replicas. Bipartisan. Not yet passed.</li>
+              <li><strong>TRAIN Act</strong> (introduced January 2026): Would require AI companies to provide copyright holders access to training records.</li>
+              <li><strong>EU AI Act</strong>: Copyright provisions in force August 2, 2025. Opt-out rights for rightsholders. Penalties up to &euro;35 million or 7% of global turnover.</li>
+            </ul>
+
+            <p><strong>UK: Getty Images v. Stability AI (November 2025)</strong>: The High Court held that AI model weights are not a &ldquo;copy&rdquo; under UK copyright law. Significant precedent for the question of whether AI music models &ldquo;contain&rdquo; the recordings they were trained on.</p>
+
+            <h3>ANALYSIS: What the Settlements Reveal</h3>
+
+            <p>The UMG/Suno and UMG/Udio deal model: artists who opt in are compensated on two dimensions &mdash; for training data use and on a per-creation basis when subscribers generate new works. This is, structurally, a licensing framework that mirrors the existing sample clearance system &mdash; but with the AI platform as an intermediary layer.</p>
+
+            <div class="callout">
+              <p>The major labels are positioning themselves to control the AI licensing layer using the same playbook they used for streaming: negotiate deals that give them a percentage of the platform&rsquo;s economics, create opt-in structures that flow through the labels&rsquo; existing catalog infrastructure, and ensure that the labels &mdash; not the original artists &mdash; sit at the negotiating table.</p>
+            </div>
+
+            <p>If the sample clearance economy is a system where major labels and publishers act as gatekeepers between artists and the raw materials of creation, the AI licensing economy is poised to be the same system with different raw materials. The gatekeeper changes form but not function.</p>
+
+            <h3>ANALYSIS: The Clearance Economy Collapse Scenario</h3>
+
+            <p>Consider the scenario. An independent hip-hop producer in 2027 wants a sound that evokes 1970s soul horns. Under the current system: identify the recording, trace ownership through decades of corporate transactions, negotiate two clearances, pay $4,000&ndash;$15,000, wait months. Under an AI-mediated system: type a description, receive original audio in seconds. No sample to clear because there is no sample. Only a statistical echo of a genre&rsquo;s sonic characteristics.</p>
+
+            <p>Who loses? Clearance intermediaries. Legacy catalog owners. Session musicians whose recordings generated residual income.</p>
+
+            <p>Who gains? The independent producer who can now create without the $15,000 barrier. The AI platform operator &mdash; the new intermediary. And potentially, opted-in artists receiving compensation through the UMG/Suno deal structures.</p>
+
+            <p>But look at those deal structures. The opt-in flows through UMG. The terms are set by UMG. The structural relationship is identical to streaming: the label sits between the artist and the platform.</p>
+
+            <h3>SPECULATION: Futures</h3>
+
+            <p><strong>AI-generated samples as the new crate-digging.</strong> The AI platform becomes the sample library. The subscription fee becomes the clearance cost. The entities that control training data become the entities that determine what sounds are available.</p>
+
+            <p><strong>Synthetic interpolation.</strong> If AI can generate a melody that captures the &ldquo;feel&rdquo; of an original without reproducing specific notes, &ldquo;style transfer&rdquo; becomes the next legal frontier. Current law says you cannot copyright a style. But current law also said you could not copyright a &ldquo;groove&rdquo; until <em>Blurred Lines</em>.</p>
+
+            <p><strong>On-chain provenance.</strong> Blockchain-based systems where AI generation triggers micro-payments to opted-in artists. The limitation: on-chain provenance solves the tracking problem but does not resolve the underlying consent question. And the history of music industry technology adoption suggests the entities with the most to gain from intermediary positions will resist systems that disintermediate them.</p>
+
+            <div class="callout">
+              <p>The most likely outcome: AI does not destroy the sample economy. It reorganizes it. The gatekeepers remain the same. The costs shift from per-sample clearance fees to per-platform licensing fees. The technology changes. The power structure adapts. It always has.</p>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- PART 6: WHAT IT REVEALS -->
+        <section class="section" id="part-6-reveals">
+          <h2 class="section-title"><span class="prompt">$</span> Part 6: What the Sample Economy Reveals</h2>
+          <div class="section-content">
+
+            <h3>The Proof Case</h3>
+
+            <p>This series has documented, across three prior reports, a power structure built on consolidation, sustained by economics, and maintained by law. This fourth report has attempted to prove all three operating simultaneously in a single transaction.</p>
+
+            <p>When an independent artist wants to sample a recording owned by a major label, they experience the entire structure at once.</p>
+
+            <p><strong>The consolidation</strong> (<a href="report-01.html">Report 1</a>): The recording they want is owned by one of three corporate groups controlling ~70% of recorded music revenue. The composition is owned by one of three publishers controlling ~60.6% of global publishing. The chain of title may pass through multiple acquisitions and bankruptcies.</p>
+
+            <p><strong>The economics</strong> (<a href="report-02.html">Report 2</a>): Clearance costs of $4,000&ndash;$15,000 per sample. Per-stream revenue of ~$0.008. The production styles that defined hip-hop&rsquo;s creative peak are economically extinct.</p>
+
+            <p><strong>The legal framework</strong> (<a href="report-03.html">Report 3</a>): No compulsory license for sampling. Two circuits applying contradictory rules. Statutory damages of up to $150,000 per infringement. Legal ambiguity serving catalog owners.</p>
+
+            <div class="callout">
+              <p>Every element of the power structure converges on this single transaction. The sample clearance system is not a peripheral feature of the music industry. It is the mechanism through which the industry&rsquo;s fundamental dynamics &mdash; who has power, how money flows, what rules apply &mdash; are enacted in real time, on individual human beings, every time someone wants to build something new from something that came before.</p>
+            </div>
+
+            <h3>What Would Need to Change</h3>
+
+            <p><strong>A compulsory license for sampling.</strong> A statutory rate for the use of short segments of existing recordings, with guaranteed compensation but no ability to block the use. This would remove the gatekeeper function that makes sample clearance a mechanism of structural control.</p>
+
+            <p><strong>Resolution of the circuit split.</strong> A uniform national standard would eliminate forum shopping and reduce the legal uncertainty that benefits incumbents.</p>
+
+            <p><strong>Transparency in clearance costs and terms.</strong> No public data exists on aggregate denial rates, typical timelines, or the distribution of costs across artist types.</p>
+
+            <p><strong>Section 203 awareness and enforcement.</strong> More artists exercising the 35-year termination right would shift the ownership landscape over time.</p>
+
+            <p><strong>AI licensing frameworks that center artists, not labels.</strong> Direct relationships between creators of source material and the artists who use AI to build on it.</p>
+
+            <p><strong>Rethinking the two-copyright structure.</strong> A statutory framework treating sampling as a single transaction &mdash; one payment to a collective body that distributes to both master and composition owners.</p>
+
+            <p>None of these changes are politically probable. The RIAA&rsquo;s $6.9 million in lobbying expenditures in 2024 (documented in <a href="report-03.html">Report 3</a>) ensures that. But probable and necessary are different words. And the gap between them is where the work happens.</p>
+
+            <h3>The Final Accounting</h3>
+
+            <p>Four reports. One structure.</p>
+
+            <p><a href="report-01.html">Report 1</a> traced a century of consolidation. <a href="report-02.html">Report 2</a> followed the money. <a href="report-03.html">Report 3</a> documented the laws. Report 4 showed all of it converging on a single transaction.</p>
+
+            <p>Isaac Hayes lost his copyrights in a 1976 bankruptcy. Forty-eight years later, his family still cannot fully control the use of songs he co-wrote.</p>
+
+            <p>Biz Markie was told &ldquo;thou shalt not steal&rdquo; by a judge who cited the Ten Commandments instead of copyright doctrine. His career never recovered. The labels&rsquo; catalogs became more valuable.</p>
+
+            <p>De La Soul waited 34 years for their music to reach streaming. When it finally arrived, some tracks had to be altered because samples could not be cleared at any price.</p>
+
+            <p>Richard Ashcroft received $1,000 from &ldquo;Bitter Sweet Symphony.&rdquo; Allen Klein&rsquo;s estate received the rest for 22 years.</p>
+
+            <p>These are not outliers. They are the system working as designed.</p>
+
+            <div class="callout">
+              <p>The power structure is revealed. What happens next is not this series&rsquo; question to answer. It is yours.</p>
+            </div>
+
+          </div>
+        </section>
+
+        <!-- APPENDIX -->
+        <section class="section" id="appendix-citations">
+          <h2 class="section-title"><span class="prompt">$</span> Appendix: Citations and Source Methodology</h2>
+          <div class="section-content">
+
+            <h3>Methodology</h3>
+
+            <p>This report draws on five research files compiled in March 2026, each containing sourced and verified material. All claims are traceable to court records, federal filings, established journalism, or industry reporting. Items verifiable from only one source are marked <code>[single-source]</code> throughout.</p>
+
+            <h3>Legal Sources</h3>
+
+            <div class="data-table">
+              <table>
+                <thead>
+                  <tr><th>Case</th><th>Citation</th><th>Key Holding</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Grand Upright v. Warner Bros.</td><td>780 F. Supp. 182 (S.D.N.Y. 1991)</td><td>Unauthorized sampling is infringement</td></tr>
+                  <tr><td>Campbell v. Acuff-Rose</td><td>510 U.S. 569 (1994)</td><td>Commercial parody can be fair use; transformative use framework</td></tr>
+                  <tr><td>Newton v. Diamond</td><td>388 F.3d 1189 (9th Cir. 2004)</td><td>De minimis applies to compositions; two-copyright distinction</td></tr>
+                  <tr><td>Bridgeport v. Dimension Films</td><td>410 F.3d 792 (6th Cir. 2005)</td><td>No de minimis for sound recordings</td></tr>
+                  <tr><td>VMG Salsoul v. Ciccone</td><td>824 F.3d 871 (9th Cir. 2016)</td><td>De minimis applies; circuit split created</td></tr>
+                  <tr><td>Williams v. Gaye</td><td>895 F.3d 1106 (9th Cir. 2018)</td><td>Compositional &ldquo;feel&rdquo; can infringe</td></tr>
+                  <tr><td>Thaler v. Perlmutter</td><td>SCOTUS cert denied March 2, 2026</td><td>AI cannot be an author; human authorship required</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3>Statutes</h3>
+            <ul>
+              <li>17 U.S.C. &sect; 106 (exclusive rights)</li>
+              <li>17 U.S.C. &sect; 107 (fair use)</li>
+              <li>17 U.S.C. &sect; 114(b) (scope of rights in sound recordings &mdash; center of Bridgeport/VMG Salsoul split)</li>
+              <li>17 U.S.C. &sect; 115 (compulsory mechanical license)</li>
+              <li>17 U.S.C. &sect; 203 (termination of transfers after 35 years)</li>
+              <li>17 U.S.C. &sect; 506(a) (criminal copyright infringement)</li>
+            </ul>
+
+            <h3>Industry Sources</h3>
+            <p>Sample clearance mechanics: Synchtank, Billboard, Okayplayer (Deborah Mannis-Gardner interviews); Tracklib; Music Week (DJ Shadow); Nolo; Spotify for Artists; U.S. Copyright Office educational materials; Sound on Sound.</p>
+
+            <p>Case studies: NPR, Rolling Stone, Billboard, NME, Variety, The FADER, Complex, Okayplayer, Slate, uDiscover Music, YES PLZ Coffee (Clipping interview), American University Business Law Review.</p>
+
+            <p>Publishing and masters: Music &amp; Copyright (market share data), Billboard, Hollywood Reporter, Forbes/AfroTech, Ebony, Morgan Lewis (Section 203), NYU Law Review, Royalty Exchange/Shot Tower Capital (valuation multiples).</p>
+
+            <p>AI and copyright: RIAA, Copyright Alliance, Music Ally, Hollywood Reporter, Music Business Worldwide, Variety, Skadden, Crowell &amp; Moring, Authors Guild, Vanderbilt Law School, Recording Academy, Euronews, European Parliament, Latham &amp; Watkins, Mayer Brown.</p>
+
+            <h3>Cross-References</h3>
+            <ul>
+              <li><a href="report-01.html">Report 1: A History of the US Recorded Music Industry</a></li>
+              <li><a href="report-02.html">Report 2: The Economics of Making Music</a></li>
+              <li><a href="report-03.html">Report 3: Law, Lobbying, and the Rules of the Game</a></li>
+            </ul>
+
+            <h3>Data Gaps</h3>
+            <p>The following data does not exist in publicly available sources:</p>
+            <ul>
+              <li>Aggregate statistics on sample clearance denial rates</li>
+              <li>Total industry spending on sample clearance fees</li>
+              <li>Systematic comparison of clearance costs for major-label vs. independent artists</li>
+              <li>Detailed financial terms of most clearance deals (typically confidential)</li>
+              <li>Complete clearance strategy for DJ Shadow&rsquo;s <em>Endtroducing</em></li>
+            </ul>
+            <p>These gaps are themselves a feature of the system&rsquo;s opacity.</p>
+
+          </div>
+        </section>
+
+        <footer class="site-footer">
+          <div class="footer-content">
+            <div class="footer-line">
+              <span class="prompt">$</span> <span class="cmd">echo</span> "Power Structures Revealed &mdash; Report 4: The Sample Economy"
+            </div>
+            <div class="footer-line">
+              <span class="prompt">$</span> <span class="cmd">echo</span> "Compiled March 2026. All data sourced. No fabrication."
+            </div>
+            <div class="footer-line">
+              <span class="prompt">$</span> <span class="cmd">echo</span> "<a href="report-01.html">&larr; Report 1: History of the Industry</a>"
+            </div>
+            <div class="footer-line">
+              <span class="prompt">$</span> <span class="cmd">echo</span> "<a href="report-02.html">&larr; Report 2: Economics of Making Music</a>"
+            </div>
+            <div class="footer-line">
+              <span class="prompt">$</span> <span class="cmd">echo</span> "<a href="report-03.html">&larr; Report 3: Law, Lobbying &amp; the Rules</a>"
+            </div>
+            <div class="footer-line footer-dim">
+              <span class="prompt">$</span> <span class="cursor-blink">_</span>
+            </div>
+          </div>
+        </footer>
+
+      </main>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

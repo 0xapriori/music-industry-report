@@ -23,6 +23,11 @@ The legal and regulatory framework that determines who profits from music. Copyr
 
 - [`report-03-law-and-lobbying.md`](report-03-law-and-lobbying.md) — Main report
 
+### Report 4: The Sample Economy
+The capstone report. Where consolidation, economics, and law converge on a single transaction — the sample clearance. The two-copyright problem, landmark case law from Grand Upright to the circuit split, case studies from Isaac Hayes to Clipping, the publishing power structure, masters ownership battles, catalog acquisitions, and the AI horizon.
+
+- [`report-04-sample-economy.md`](report-04-sample-economy.md) — Main report
+
 ---
 
 ## Reference Materials
